@@ -1,0 +1,9 @@
+[package]
+name = "bancode"
+version = "1.0.0"
+edition = "2021"
+description = "BANcode Framework - diagnostic code bindings"
+
+[lib]
+name = "bancode"
+path = "src/lib.rs"
