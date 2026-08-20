@@ -14,16 +14,16 @@
 #   0011A780-0011A7FF  (unmapped cluster, no trap handler)
 #
 # --- Slot list ---
-SLOT    0011A000   SUCS_TRAP_DISPATCH_FAILED     Trap dispatch invoked but no handler installed
-SLOT    0011A001   SUCS_TRAP_SLOT_INVALID        BANcode mapped to invalid trap slot
-SLOT    0011A002   SUCS_TRAP_HANDLER_NULL        NULL handler registered for trap slot
-SLOT    0011A003   SUCS_SENTINEL_RAISED          SUCS_INVALID_CODEPOINT encountered in stream
-SLOT    0011A004   SUCS_TRAP_SLOT15_UNMAPPED     BANcode in unmapped cluster 0011A780-0011A7FF
-SLOT    0011A005   SUCS_DOWNCAST_FAILED          ExtSUCS-to-BaseSUCS narrowing failed
-SLOT    0011A006   SUCS_TRAP_RANGE_INTRUSION     Codepoint entered trap range 0x7FFFFFF0-0x7FFFFFFE
-SLOT    0011A007   SUCS_CONTEXT_CORRUPT          Trap handler context pointer invalid
-SLOT    0011A008   SUCS_RECURSIVE_TRAP           Trap fired during trap handler execution
-SLOT    0011A009   SUCS_KERNEL_STACK_OVERFLOW    Kernel stack exhausted during trap dispatch
+SLOT    0011A000   UNASSIGNED
+SLOT    0011A001   UNASSIGNED
+SLOT    0011A002   UNASSIGNED
+SLOT    0011A003   UNASSIGNED
+SLOT    0011A004   UNASSIGNED
+SLOT    0011A005   UNASSIGNED
+SLOT    0011A006   UNASSIGNED
+SLOT    0011A007   UNASSIGNED
+SLOT    0011A008   UNASSIGNED
+SLOT    0011A009   UNASSIGNED
 SLOT    0011A00A   UNASSIGNED
 SLOT    0011A00B   UNASSIGNED
 SLOT    0011A00C   UNASSIGNED
@@ -270,14 +270,14 @@ SLOT    0011A0FC   UNASSIGNED
 SLOT    0011A0FD   UNASSIGNED
 SLOT    0011A0FE   UNASSIGNED
 SLOT    0011A0FF   UNASSIGNED
-SLOT    0011A100   SUCS_PLUGIN_CHECKSUM_GATE     Plugin CRC32c/Fletcher-64 mismatch; quarantined
-SLOT    0011A101   SUCS_PLUGIN_RANGE_GATE        Plugin range malformed or below base limit; quarantined
-SLOT    0011A102   SUCS_PLUGIN_COLLISION_GATE    Plugin range overlaps active plugin; quarantined
-SLOT    0011A103   SUCS_PLUGIN_MOUNT_GATE        Plugin partition not OWFS; quarantined
-SLOT    0011A104   SUCS_PLUGIN_CAPACITY_GATE     Active plugin table full; quarantined
-SLOT    0011A105   SUCS_PLUGIN_BLOB_CORRUPT      Plugin blob malformed (wrong magic/size)
-SLOT    0011A106   SUCS_PLUGIN_VERSION_REJECT    Plugin blob format version unsupported
-SLOT    0011A107   SUCS_PLUGIN_ID_MALFORMED     Plugin identifier empty or malformed
+SLOT    0011A100   UNASSIGNED
+SLOT    0011A101   UNASSIGNED
+SLOT    0011A102   UNASSIGNED
+SLOT    0011A103   UNASSIGNED
+SLOT    0011A104   UNASSIGNED
+SLOT    0011A105   UNASSIGNED
+SLOT    0011A106   UNASSIGNED
+SLOT    0011A107   UNASSIGNED
 SLOT    0011A108   UNASSIGNED
 SLOT    0011A109   UNASSIGNED
 SLOT    0011A10A   UNASSIGNED
@@ -526,21 +526,21 @@ SLOT    0011A1FC   UNASSIGNED
 SLOT    0011A1FD   UNASSIGNED
 SLOT    0011A1FE   UNASSIGNED
 SLOT    0011A1FF   UNASSIGNED
-SLOT    0011A200   SUTF_DECODE_OVERLONG          Overlong SUTF sequence (security rejection)
-SLOT    0011A201   SUTF_DECODE_BAD_CONTINUATION  Invalid continuation byte in SUTF sequence
-SLOT    0011A202   SUTF_DECODE_TRAP_RANGE        Decoded codepoint in kernel trap range
-SLOT    0011A203   SUTF_DECODE_SENTINEL          Decoded codepoint equals SUCS_INVALID_CODEPOINT
-SLOT    0011A204   SUTF_DECODE_OUT_OF_BOUNDS     Codepoint exceeds max range of encoding width
-SLOT    0011A205   SUTF_ENCODE_INVALID_CP        Codepoint invalid or reserved
-SLOT    0011A206   VSUTF_BAD_PREFIX              Unrecognized vSUTF lead byte
-SLOT    0011A207   VSUTF_OVERLONG_EXTENDED       Extended frame encoding fits in base framing
-SLOT    0011A208   VSUTF_TRUNCATED_EXTENDED      Extended frame truncated (< 9 bytes)
-SLOT    0011A209   ESUTF_PAGE_TRANSLATION_FAIL   e-SUTF host-to-guest page translation failed
-SLOT    0011A20A   ESUTF_UNMAPPED_ADDRESS        e-SUTF codepoint not in any mapped page
-SLOT    0011A20B   ESUTF_PAGE_TABLE_FULL         e-SUTF page table full (256 max)
-SLOT    0011A20C   ESUTF_PAGE_NOT_ALIGNED        e-SUTF page base not page-aligned
-SLOT    0011A20D   ESUTF_TRAP_PAGE_INTERSECT     e-SUTF page intersects kernel trap range
-SLOT    0011A20E   ESUTF_IPC_FRAME_INVALID       e-SUTF IPC frame too small or malformed
+SLOT    0011A200   UNASSIGNED
+SLOT    0011A201   UNASSIGNED
+SLOT    0011A202   UNASSIGNED
+SLOT    0011A203   UNASSIGNED
+SLOT    0011A204   UNASSIGNED
+SLOT    0011A205   UNASSIGNED
+SLOT    0011A206   UNASSIGNED
+SLOT    0011A207   UNASSIGNED
+SLOT    0011A208   UNASSIGNED
+SLOT    0011A209   UNASSIGNED
+SLOT    0011A20A   UNASSIGNED
+SLOT    0011A20B   UNASSIGNED
+SLOT    0011A20C   UNASSIGNED
+SLOT    0011A20D   UNASSIGNED
+SLOT    0011A20E   UNASSIGNED
 SLOT    0011A20F   UNASSIGNED
 SLOT    0011A210   UNASSIGNED
 SLOT    0011A211   UNASSIGNED
@@ -782,14 +782,14 @@ SLOT    0011A2FC   UNASSIGNED
 SLOT    0011A2FD   UNASSIGNED
 SLOT    0011A2FE   UNASSIGNED
 SLOT    0011A2FF   UNASSIGNED
-SLOT    0011A300   OWFS_MAGIC_MISMATCH           OWFS superblock magic not 0x4F574653
-SLOT    0011A301   OWFS_SUPERBLOCK_CORRUPT       OWFS superblock CRC32c validation failed
-SLOT    0011A302   OWFS_INODE_CHECKSUM_FAIL      OWFS inode CRC32c integrity check failed
-SLOT    0011A303   OWFS_CATALOG_CHECKSUM_FAIL    OWFS catalog entry CRC32c check failed
-SLOT    0011A304   OWFS_BITMAP_CHECKSUM_FAIL     OWFS bitmap Fletcher-64 check failed
-SLOT    0011A305   OWFS_INODE_READ_FAIL          Cannot read OWFS inode table block
-SLOT    0011A306   OWFS_INDIRECT_READ_FAIL       Cannot read OWFS indirect block map
-SLOT    0011A307   OWFS_VOLUME_INCONSISTENT      OWFS consistency check failed; data corruption
+SLOT    0011A300   UNASSIGNED
+SLOT    0011A301   UNASSIGNED
+SLOT    0011A302   UNASSIGNED
+SLOT    0011A303   UNASSIGNED
+SLOT    0011A304   UNASSIGNED
+SLOT    0011A305   UNASSIGNED
+SLOT    0011A306   UNASSIGNED
+SLOT    0011A307   UNASSIGNED
 SLOT    0011A308   UNASSIGNED
 SLOT    0011A309   UNASSIGNED
 SLOT    0011A30A   UNASSIGNED
@@ -1038,12 +1038,12 @@ SLOT    0011A3FC   UNASSIGNED
 SLOT    0011A3FD   UNASSIGNED
 SLOT    0011A3FE   UNASSIGNED
 SLOT    0011A3FF   UNASSIGNED
-SLOT    0011A400   USFS_MAGIC_MISMATCH           USFS superblock magic not 0x55534653
-SLOT    0011A401   USFS_SUPERBLOCK_CORRUPT       USFS superblock CRC32c validation failed
-SLOT    0011A402   USFS_ENTRY_CHECKSUM_FAIL      USFS entry table CRC32c check failed
-SLOT    0011A403   USFS_SIGNATURE_CHECKSUM_FAIL  USFS bitmap signature check failed
-SLOT    0011A404   USFS_BITMAP_FLETCHER_FAIL     USFS bitmap Fletcher-64 check failed
-SLOT    0011A405   USFS_VOLUME_INCONSISTENT      USFS consistency check failed; data corruption
+SLOT    0011A400   UNASSIGNED
+SLOT    0011A401   UNASSIGNED
+SLOT    0011A402   UNASSIGNED
+SLOT    0011A403   UNASSIGNED
+SLOT    0011A404   UNASSIGNED
+SLOT    0011A405   UNASSIGNED
 SLOT    0011A406   UNASSIGNED
 SLOT    0011A407   UNASSIGNED
 SLOT    0011A408   UNASSIGNED
@@ -1294,9 +1294,9 @@ SLOT    0011A4FC   UNASSIGNED
 SLOT    0011A4FD   UNASSIGNED
 SLOT    0011A4FE   UNASSIGNED
 SLOT    0011A4FF   UNASSIGNED
-SLOT    0011A500   HTL_IO_FAILURE                HTL I/O failure from hardware driver
-SLOT    0011A501   HTL_TIMEOUT                   HTL hardware timeout
-SLOT    0011A502   HTL_NO_DEVICE                 No hardware device present
+SLOT    0011A500   UNASSIGNED
+SLOT    0011A501   UNASSIGNED
+SLOT    0011A502   UNASSIGNED
 SLOT    0011A503   UNASSIGNED
 SLOT    0011A504   UNASSIGNED
 SLOT    0011A505   UNASSIGNED
@@ -1550,16 +1550,16 @@ SLOT    0011A5FC   UNASSIGNED
 SLOT    0011A5FD   UNASSIGNED
 SLOT    0011A5FE   UNASSIGNED
 SLOT    0011A5FF   UNASSIGNED
-SLOT    0011A600   MBL_KERNEL_LOAD_FAILED        Kernel image failed to load from OWFS
-SLOT    0011A601   MBL_KERNEL_TOO_SMALL          Kernel image smaller than 16 bytes
-SLOT    0011A602   MBL_BOOT_MAGIC_MISSING        MBL2 magic not found at boot config address
-SLOT    0011A603   MBL_OWMKFS_FULL               Volume full during mkfs formatting
-SLOT    0011A604   MBL_OWMKFS_NO_INODES          No free inodes during OWFS mkfs
-SLOT    0011A605   MBL_OWMKFS_TOO_SMALL          Partition too small for minimum OWFS layout
-SLOT    0011A606   MBL_EXIT_BOOT_SERVICES_FAIL   UEFI ExitBootServices failed
-SLOT    0011A607   MBL_MEMORY_ALLOC_FAIL         UEFI AllocatePages for memory map failed
-SLOT    0011A608   MBL_MEMORY_MAP_FAIL           UEFI GetMemoryMap failed
-SLOT    0011A609   MBL_NO_EXIT_BOOT_SERVICES     gExitBootServices protocol pointer NULL
+SLOT    0011A600   UNASSIGNED
+SLOT    0011A601   UNASSIGNED
+SLOT    0011A602   UNASSIGNED
+SLOT    0011A603   UNASSIGNED
+SLOT    0011A604   UNASSIGNED
+SLOT    0011A605   UNASSIGNED
+SLOT    0011A606   UNASSIGNED
+SLOT    0011A607   UNASSIGNED
+SLOT    0011A608   UNASSIGNED
+SLOT    0011A609   UNASSIGNED
 SLOT    0011A60A   UNASSIGNED
 SLOT    0011A60B   UNASSIGNED
 SLOT    0011A60C   UNASSIGNED
@@ -1806,20 +1806,20 @@ SLOT    0011A6FC   UNASSIGNED
 SLOT    0011A6FD   UNASSIGNED
 SLOT    0011A6FE   UNASSIGNED
 SLOT    0011A6FF   UNASSIGNED
-SLOT    0011A700   UEFI_LOAD_ERROR               Image failed to load
-SLOT    0011A701   UEFI_INVALID_PARAMETER        Invalid parameter to firmware service
-SLOT    0011A702   UEFI_UNSUPPORTED              Operation not supported by platform
-SLOT    0011A703   UEFI_BAD_BUFFER_SIZE          Buffer size invalid
-SLOT    0011A704   UEFI_BUFFER_TOO_SMALL         Output buffer too small
-SLOT    0011A705   UEFI_NOT_READY                Device or resource not ready
-SLOT    0011A706   UEFI_DEVICE_ERROR             Hardware device error
-SLOT    0011A707   UEFI_WRITE_PROTECTED          Device or media write-protected
-SLOT    0011A708   UEFI_OUT_OF_RESOURCES          System resource allocation failed
-SLOT    0011A709   UEFI_ABORTED                  Operation was aborted
-SLOT    0011A70A   UEFI_NOT_FOUND                Requested resource not found
-SLOT    0011A70B   UEFI_NOT_STARTED              Device not started
-SLOT    0011A70C   UEFI_ALREADY_STARTED          Operation already in progress
-SLOT    0011A70D   UEFI_SECURITY_VIOLATION       Security violation detected
+SLOT    0011A700   UNASSIGNED
+SLOT    0011A701   UNASSIGNED
+SLOT    0011A702   UNASSIGNED
+SLOT    0011A703   UNASSIGNED
+SLOT    0011A704   UNASSIGNED
+SLOT    0011A705   UNASSIGNED
+SLOT    0011A706   UNASSIGNED
+SLOT    0011A707   UNASSIGNED
+SLOT    0011A708   UNASSIGNED
+SLOT    0011A709   UNASSIGNED
+SLOT    0011A70A   UNASSIGNED
+SLOT    0011A70B   UNASSIGNED
+SLOT    0011A70C   UNASSIGNED
+SLOT    0011A70D   UNASSIGNED
 SLOT    0011A70E   UNASSIGNED
 SLOT    0011A70F   UNASSIGNED
 SLOT    0011A710   UNASSIGNED
@@ -1934,131 +1934,131 @@ SLOT    0011A77C   UNASSIGNED
 SLOT    0011A77D   UNASSIGNED
 SLOT    0011A77E   UNASSIGNED
 SLOT    0011A77F   UNASSIGNED
-SLOT    0011A780   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A781   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A782   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A783   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A784   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A785   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A786   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A787   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A788   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A789   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A78A   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A78B   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A78C   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A78D   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A78E   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A78F   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A790   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A791   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A792   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A793   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A794   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A795   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A796   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A797   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A798   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A799   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A79A   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A79B   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A79C   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A79D   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A79E   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A79F   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7A0   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7A1   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7A2   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7A3   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7A4   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7A5   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7A6   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7A7   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7A8   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7A9   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7AA   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7AB   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7AC   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7AD   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7AE   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7AF   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7B0   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7B1   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7B2   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7B3   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7B4   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7B5   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7B6   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7B7   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7B8   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7B9   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7BA   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7BB   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7BC   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7BD   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7BE   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7BF   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7C0   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7C1   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7C2   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7C3   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7C4   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7C5   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7C6   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7C7   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7C8   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7C9   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7CA   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7CB   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7CC   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7CD   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7CE   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7CF   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7D0   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7D1   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7D2   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7D3   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7D4   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7D5   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7D6   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7D7   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7D8   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7D9   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7DA   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7DB   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7DC   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7DD   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7DE   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7DF   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7E0   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7E1   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7E2   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7E3   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7E4   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7E5   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7E6   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7E7   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7E8   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7E9   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7EA   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7EB   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7EC   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7ED   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7EE   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7EF   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7F0   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7F1   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7F2   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7F3   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7F4   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7F5   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7F6   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7F7   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7F8   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7F9   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7FA   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7FB   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7FC   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7FD   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7FE   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
-SLOT    0011A7FF   RESERVED_UNMAPPED             No trap handler; slot 15 unmapped cluster
+SLOT    0011A780   UNASSIGNED
+SLOT    0011A781   UNASSIGNED
+SLOT    0011A782   UNASSIGNED
+SLOT    0011A783   UNASSIGNED
+SLOT    0011A784   UNASSIGNED
+SLOT    0011A785   UNASSIGNED
+SLOT    0011A786   UNASSIGNED
+SLOT    0011A787   UNASSIGNED
+SLOT    0011A788   UNASSIGNED
+SLOT    0011A789   UNASSIGNED
+SLOT    0011A78A   UNASSIGNED
+SLOT    0011A78B   UNASSIGNED
+SLOT    0011A78C   UNASSIGNED
+SLOT    0011A78D   UNASSIGNED
+SLOT    0011A78E   UNASSIGNED
+SLOT    0011A78F   UNASSIGNED
+SLOT    0011A790   UNASSIGNED
+SLOT    0011A791   UNASSIGNED
+SLOT    0011A792   UNASSIGNED
+SLOT    0011A793   UNASSIGNED
+SLOT    0011A794   UNASSIGNED
+SLOT    0011A795   UNASSIGNED
+SLOT    0011A796   UNASSIGNED
+SLOT    0011A797   UNASSIGNED
+SLOT    0011A798   UNASSIGNED
+SLOT    0011A799   UNASSIGNED
+SLOT    0011A79A   UNASSIGNED
+SLOT    0011A79B   UNASSIGNED
+SLOT    0011A79C   UNASSIGNED
+SLOT    0011A79D   UNASSIGNED
+SLOT    0011A79E   UNASSIGNED
+SLOT    0011A79F   UNASSIGNED
+SLOT    0011A7A0   UNASSIGNED
+SLOT    0011A7A1   UNASSIGNED
+SLOT    0011A7A2   UNASSIGNED
+SLOT    0011A7A3   UNASSIGNED
+SLOT    0011A7A4   UNASSIGNED
+SLOT    0011A7A5   UNASSIGNED
+SLOT    0011A7A6   UNASSIGNED
+SLOT    0011A7A7   UNASSIGNED
+SLOT    0011A7A8   UNASSIGNED
+SLOT    0011A7A9   UNASSIGNED
+SLOT    0011A7AA   UNASSIGNED
+SLOT    0011A7AB   UNASSIGNED
+SLOT    0011A7AC   UNASSIGNED
+SLOT    0011A7AD   UNASSIGNED
+SLOT    0011A7AE   UNASSIGNED
+SLOT    0011A7AF   UNASSIGNED
+SLOT    0011A7B0   UNASSIGNED
+SLOT    0011A7B1   UNASSIGNED
+SLOT    0011A7B2   UNASSIGNED
+SLOT    0011A7B3   UNASSIGNED
+SLOT    0011A7B4   UNASSIGNED
+SLOT    0011A7B5   UNASSIGNED
+SLOT    0011A7B6   UNASSIGNED
+SLOT    0011A7B7   UNASSIGNED
+SLOT    0011A7B8   UNASSIGNED
+SLOT    0011A7B9   UNASSIGNED
+SLOT    0011A7BA   UNASSIGNED
+SLOT    0011A7BB   UNASSIGNED
+SLOT    0011A7BC   UNASSIGNED
+SLOT    0011A7BD   UNASSIGNED
+SLOT    0011A7BE   UNASSIGNED
+SLOT    0011A7BF   UNASSIGNED
+SLOT    0011A7C0   UNASSIGNED
+SLOT    0011A7C1   UNASSIGNED
+SLOT    0011A7C2   UNASSIGNED
+SLOT    0011A7C3   UNASSIGNED
+SLOT    0011A7C4   UNASSIGNED
+SLOT    0011A7C5   UNASSIGNED
+SLOT    0011A7C6   UNASSIGNED
+SLOT    0011A7C7   UNASSIGNED
+SLOT    0011A7C8   UNASSIGNED
+SLOT    0011A7C9   UNASSIGNED
+SLOT    0011A7CA   UNASSIGNED
+SLOT    0011A7CB   UNASSIGNED
+SLOT    0011A7CC   UNASSIGNED
+SLOT    0011A7CD   UNASSIGNED
+SLOT    0011A7CE   UNASSIGNED
+SLOT    0011A7CF   UNASSIGNED
+SLOT    0011A7D0   UNASSIGNED
+SLOT    0011A7D1   UNASSIGNED
+SLOT    0011A7D2   UNASSIGNED
+SLOT    0011A7D3   UNASSIGNED
+SLOT    0011A7D4   UNASSIGNED
+SLOT    0011A7D5   UNASSIGNED
+SLOT    0011A7D6   UNASSIGNED
+SLOT    0011A7D7   UNASSIGNED
+SLOT    0011A7D8   UNASSIGNED
+SLOT    0011A7D9   UNASSIGNED
+SLOT    0011A7DA   UNASSIGNED
+SLOT    0011A7DB   UNASSIGNED
+SLOT    0011A7DC   UNASSIGNED
+SLOT    0011A7DD   UNASSIGNED
+SLOT    0011A7DE   UNASSIGNED
+SLOT    0011A7DF   UNASSIGNED
+SLOT    0011A7E0   UNASSIGNED
+SLOT    0011A7E1   UNASSIGNED
+SLOT    0011A7E2   UNASSIGNED
+SLOT    0011A7E3   UNASSIGNED
+SLOT    0011A7E4   UNASSIGNED
+SLOT    0011A7E5   UNASSIGNED
+SLOT    0011A7E6   UNASSIGNED
+SLOT    0011A7E7   UNASSIGNED
+SLOT    0011A7E8   UNASSIGNED
+SLOT    0011A7E9   UNASSIGNED
+SLOT    0011A7EA   UNASSIGNED
+SLOT    0011A7EB   UNASSIGNED
+SLOT    0011A7EC   UNASSIGNED
+SLOT    0011A7ED   UNASSIGNED
+SLOT    0011A7EE   UNASSIGNED
+SLOT    0011A7EF   UNASSIGNED
+SLOT    0011A7F0   UNASSIGNED
+SLOT    0011A7F1   UNASSIGNED
+SLOT    0011A7F2   UNASSIGNED
+SLOT    0011A7F3   UNASSIGNED
+SLOT    0011A7F4   UNASSIGNED
+SLOT    0011A7F5   UNASSIGNED
+SLOT    0011A7F6   UNASSIGNED
+SLOT    0011A7F7   UNASSIGNED
+SLOT    0011A7F8   UNASSIGNED
+SLOT    0011A7F9   UNASSIGNED
+SLOT    0011A7FA   UNASSIGNED
+SLOT    0011A7FB   UNASSIGNED
+SLOT    0011A7FC   UNASSIGNED
+SLOT    0011A7FD   UNASSIGNED
+SLOT    0011A7FE   UNASSIGNED
+SLOT    0011A7FF   UNASSIGNED

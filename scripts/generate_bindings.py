@@ -382,8 +382,8 @@ def generate_rust(registry):
     cargo = []
     cargo.append("[package]")
     cargo.append('name = "bancode"')
-    cargo.append('version = "1.0.0"')
-    cargo.append('edition = "2021"')
+    cargo.append('version = "0.1.0"')
+    cargo.append('edition = "2026"')
     cargo.append('description = "BANcode Framework - diagnostic code bindings"')
     cargo.append("")
     cargo.append("[lib]")

@@ -28,7 +28,7 @@ typedef uint32_t bancode_t;
 #include "comcode.h"
 #include "softcode.h"
 
-#define BANCODE_TOTAL_ASSIGNED 396
+#define BANCODE_TOTAL_ASSIGNED 0
 
 /* Trap range dispatch - like Unicode surrogate pairs */
 /* Each trap address 0x7FFFFFF0+N maps to BANcode at offset N */

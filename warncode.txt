@@ -9,17 +9,17 @@
 #   0011AB00-0011ABFF  Boot & protocol
 #
 # --- Slot list ---
-SLOT    0011A800   SUCS_MODE_INVALID             Invalid mode specified for kernel mode switch
-SLOT    0011A801   SUCS_MODE_ALREADY_ACTIVE      Requested mode is already the active mode
-SLOT    0011A802   SUCS_PLUGIN_INVALID_BLOB      Malformed plugin blob (non-fatal staging warning)
-SLOT    0011A803   SUCS_PLUGIN_DUPLICATE_ID      Plugin ID already staged or mounted
-SLOT    0011A804   SUCS_PLUGIN_STAGING_FULL      Plugin staging table full (4 max pending)
-SLOT    0011A805   SUCS_PLUGIN_NOT_OWFS          Plugin partition not OWFS (non-fatal staging warning)
-SLOT    0011A806   SUCS_PLUGIN_MOUNT_FAILED      Plugin partition mount failed
-SLOT    0011A807   SUCS_PLUGIN_BUFFER_OVERFLOW   Plugin blob exceeds staging buffer (16 KB)
-SLOT    0011A808   SUCS_PLUGIN_RANGE_COLLISION   Plugin range overlaps existing plugin (staging)
-SLOT    0011A809   SUCS_PLUGIN_CHECKSUM_MISMATCH Plugin checksum mismatch (non-quarantine path)
-SLOT    0011A80A   SUCS_KEY_INVALID              Encryption key wrong length (must be 32 bytes for ChaCha20)
+SLOT    0011A800   UNASSIGNED
+SLOT    0011A801   UNASSIGNED
+SLOT    0011A802   UNASSIGNED
+SLOT    0011A803   UNASSIGNED
+SLOT    0011A804   UNASSIGNED
+SLOT    0011A805   UNASSIGNED
+SLOT    0011A806   UNASSIGNED
+SLOT    0011A807   UNASSIGNED
+SLOT    0011A808   UNASSIGNED
+SLOT    0011A809   UNASSIGNED
+SLOT    0011A80A   UNASSIGNED
 SLOT    0011A80B   UNASSIGNED
 SLOT    0011A80C   UNASSIGNED
 SLOT    0011A80D   UNASSIGNED
@@ -265,15 +265,15 @@ SLOT    0011A8FC   UNASSIGNED
 SLOT    0011A8FD   UNASSIGNED
 SLOT    0011A8FE   UNASSIGNED
 SLOT    0011A8FF   UNASSIGNED
-SLOT    0011A900   OWFS_VOLUME_DIRTY             OWFS volume dirty from unclean unmount
-SLOT    0011A901   OWFS_VOLUME_LOCKED            OWFS volume locked for consistency scan
-SLOT    0011A902   OWFS_WRITE_PROTECTED          OWFS volume or inode write-protected
-SLOT    0011A903   OWFS_NO_FREE_BLOCKS           OWFS: no free data blocks (disk full)
-SLOT    0011A904   OWFS_NO_FREE_INODES           OWFS: no free inodes in table
-SLOT    0011A905   OWFS_CATALOG_FULL             OWFS: no free blocks to grow catalog
-SLOT    0011A906   OWFS_ACCESS_DENIED            OWFS: rwx permission denied for principal
-SLOT    0011A907   OWFS_KEY_INVALID              OWFS: encryption key wrong length
-SLOT    0011A908   OWFS_CRC_SILENT_SKIP          OWFS: catalog entry CRC mismatch, entry skipped
+SLOT    0011A900   UNASSIGNED
+SLOT    0011A901   UNASSIGNED
+SLOT    0011A902   UNASSIGNED
+SLOT    0011A903   UNASSIGNED
+SLOT    0011A904   UNASSIGNED
+SLOT    0011A905   UNASSIGNED
+SLOT    0011A906   UNASSIGNED
+SLOT    0011A907   UNASSIGNED
+SLOT    0011A908   UNASSIGNED
 SLOT    0011A909   UNASSIGNED
 SLOT    0011A90A   UNASSIGNED
 SLOT    0011A90B   UNASSIGNED
@@ -521,14 +521,14 @@ SLOT    0011A9FC   UNASSIGNED
 SLOT    0011A9FD   UNASSIGNED
 SLOT    0011A9FE   UNASSIGNED
 SLOT    0011A9FF   UNASSIGNED
-SLOT    0011AA00   USFS_VOLUME_DIRTY             USFS volume dirty from unclean unmount
-SLOT    0011AA01   USFS_VOLUME_LOCKED            USFS volume locked for consistency scan
-SLOT    0011AA02   USFS_WRITE_PROTECTED          USFS volume or entry write-protected
-SLOT    0011AA03   USFS_NO_FREE_BLOCKS           USFS: no free data blocks (disk full)
-SLOT    0011AA04   USFS_NO_FREE_ENTRIES          USFS: no free entries in table
-SLOT    0011AA05   USFS_ACCESS_DENIED            USFS: rwx permission denied for principal
-SLOT    0011AA06   USFS_KEY_INVALID              USFS: encryption key wrong length
-SLOT    0011AA07   USFS_ENCRYPTED_UNHANDLED      USFS: encryption error (reserved, currently unused)
+SLOT    0011AA00   UNASSIGNED
+SLOT    0011AA01   UNASSIGNED
+SLOT    0011AA02   UNASSIGNED
+SLOT    0011AA03   UNASSIGNED
+SLOT    0011AA04   UNASSIGNED
+SLOT    0011AA05   UNASSIGNED
+SLOT    0011AA06   UNASSIGNED
+SLOT    0011AA07   UNASSIGNED
 SLOT    0011AA08   UNASSIGNED
 SLOT    0011AA09   UNASSIGNED
 SLOT    0011AA0A   UNASSIGNED
@@ -777,18 +777,18 @@ SLOT    0011AAFC   UNASSIGNED
 SLOT    0011AAFD   UNASSIGNED
 SLOT    0011AAFE   UNASSIGNED
 SLOT    0011AAFF   UNASSIGNED
-SLOT    0011AB00   MBL_NO_GOP                    ModBoot: GOP (framebuffer) protocol not found
-SLOT    0011AB01   MBL_NO_BLOCK_IO               ModBoot: Block I/O protocol not found
-SLOT    0011AB02   MBL_NO_LOADED_IMAGE           ModBoot: Loaded Image protocol not found
-SLOT    0011AB03   MBL_GOP_MODE_FAIL             ModBoot: GOP QueryMode failed
-SLOT    0011AB04   MBL_REMOVABLE_MEDIA           ModBoot: removable media skipped (looking for fixed disk)
-SLOT    0011AB05   MBL_MEDIA_NOT_PRESENT         ModBoot: media not present in drive
-SLOT    0011AB06   MBL_OWMKFS_REBOOT_REQUIRED    ModBoot: mode switch staged; reboot required
-SLOT    0011AB07   MBL_PLUGIN_REBOOT_REQUIRED    ModBoot: plugin staged; reboot required
-SLOT    0011AB08   MBL_RTC_UNAVAILABLE           ModBoot: RTC GetTime failed, returning 0
-SLOT    0011AB09   MBL_KBD_UNAVAILABLE           ModBoot: ConIn protocol missing, no keyboard
-SLOT    0011AB0A   MBL_MENU_EMPTY                ModBoot: no bootable entries found in catalog
-SLOT    0011AB0B   MBL_SUTF8_NONASCII            ModBoot: SUTF-8 decoded non-ASCII, substituted '?'
+SLOT    0011AB00   UNASSIGNED
+SLOT    0011AB01   UNASSIGNED
+SLOT    0011AB02   UNASSIGNED
+SLOT    0011AB03   UNASSIGNED
+SLOT    0011AB04   UNASSIGNED
+SLOT    0011AB05   UNASSIGNED
+SLOT    0011AB06   UNASSIGNED
+SLOT    0011AB07   UNASSIGNED
+SLOT    0011AB08   UNASSIGNED
+SLOT    0011AB09   UNASSIGNED
+SLOT    0011AB0A   UNASSIGNED
+SLOT    0011AB0B   UNASSIGNED
 SLOT    0011AB0C   UNASSIGNED
 SLOT    0011AB0D   UNASSIGNED
 SLOT    0011AB0E   UNASSIGNED

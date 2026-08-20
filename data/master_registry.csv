@@ -1,14 +1,14 @@
 hex,value,name,category,subcategory,description,assigned
-0011A000,1155072,SUCS_TRAP_DISPATCH_FAILED,bancode,,Trap dispatch invoked but no handler installed,True
-0011A001,1155073,SUCS_TRAP_SLOT_INVALID,bancode,,BANcode mapped to invalid trap slot,True
-0011A002,1155074,SUCS_TRAP_HANDLER_NULL,bancode,,NULL handler registered for trap slot,True
-0011A003,1155075,SUCS_SENTINEL_RAISED,bancode,,SUCS_INVALID_CODEPOINT encountered in stream,True
-0011A004,1155076,SUCS_TRAP_SLOT15_UNMAPPED,bancode,,BANcode in unmapped cluster 0011A780-0011A7FF,True
-0011A005,1155077,SUCS_DOWNCAST_FAILED,bancode,,ExtSUCS-to-BaseSUCS narrowing failed,True
-0011A006,1155078,SUCS_TRAP_RANGE_INTRUSION,bancode,,Codepoint entered trap range 0x7FFFFFF0-0x7FFFFFFE,True
-0011A007,1155079,SUCS_CONTEXT_CORRUPT,bancode,,Trap handler context pointer invalid,True
-0011A008,1155080,SUCS_RECURSIVE_TRAP,bancode,,Trap fired during trap handler execution,True
-0011A009,1155081,SUCS_KERNEL_STACK_OVERFLOW,bancode,,Kernel stack exhausted during trap dispatch,True
+0011A000,1155072,UNASSIGNED,bancode,,,False
+0011A001,1155073,UNASSIGNED,bancode,,,False
+0011A002,1155074,UNASSIGNED,bancode,,,False
+0011A003,1155075,UNASSIGNED,bancode,,,False
+0011A004,1155076,UNASSIGNED,bancode,,,False
+0011A005,1155077,UNASSIGNED,bancode,,,False
+0011A006,1155078,UNASSIGNED,bancode,,,False
+0011A007,1155079,UNASSIGNED,bancode,,,False
+0011A008,1155080,UNASSIGNED,bancode,,,False
+0011A009,1155081,UNASSIGNED,bancode,,,False
 0011A00A,1155082,UNASSIGNED,bancode,,,False
 0011A00B,1155083,UNASSIGNED,bancode,,,False
 0011A00C,1155084,UNASSIGNED,bancode,,,False
@@ -255,14 +255,14 @@ hex,value,name,category,subcategory,description,assigned
 0011A0FD,1155325,UNASSIGNED,bancode,,,False
 0011A0FE,1155326,UNASSIGNED,bancode,,,False
 0011A0FF,1155327,UNASSIGNED,bancode,,,False
-0011A100,1155328,SUCS_PLUGIN_CHECKSUM_GATE,bancode,,Plugin CRC32c/Fletcher-64 mismatch; quarantined,True
-0011A101,1155329,SUCS_PLUGIN_RANGE_GATE,bancode,,Plugin range malformed or below base limit; quarantined,True
-0011A102,1155330,SUCS_PLUGIN_COLLISION_GATE,bancode,,Plugin range overlaps active plugin; quarantined,True
-0011A103,1155331,SUCS_PLUGIN_MOUNT_GATE,bancode,,Plugin partition not OWFS; quarantined,True
-0011A104,1155332,SUCS_PLUGIN_CAPACITY_GATE,bancode,,Active plugin table full; quarantined,True
-0011A105,1155333,SUCS_PLUGIN_BLOB_CORRUPT,bancode,,Plugin blob malformed (wrong magic/size),True
-0011A106,1155334,SUCS_PLUGIN_VERSION_REJECT,bancode,,Plugin blob format version unsupported,True
-0011A107,1155335,SUCS_PLUGIN_ID_MALFORMED,bancode,,Plugin identifier empty or malformed,True
+0011A100,1155328,UNASSIGNED,bancode,,,False
+0011A101,1155329,UNASSIGNED,bancode,,,False
+0011A102,1155330,UNASSIGNED,bancode,,,False
+0011A103,1155331,UNASSIGNED,bancode,,,False
+0011A104,1155332,UNASSIGNED,bancode,,,False
+0011A105,1155333,UNASSIGNED,bancode,,,False
+0011A106,1155334,UNASSIGNED,bancode,,,False
+0011A107,1155335,UNASSIGNED,bancode,,,False
 0011A108,1155336,UNASSIGNED,bancode,,,False
 0011A109,1155337,UNASSIGNED,bancode,,,False
 0011A10A,1155338,UNASSIGNED,bancode,,,False
@@ -511,21 +511,21 @@ hex,value,name,category,subcategory,description,assigned
 0011A1FD,1155581,UNASSIGNED,bancode,,,False
 0011A1FE,1155582,UNASSIGNED,bancode,,,False
 0011A1FF,1155583,UNASSIGNED,bancode,,,False
-0011A200,1155584,SUTF_DECODE_OVERLONG,bancode,,Overlong SUTF sequence (security rejection),True
-0011A201,1155585,SUTF_DECODE_BAD_CONTINUATION,bancode,,Invalid continuation byte in SUTF sequence,True
-0011A202,1155586,SUTF_DECODE_TRAP_RANGE,bancode,,Decoded codepoint in kernel trap range,True
-0011A203,1155587,SUTF_DECODE_SENTINEL,bancode,,Decoded codepoint equals SUCS_INVALID_CODEPOINT,True
-0011A204,1155588,SUTF_DECODE_OUT_OF_BOUNDS,bancode,,Codepoint exceeds max range of encoding width,True
-0011A205,1155589,SUTF_ENCODE_INVALID_CP,bancode,,Codepoint invalid or reserved,True
-0011A206,1155590,VSUTF_BAD_PREFIX,bancode,,Unrecognized vSUTF lead byte,True
-0011A207,1155591,VSUTF_OVERLONG_EXTENDED,bancode,,Extended frame encoding fits in base framing,True
-0011A208,1155592,VSUTF_TRUNCATED_EXTENDED,bancode,,Extended frame truncated (< 9 bytes),True
-0011A209,1155593,ESUTF_PAGE_TRANSLATION_FAIL,bancode,,e-SUTF host-to-guest page translation failed,True
-0011A20A,1155594,ESUTF_UNMAPPED_ADDRESS,bancode,,e-SUTF codepoint not in any mapped page,True
-0011A20B,1155595,ESUTF_PAGE_TABLE_FULL,bancode,,e-SUTF page table full (256 max),True
-0011A20C,1155596,ESUTF_PAGE_NOT_ALIGNED,bancode,,e-SUTF page base not page-aligned,True
-0011A20D,1155597,ESUTF_TRAP_PAGE_INTERSECT,bancode,,e-SUTF page intersects kernel trap range,True
-0011A20E,1155598,ESUTF_IPC_FRAME_INVALID,bancode,,e-SUTF IPC frame too small or malformed,True
+0011A200,1155584,UNASSIGNED,bancode,,,False
+0011A201,1155585,UNASSIGNED,bancode,,,False
+0011A202,1155586,UNASSIGNED,bancode,,,False
+0011A203,1155587,UNASSIGNED,bancode,,,False
+0011A204,1155588,UNASSIGNED,bancode,,,False
+0011A205,1155589,UNASSIGNED,bancode,,,False
+0011A206,1155590,UNASSIGNED,bancode,,,False
+0011A207,1155591,UNASSIGNED,bancode,,,False
+0011A208,1155592,UNASSIGNED,bancode,,,False
+0011A209,1155593,UNASSIGNED,bancode,,,False
+0011A20A,1155594,UNASSIGNED,bancode,,,False
+0011A20B,1155595,UNASSIGNED,bancode,,,False
+0011A20C,1155596,UNASSIGNED,bancode,,,False
+0011A20D,1155597,UNASSIGNED,bancode,,,False
+0011A20E,1155598,UNASSIGNED,bancode,,,False
 0011A20F,1155599,UNASSIGNED,bancode,,,False
 0011A210,1155600,UNASSIGNED,bancode,,,False
 0011A211,1155601,UNASSIGNED,bancode,,,False
@@ -767,14 +767,14 @@ hex,value,name,category,subcategory,description,assigned
 0011A2FD,1155837,UNASSIGNED,bancode,,,False
 0011A2FE,1155838,UNASSIGNED,bancode,,,False
 0011A2FF,1155839,UNASSIGNED,bancode,,,False
-0011A300,1155840,OWFS_MAGIC_MISMATCH,bancode,,OWFS superblock magic not 0x4F574653,True
-0011A301,1155841,OWFS_SUPERBLOCK_CORRUPT,bancode,,OWFS superblock CRC32c validation failed,True
-0011A302,1155842,OWFS_INODE_CHECKSUM_FAIL,bancode,,OWFS inode CRC32c integrity check failed,True
-0011A303,1155843,OWFS_CATALOG_CHECKSUM_FAIL,bancode,,OWFS catalog entry CRC32c check failed,True
-0011A304,1155844,OWFS_BITMAP_CHECKSUM_FAIL,bancode,,OWFS bitmap Fletcher-64 check failed,True
-0011A305,1155845,OWFS_INODE_READ_FAIL,bancode,,Cannot read OWFS inode table block,True
-0011A306,1155846,OWFS_INDIRECT_READ_FAIL,bancode,,Cannot read OWFS indirect block map,True
-0011A307,1155847,OWFS_VOLUME_INCONSISTENT,bancode,,OWFS consistency check failed; data corruption,True
+0011A300,1155840,UNASSIGNED,bancode,,,False
+0011A301,1155841,UNASSIGNED,bancode,,,False
+0011A302,1155842,UNASSIGNED,bancode,,,False
+0011A303,1155843,UNASSIGNED,bancode,,,False
+0011A304,1155844,UNASSIGNED,bancode,,,False
+0011A305,1155845,UNASSIGNED,bancode,,,False
+0011A306,1155846,UNASSIGNED,bancode,,,False
+0011A307,1155847,UNASSIGNED,bancode,,,False
 0011A308,1155848,UNASSIGNED,bancode,,,False
 0011A309,1155849,UNASSIGNED,bancode,,,False
 0011A30A,1155850,UNASSIGNED,bancode,,,False
@@ -1023,12 +1023,12 @@ hex,value,name,category,subcategory,description,assigned
 0011A3FD,1156093,UNASSIGNED,bancode,,,False
 0011A3FE,1156094,UNASSIGNED,bancode,,,False
 0011A3FF,1156095,UNASSIGNED,bancode,,,False
-0011A400,1156096,USFS_MAGIC_MISMATCH,bancode,,USFS superblock magic not 0x55534653,True
-0011A401,1156097,USFS_SUPERBLOCK_CORRUPT,bancode,,USFS superblock CRC32c validation failed,True
-0011A402,1156098,USFS_ENTRY_CHECKSUM_FAIL,bancode,,USFS entry table CRC32c check failed,True
-0011A403,1156099,USFS_SIGNATURE_CHECKSUM_FAIL,bancode,,USFS bitmap signature check failed,True
-0011A404,1156100,USFS_BITMAP_FLETCHER_FAIL,bancode,,USFS bitmap Fletcher-64 check failed,True
-0011A405,1156101,USFS_VOLUME_INCONSISTENT,bancode,,USFS consistency check failed; data corruption,True
+0011A400,1156096,UNASSIGNED,bancode,,,False
+0011A401,1156097,UNASSIGNED,bancode,,,False
+0011A402,1156098,UNASSIGNED,bancode,,,False
+0011A403,1156099,UNASSIGNED,bancode,,,False
+0011A404,1156100,UNASSIGNED,bancode,,,False
+0011A405,1156101,UNASSIGNED,bancode,,,False
 0011A406,1156102,UNASSIGNED,bancode,,,False
 0011A407,1156103,UNASSIGNED,bancode,,,False
 0011A408,1156104,UNASSIGNED,bancode,,,False
@@ -1279,9 +1279,9 @@ hex,value,name,category,subcategory,description,assigned
 0011A4FD,1156349,UNASSIGNED,bancode,,,False
 0011A4FE,1156350,UNASSIGNED,bancode,,,False
 0011A4FF,1156351,UNASSIGNED,bancode,,,False
-0011A500,1156352,HTL_IO_FAILURE,bancode,,HTL I/O failure from hardware driver,True
-0011A501,1156353,HTL_TIMEOUT,bancode,,HTL hardware timeout,True
-0011A502,1156354,HTL_NO_DEVICE,bancode,,No hardware device present,True
+0011A500,1156352,UNASSIGNED,bancode,,,False
+0011A501,1156353,UNASSIGNED,bancode,,,False
+0011A502,1156354,UNASSIGNED,bancode,,,False
 0011A503,1156355,UNASSIGNED,bancode,,,False
 0011A504,1156356,UNASSIGNED,bancode,,,False
 0011A505,1156357,UNASSIGNED,bancode,,,False
@@ -1535,16 +1535,16 @@ hex,value,name,category,subcategory,description,assigned
 0011A5FD,1156605,UNASSIGNED,bancode,,,False
 0011A5FE,1156606,UNASSIGNED,bancode,,,False
 0011A5FF,1156607,UNASSIGNED,bancode,,,False
-0011A600,1156608,MBL_KERNEL_LOAD_FAILED,bancode,,Kernel image failed to load from OWFS,True
-0011A601,1156609,MBL_KERNEL_TOO_SMALL,bancode,,Kernel image smaller than 16 bytes,True
-0011A602,1156610,MBL_BOOT_MAGIC_MISSING,bancode,,MBL2 magic not found at boot config address,True
-0011A603,1156611,MBL_OWMKFS_FULL,bancode,,Volume full during mkfs formatting,True
-0011A604,1156612,MBL_OWMKFS_NO_INODES,bancode,,No free inodes during OWFS mkfs,True
-0011A605,1156613,MBL_OWMKFS_TOO_SMALL,bancode,,Partition too small for minimum OWFS layout,True
-0011A606,1156614,MBL_EXIT_BOOT_SERVICES_FAIL,bancode,,UEFI ExitBootServices failed,True
-0011A607,1156615,MBL_MEMORY_ALLOC_FAIL,bancode,,UEFI AllocatePages for memory map failed,True
-0011A608,1156616,MBL_MEMORY_MAP_FAIL,bancode,,UEFI GetMemoryMap failed,True
-0011A609,1156617,MBL_NO_EXIT_BOOT_SERVICES,bancode,,gExitBootServices protocol pointer NULL,True
+0011A600,1156608,UNASSIGNED,bancode,,,False
+0011A601,1156609,UNASSIGNED,bancode,,,False
+0011A602,1156610,UNASSIGNED,bancode,,,False
+0011A603,1156611,UNASSIGNED,bancode,,,False
+0011A604,1156612,UNASSIGNED,bancode,,,False
+0011A605,1156613,UNASSIGNED,bancode,,,False
+0011A606,1156614,UNASSIGNED,bancode,,,False
+0011A607,1156615,UNASSIGNED,bancode,,,False
+0011A608,1156616,UNASSIGNED,bancode,,,False
+0011A609,1156617,UNASSIGNED,bancode,,,False
 0011A60A,1156618,UNASSIGNED,bancode,,,False
 0011A60B,1156619,UNASSIGNED,bancode,,,False
 0011A60C,1156620,UNASSIGNED,bancode,,,False
@@ -1791,20 +1791,20 @@ hex,value,name,category,subcategory,description,assigned
 0011A6FD,1156861,UNASSIGNED,bancode,,,False
 0011A6FE,1156862,UNASSIGNED,bancode,,,False
 0011A6FF,1156863,UNASSIGNED,bancode,,,False
-0011A700,1156864,UEFI_LOAD_ERROR,bancode,,Image failed to load,True
-0011A701,1156865,UEFI_INVALID_PARAMETER,bancode,,Invalid parameter to firmware service,True
-0011A702,1156866,UEFI_UNSUPPORTED,bancode,,Operation not supported by platform,True
-0011A703,1156867,UEFI_BAD_BUFFER_SIZE,bancode,,Buffer size invalid,True
-0011A704,1156868,UEFI_BUFFER_TOO_SMALL,bancode,,Output buffer too small,True
-0011A705,1156869,UEFI_NOT_READY,bancode,,Device or resource not ready,True
-0011A706,1156870,UEFI_DEVICE_ERROR,bancode,,Hardware device error,True
-0011A707,1156871,UEFI_WRITE_PROTECTED,bancode,,Device or media write-protected,True
-0011A708,1156872,UEFI_OUT_OF_RESOURCES,bancode,,System resource allocation failed,True
-0011A709,1156873,UEFI_ABORTED,bancode,,Operation was aborted,True
-0011A70A,1156874,UEFI_NOT_FOUND,bancode,,Requested resource not found,True
-0011A70B,1156875,UEFI_NOT_STARTED,bancode,,Device not started,True
-0011A70C,1156876,UEFI_ALREADY_STARTED,bancode,,Operation already in progress,True
-0011A70D,1156877,UEFI_SECURITY_VIOLATION,bancode,,Security violation detected,True
+0011A700,1156864,UNASSIGNED,bancode,,,False
+0011A701,1156865,UNASSIGNED,bancode,,,False
+0011A702,1156866,UNASSIGNED,bancode,,,False
+0011A703,1156867,UNASSIGNED,bancode,,,False
+0011A704,1156868,UNASSIGNED,bancode,,,False
+0011A705,1156869,UNASSIGNED,bancode,,,False
+0011A706,1156870,UNASSIGNED,bancode,,,False
+0011A707,1156871,UNASSIGNED,bancode,,,False
+0011A708,1156872,UNASSIGNED,bancode,,,False
+0011A709,1156873,UNASSIGNED,bancode,,,False
+0011A70A,1156874,UNASSIGNED,bancode,,,False
+0011A70B,1156875,UNASSIGNED,bancode,,,False
+0011A70C,1156876,UNASSIGNED,bancode,,,False
+0011A70D,1156877,UNASSIGNED,bancode,,,False
 0011A70E,1156878,UNASSIGNED,bancode,,,False
 0011A70F,1156879,UNASSIGNED,bancode,,,False
 0011A710,1156880,UNASSIGNED,bancode,,,False
@@ -1919,145 +1919,145 @@ hex,value,name,category,subcategory,description,assigned
 0011A77D,1156989,UNASSIGNED,bancode,,,False
 0011A77E,1156990,UNASSIGNED,bancode,,,False
 0011A77F,1156991,UNASSIGNED,bancode,,,False
-0011A780,1156992,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A781,1156993,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A782,1156994,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A783,1156995,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A784,1156996,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A785,1156997,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A786,1156998,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A787,1156999,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A788,1157000,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A789,1157001,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A78A,1157002,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A78B,1157003,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A78C,1157004,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A78D,1157005,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A78E,1157006,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A78F,1157007,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A790,1157008,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A791,1157009,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A792,1157010,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A793,1157011,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A794,1157012,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A795,1157013,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A796,1157014,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A797,1157015,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A798,1157016,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A799,1157017,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A79A,1157018,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A79B,1157019,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A79C,1157020,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A79D,1157021,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A79E,1157022,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A79F,1157023,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7A0,1157024,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7A1,1157025,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7A2,1157026,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7A3,1157027,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7A4,1157028,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7A5,1157029,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7A6,1157030,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7A7,1157031,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7A8,1157032,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7A9,1157033,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7AA,1157034,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7AB,1157035,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7AC,1157036,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7AD,1157037,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7AE,1157038,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7AF,1157039,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7B0,1157040,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7B1,1157041,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7B2,1157042,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7B3,1157043,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7B4,1157044,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7B5,1157045,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7B6,1157046,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7B7,1157047,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7B8,1157048,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7B9,1157049,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7BA,1157050,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7BB,1157051,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7BC,1157052,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7BD,1157053,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7BE,1157054,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7BF,1157055,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7C0,1157056,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7C1,1157057,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7C2,1157058,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7C3,1157059,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7C4,1157060,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7C5,1157061,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7C6,1157062,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7C7,1157063,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7C8,1157064,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7C9,1157065,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7CA,1157066,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7CB,1157067,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7CC,1157068,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7CD,1157069,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7CE,1157070,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7CF,1157071,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7D0,1157072,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7D1,1157073,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7D2,1157074,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7D3,1157075,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7D4,1157076,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7D5,1157077,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7D6,1157078,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7D7,1157079,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7D8,1157080,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7D9,1157081,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7DA,1157082,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7DB,1157083,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7DC,1157084,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7DD,1157085,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7DE,1157086,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7DF,1157087,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7E0,1157088,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7E1,1157089,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7E2,1157090,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7E3,1157091,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7E4,1157092,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7E5,1157093,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7E6,1157094,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7E7,1157095,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7E8,1157096,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7E9,1157097,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7EA,1157098,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7EB,1157099,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7EC,1157100,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7ED,1157101,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7EE,1157102,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7EF,1157103,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7F0,1157104,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7F1,1157105,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7F2,1157106,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7F3,1157107,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7F4,1157108,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7F5,1157109,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7F6,1157110,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7F7,1157111,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7F8,1157112,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7F9,1157113,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7FA,1157114,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7FB,1157115,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7FC,1157116,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7FD,1157117,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7FE,1157118,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A7FF,1157119,RESERVED_UNMAPPED,bancode,,No trap handler; slot 15 unmapped cluster,True
-0011A800,1157120,SUCS_MODE_INVALID,warncode,,Invalid mode specified for kernel mode switch,True
-0011A801,1157121,SUCS_MODE_ALREADY_ACTIVE,warncode,,Requested mode is already the active mode,True
-0011A802,1157122,SUCS_PLUGIN_INVALID_BLOB,warncode,,Malformed plugin blob (non-fatal staging warning),True
-0011A803,1157123,SUCS_PLUGIN_DUPLICATE_ID,warncode,,Plugin ID already staged or mounted,True
-0011A804,1157124,SUCS_PLUGIN_STAGING_FULL,warncode,,Plugin staging table full (4 max pending),True
-0011A805,1157125,SUCS_PLUGIN_NOT_OWFS,warncode,,Plugin partition not OWFS (non-fatal staging warning),True
-0011A806,1157126,SUCS_PLUGIN_MOUNT_FAILED,warncode,,Plugin partition mount failed,True
-0011A807,1157127,SUCS_PLUGIN_BUFFER_OVERFLOW,warncode,,Plugin blob exceeds staging buffer (16 KB),True
-0011A808,1157128,SUCS_PLUGIN_RANGE_COLLISION,warncode,,Plugin range overlaps existing plugin (staging),True
-0011A809,1157129,SUCS_PLUGIN_CHECKSUM_MISMATCH,warncode,,Plugin checksum mismatch (non-quarantine path),True
-0011A80A,1157130,SUCS_KEY_INVALID,warncode,,Encryption key wrong length (must be 32 bytes for ChaCha20),True
+0011A780,1156992,UNASSIGNED,bancode,,,False
+0011A781,1156993,UNASSIGNED,bancode,,,False
+0011A782,1156994,UNASSIGNED,bancode,,,False
+0011A783,1156995,UNASSIGNED,bancode,,,False
+0011A784,1156996,UNASSIGNED,bancode,,,False
+0011A785,1156997,UNASSIGNED,bancode,,,False
+0011A786,1156998,UNASSIGNED,bancode,,,False
+0011A787,1156999,UNASSIGNED,bancode,,,False
+0011A788,1157000,UNASSIGNED,bancode,,,False
+0011A789,1157001,UNASSIGNED,bancode,,,False
+0011A78A,1157002,UNASSIGNED,bancode,,,False
+0011A78B,1157003,UNASSIGNED,bancode,,,False
+0011A78C,1157004,UNASSIGNED,bancode,,,False
+0011A78D,1157005,UNASSIGNED,bancode,,,False
+0011A78E,1157006,UNASSIGNED,bancode,,,False
+0011A78F,1157007,UNASSIGNED,bancode,,,False
+0011A790,1157008,UNASSIGNED,bancode,,,False
+0011A791,1157009,UNASSIGNED,bancode,,,False
+0011A792,1157010,UNASSIGNED,bancode,,,False
+0011A793,1157011,UNASSIGNED,bancode,,,False
+0011A794,1157012,UNASSIGNED,bancode,,,False
+0011A795,1157013,UNASSIGNED,bancode,,,False
+0011A796,1157014,UNASSIGNED,bancode,,,False
+0011A797,1157015,UNASSIGNED,bancode,,,False
+0011A798,1157016,UNASSIGNED,bancode,,,False
+0011A799,1157017,UNASSIGNED,bancode,,,False
+0011A79A,1157018,UNASSIGNED,bancode,,,False
+0011A79B,1157019,UNASSIGNED,bancode,,,False
+0011A79C,1157020,UNASSIGNED,bancode,,,False
+0011A79D,1157021,UNASSIGNED,bancode,,,False
+0011A79E,1157022,UNASSIGNED,bancode,,,False
+0011A79F,1157023,UNASSIGNED,bancode,,,False
+0011A7A0,1157024,UNASSIGNED,bancode,,,False
+0011A7A1,1157025,UNASSIGNED,bancode,,,False
+0011A7A2,1157026,UNASSIGNED,bancode,,,False
+0011A7A3,1157027,UNASSIGNED,bancode,,,False
+0011A7A4,1157028,UNASSIGNED,bancode,,,False
+0011A7A5,1157029,UNASSIGNED,bancode,,,False
+0011A7A6,1157030,UNASSIGNED,bancode,,,False
+0011A7A7,1157031,UNASSIGNED,bancode,,,False
+0011A7A8,1157032,UNASSIGNED,bancode,,,False
+0011A7A9,1157033,UNASSIGNED,bancode,,,False
+0011A7AA,1157034,UNASSIGNED,bancode,,,False
+0011A7AB,1157035,UNASSIGNED,bancode,,,False
+0011A7AC,1157036,UNASSIGNED,bancode,,,False
+0011A7AD,1157037,UNASSIGNED,bancode,,,False
+0011A7AE,1157038,UNASSIGNED,bancode,,,False
+0011A7AF,1157039,UNASSIGNED,bancode,,,False
+0011A7B0,1157040,UNASSIGNED,bancode,,,False
+0011A7B1,1157041,UNASSIGNED,bancode,,,False
+0011A7B2,1157042,UNASSIGNED,bancode,,,False
+0011A7B3,1157043,UNASSIGNED,bancode,,,False
+0011A7B4,1157044,UNASSIGNED,bancode,,,False
+0011A7B5,1157045,UNASSIGNED,bancode,,,False
+0011A7B6,1157046,UNASSIGNED,bancode,,,False
+0011A7B7,1157047,UNASSIGNED,bancode,,,False
+0011A7B8,1157048,UNASSIGNED,bancode,,,False
+0011A7B9,1157049,UNASSIGNED,bancode,,,False
+0011A7BA,1157050,UNASSIGNED,bancode,,,False
+0011A7BB,1157051,UNASSIGNED,bancode,,,False
+0011A7BC,1157052,UNASSIGNED,bancode,,,False
+0011A7BD,1157053,UNASSIGNED,bancode,,,False
+0011A7BE,1157054,UNASSIGNED,bancode,,,False
+0011A7BF,1157055,UNASSIGNED,bancode,,,False
+0011A7C0,1157056,UNASSIGNED,bancode,,,False
+0011A7C1,1157057,UNASSIGNED,bancode,,,False
+0011A7C2,1157058,UNASSIGNED,bancode,,,False
+0011A7C3,1157059,UNASSIGNED,bancode,,,False
+0011A7C4,1157060,UNASSIGNED,bancode,,,False
+0011A7C5,1157061,UNASSIGNED,bancode,,,False
+0011A7C6,1157062,UNASSIGNED,bancode,,,False
+0011A7C7,1157063,UNASSIGNED,bancode,,,False
+0011A7C8,1157064,UNASSIGNED,bancode,,,False
+0011A7C9,1157065,UNASSIGNED,bancode,,,False
+0011A7CA,1157066,UNASSIGNED,bancode,,,False
+0011A7CB,1157067,UNASSIGNED,bancode,,,False
+0011A7CC,1157068,UNASSIGNED,bancode,,,False
+0011A7CD,1157069,UNASSIGNED,bancode,,,False
+0011A7CE,1157070,UNASSIGNED,bancode,,,False
+0011A7CF,1157071,UNASSIGNED,bancode,,,False
+0011A7D0,1157072,UNASSIGNED,bancode,,,False
+0011A7D1,1157073,UNASSIGNED,bancode,,,False
+0011A7D2,1157074,UNASSIGNED,bancode,,,False
+0011A7D3,1157075,UNASSIGNED,bancode,,,False
+0011A7D4,1157076,UNASSIGNED,bancode,,,False
+0011A7D5,1157077,UNASSIGNED,bancode,,,False
+0011A7D6,1157078,UNASSIGNED,bancode,,,False
+0011A7D7,1157079,UNASSIGNED,bancode,,,False
+0011A7D8,1157080,UNASSIGNED,bancode,,,False
+0011A7D9,1157081,UNASSIGNED,bancode,,,False
+0011A7DA,1157082,UNASSIGNED,bancode,,,False
+0011A7DB,1157083,UNASSIGNED,bancode,,,False
+0011A7DC,1157084,UNASSIGNED,bancode,,,False
+0011A7DD,1157085,UNASSIGNED,bancode,,,False
+0011A7DE,1157086,UNASSIGNED,bancode,,,False
+0011A7DF,1157087,UNASSIGNED,bancode,,,False
+0011A7E0,1157088,UNASSIGNED,bancode,,,False
+0011A7E1,1157089,UNASSIGNED,bancode,,,False
+0011A7E2,1157090,UNASSIGNED,bancode,,,False
+0011A7E3,1157091,UNASSIGNED,bancode,,,False
+0011A7E4,1157092,UNASSIGNED,bancode,,,False
+0011A7E5,1157093,UNASSIGNED,bancode,,,False
+0011A7E6,1157094,UNASSIGNED,bancode,,,False
+0011A7E7,1157095,UNASSIGNED,bancode,,,False
+0011A7E8,1157096,UNASSIGNED,bancode,,,False
+0011A7E9,1157097,UNASSIGNED,bancode,,,False
+0011A7EA,1157098,UNASSIGNED,bancode,,,False
+0011A7EB,1157099,UNASSIGNED,bancode,,,False
+0011A7EC,1157100,UNASSIGNED,bancode,,,False
+0011A7ED,1157101,UNASSIGNED,bancode,,,False
+0011A7EE,1157102,UNASSIGNED,bancode,,,False
+0011A7EF,1157103,UNASSIGNED,bancode,,,False
+0011A7F0,1157104,UNASSIGNED,bancode,,,False
+0011A7F1,1157105,UNASSIGNED,bancode,,,False
+0011A7F2,1157106,UNASSIGNED,bancode,,,False
+0011A7F3,1157107,UNASSIGNED,bancode,,,False
+0011A7F4,1157108,UNASSIGNED,bancode,,,False
+0011A7F5,1157109,UNASSIGNED,bancode,,,False
+0011A7F6,1157110,UNASSIGNED,bancode,,,False
+0011A7F7,1157111,UNASSIGNED,bancode,,,False
+0011A7F8,1157112,UNASSIGNED,bancode,,,False
+0011A7F9,1157113,UNASSIGNED,bancode,,,False
+0011A7FA,1157114,UNASSIGNED,bancode,,,False
+0011A7FB,1157115,UNASSIGNED,bancode,,,False
+0011A7FC,1157116,UNASSIGNED,bancode,,,False
+0011A7FD,1157117,UNASSIGNED,bancode,,,False
+0011A7FE,1157118,UNASSIGNED,bancode,,,False
+0011A7FF,1157119,UNASSIGNED,bancode,,,False
+0011A800,1157120,UNASSIGNED,warncode,,,False
+0011A801,1157121,UNASSIGNED,warncode,,,False
+0011A802,1157122,UNASSIGNED,warncode,,,False
+0011A803,1157123,UNASSIGNED,warncode,,,False
+0011A804,1157124,UNASSIGNED,warncode,,,False
+0011A805,1157125,UNASSIGNED,warncode,,,False
+0011A806,1157126,UNASSIGNED,warncode,,,False
+0011A807,1157127,UNASSIGNED,warncode,,,False
+0011A808,1157128,UNASSIGNED,warncode,,,False
+0011A809,1157129,UNASSIGNED,warncode,,,False
+0011A80A,1157130,UNASSIGNED,warncode,,,False
 0011A80B,1157131,UNASSIGNED,warncode,,,False
 0011A80C,1157132,UNASSIGNED,warncode,,,False
 0011A80D,1157133,UNASSIGNED,warncode,,,False
@@ -2303,15 +2303,15 @@ hex,value,name,category,subcategory,description,assigned
 0011A8FD,1157373,UNASSIGNED,warncode,,,False
 0011A8FE,1157374,UNASSIGNED,warncode,,,False
 0011A8FF,1157375,UNASSIGNED,warncode,,,False
-0011A900,1157376,OWFS_VOLUME_DIRTY,warncode,,OWFS volume dirty from unclean unmount,True
-0011A901,1157377,OWFS_VOLUME_LOCKED,warncode,,OWFS volume locked for consistency scan,True
-0011A902,1157378,OWFS_WRITE_PROTECTED,warncode,,OWFS volume or inode write-protected,True
-0011A903,1157379,OWFS_NO_FREE_BLOCKS,warncode,,OWFS: no free data blocks (disk full),True
-0011A904,1157380,OWFS_NO_FREE_INODES,warncode,,OWFS: no free inodes in table,True
-0011A905,1157381,OWFS_CATALOG_FULL,warncode,,OWFS: no free blocks to grow catalog,True
-0011A906,1157382,OWFS_ACCESS_DENIED,warncode,,OWFS: rwx permission denied for principal,True
-0011A907,1157383,OWFS_KEY_INVALID,warncode,,OWFS: encryption key wrong length,True
-0011A908,1157384,OWFS_CRC_SILENT_SKIP,warncode,,"OWFS: catalog entry CRC mismatch, entry skipped",True
+0011A900,1157376,UNASSIGNED,warncode,,,False
+0011A901,1157377,UNASSIGNED,warncode,,,False
+0011A902,1157378,UNASSIGNED,warncode,,,False
+0011A903,1157379,UNASSIGNED,warncode,,,False
+0011A904,1157380,UNASSIGNED,warncode,,,False
+0011A905,1157381,UNASSIGNED,warncode,,,False
+0011A906,1157382,UNASSIGNED,warncode,,,False
+0011A907,1157383,UNASSIGNED,warncode,,,False
+0011A908,1157384,UNASSIGNED,warncode,,,False
 0011A909,1157385,UNASSIGNED,warncode,,,False
 0011A90A,1157386,UNASSIGNED,warncode,,,False
 0011A90B,1157387,UNASSIGNED,warncode,,,False
@@ -2559,14 +2559,14 @@ hex,value,name,category,subcategory,description,assigned
 0011A9FD,1157629,UNASSIGNED,warncode,,,False
 0011A9FE,1157630,UNASSIGNED,warncode,,,False
 0011A9FF,1157631,UNASSIGNED,warncode,,,False
-0011AA00,1157632,USFS_VOLUME_DIRTY,warncode,,USFS volume dirty from unclean unmount,True
-0011AA01,1157633,USFS_VOLUME_LOCKED,warncode,,USFS volume locked for consistency scan,True
-0011AA02,1157634,USFS_WRITE_PROTECTED,warncode,,USFS volume or entry write-protected,True
-0011AA03,1157635,USFS_NO_FREE_BLOCKS,warncode,,USFS: no free data blocks (disk full),True
-0011AA04,1157636,USFS_NO_FREE_ENTRIES,warncode,,USFS: no free entries in table,True
-0011AA05,1157637,USFS_ACCESS_DENIED,warncode,,USFS: rwx permission denied for principal,True
-0011AA06,1157638,USFS_KEY_INVALID,warncode,,USFS: encryption key wrong length,True
-0011AA07,1157639,USFS_ENCRYPTED_UNHANDLED,warncode,,"USFS: encryption error (reserved, currently unused)",True
+0011AA00,1157632,UNASSIGNED,warncode,,,False
+0011AA01,1157633,UNASSIGNED,warncode,,,False
+0011AA02,1157634,UNASSIGNED,warncode,,,False
+0011AA03,1157635,UNASSIGNED,warncode,,,False
+0011AA04,1157636,UNASSIGNED,warncode,,,False
+0011AA05,1157637,UNASSIGNED,warncode,,,False
+0011AA06,1157638,UNASSIGNED,warncode,,,False
+0011AA07,1157639,UNASSIGNED,warncode,,,False
 0011AA08,1157640,UNASSIGNED,warncode,,,False
 0011AA09,1157641,UNASSIGNED,warncode,,,False
 0011AA0A,1157642,UNASSIGNED,warncode,,,False
@@ -2815,18 +2815,18 @@ hex,value,name,category,subcategory,description,assigned
 0011AAFD,1157885,UNASSIGNED,warncode,,,False
 0011AAFE,1157886,UNASSIGNED,warncode,,,False
 0011AAFF,1157887,UNASSIGNED,warncode,,,False
-0011AB00,1157888,MBL_NO_GOP,warncode,,ModBoot: GOP (framebuffer) protocol not found,True
-0011AB01,1157889,MBL_NO_BLOCK_IO,warncode,,ModBoot: Block I/O protocol not found,True
-0011AB02,1157890,MBL_NO_LOADED_IMAGE,warncode,,ModBoot: Loaded Image protocol not found,True
-0011AB03,1157891,MBL_GOP_MODE_FAIL,warncode,,ModBoot: GOP QueryMode failed,True
-0011AB04,1157892,MBL_REMOVABLE_MEDIA,warncode,,ModBoot: removable media skipped (looking for fixed disk),True
-0011AB05,1157893,MBL_MEDIA_NOT_PRESENT,warncode,,ModBoot: media not present in drive,True
-0011AB06,1157894,MBL_OWMKFS_REBOOT_REQUIRED,warncode,,ModBoot: mode switch staged; reboot required,True
-0011AB07,1157895,MBL_PLUGIN_REBOOT_REQUIRED,warncode,,ModBoot: plugin staged; reboot required,True
-0011AB08,1157896,MBL_RTC_UNAVAILABLE,warncode,,"ModBoot: RTC GetTime failed, returning 0",True
-0011AB09,1157897,MBL_KBD_UNAVAILABLE,warncode,,"ModBoot: ConIn protocol missing, no keyboard",True
-0011AB0A,1157898,MBL_MENU_EMPTY,warncode,,ModBoot: no bootable entries found in catalog,True
-0011AB0B,1157899,MBL_SUTF8_NONASCII,warncode,,"ModBoot: SUTF-8 decoded non-ASCII, substituted '?'",True
+0011AB00,1157888,UNASSIGNED,warncode,,,False
+0011AB01,1157889,UNASSIGNED,warncode,,,False
+0011AB02,1157890,UNASSIGNED,warncode,,,False
+0011AB03,1157891,UNASSIGNED,warncode,,,False
+0011AB04,1157892,UNASSIGNED,warncode,,,False
+0011AB05,1157893,UNASSIGNED,warncode,,,False
+0011AB06,1157894,UNASSIGNED,warncode,,,False
+0011AB07,1157895,UNASSIGNED,warncode,,,False
+0011AB08,1157896,UNASSIGNED,warncode,,,False
+0011AB09,1157897,UNASSIGNED,warncode,,,False
+0011AB0A,1157898,UNASSIGNED,warncode,,,False
+0011AB0B,1157899,UNASSIGNED,warncode,,,False
 0011AB0C,1157900,UNASSIGNED,warncode,,,False
 0011AB0D,1157901,UNASSIGNED,warncode,,,False
 0011AB0E,1157902,UNASSIGNED,warncode,,,False
@@ -3071,24 +3071,24 @@ hex,value,name,category,subcategory,description,assigned
 0011ABFD,1158141,UNASSIGNED,warncode,,,False
 0011ABFE,1158142,UNASSIGNED,warncode,,,False
 0011ABFF,1158143,UNASSIGNED,warncode,,,False
-0011AC00,1158144,SUCS_SWITCH_SUCCESS,comcode,,Mode alteration committed successfully,True
-0011AC01,1158145,SUCS_SWITCH_REBOOT_REQUIRED,comcode,,Mode switch staged; reboot required,True
-0011AC02,1158146,SUCS_PLUGIN_OK,comcode,,Plugin operation succeeded,True
-0011AC03,1158147,SUCS_PLUGIN_MOUNTED,comcode,,Plugin mounted and registered successfully,True
-0011AC04,1158148,SUCS_PLUGIN_STAGED,comcode,,Plugin staged for next boot,True
-0011AC05,1158149,SUCS_PLUGIN_COMMITTED,comcode,,Plugin committed on boot (mounted or quarantined),True
-0011AC06,1158150,SUCS_PLUGIN_UNMOUNTED,comcode,,Plugin unmounted successfully,True
-0011AC07,1158151,SUCS_PLUGIN_CHECKSUM_OK,comcode,,Plugin CRC32c/Fletcher-64 gate passed,True
-0011AC08,1158152,SUCS_PLUGIN_RANGE_OK,comcode,,Plugin range gate passed,True
-0011AC09,1158153,SUCS_PLUGIN_COLLISION_OK,comcode,,Plugin collision gate passed,True
-0011AC0A,1158154,SUCS_PLUGIN_MOUNT_OK,comcode,,Plugin mount gate passed,True
-0011AC0B,1158155,SUCS_PLUGIN_CAPACITY_OK,comcode,,Plugin capacity gate passed,True
-0011AC0C,1158156,SUCS_BOOT_COMMIT,comcode,,Boot configuration committed,True
-0011AC0D,1158157,SUCS_BOOT_NO_PENDING,comcode,,No pending mode changes at boot,True
-0011AC0E,1158158,SUCS_HANDLER_REGISTERED,comcode,,Trap handler registered successfully,True
-0011AC0F,1158159,SUCS_HANDLER_UNREGISTERED,comcode,,Trap handler unregistered successfully,True
-0011AC10,1158160,SUCS_DISPATCH_SUCCESS,comcode,,Trap dispatch invoked handler successfully,True
-0011AC11,1158161,SUCS_SUES_SUCCESS,comcode,,SUES operation completed successfully,True
+0011AC00,1158144,UNASSIGNED,comcode,,,False
+0011AC01,1158145,UNASSIGNED,comcode,,,False
+0011AC02,1158146,UNASSIGNED,comcode,,,False
+0011AC03,1158147,UNASSIGNED,comcode,,,False
+0011AC04,1158148,UNASSIGNED,comcode,,,False
+0011AC05,1158149,UNASSIGNED,comcode,,,False
+0011AC06,1158150,UNASSIGNED,comcode,,,False
+0011AC07,1158151,UNASSIGNED,comcode,,,False
+0011AC08,1158152,UNASSIGNED,comcode,,,False
+0011AC09,1158153,UNASSIGNED,comcode,,,False
+0011AC0A,1158154,UNASSIGNED,comcode,,,False
+0011AC0B,1158155,UNASSIGNED,comcode,,,False
+0011AC0C,1158156,UNASSIGNED,comcode,,,False
+0011AC0D,1158157,UNASSIGNED,comcode,,,False
+0011AC0E,1158158,UNASSIGNED,comcode,,,False
+0011AC0F,1158159,UNASSIGNED,comcode,,,False
+0011AC10,1158160,UNASSIGNED,comcode,,,False
+0011AC11,1158161,UNASSIGNED,comcode,,,False
 0011AC12,1158162,UNASSIGNED,comcode,,,False
 0011AC13,1158163,UNASSIGNED,comcode,,,False
 0011AC14,1158164,UNASSIGNED,comcode,,,False
@@ -3103,35 +3103,35 @@ hex,value,name,category,subcategory,description,assigned
 0011AC1D,1158173,UNASSIGNED,comcode,,,False
 0011AC1E,1158174,UNASSIGNED,comcode,,,False
 0011AC1F,1158175,UNASSIGNED,comcode,,,False
-0011AC20,1158176,SUCS_IPC_SEND,comcode,,IPC message sent successfully,True
-0011AC21,1158177,SUCS_IPC_RECV,comcode,,IPC message received successfully,True
-0011AC22,1158178,SUCS_IPC_ACK,comcode,,IPC acknowledgement transmitted,True
-0011AC23,1158179,SUCS_IPC_NACK,comcode,,IPC negative acknowledgement (message rejected),True
-0011AC24,1158180,SUCS_IPC_TIMEOUT,comcode,,"IPC exchange timed out (non-fatal, retryable)",True
-0011AC25,1158181,SUCS_IPC_QUEUE_FULL,comcode,,IPC message queue at capacity,True
-0011AC26,1158182,SUCS_IPC_QUEUE_DRAINED,comcode,,IPC message queue fully drained,True
-0011AC27,1158183,SUCS_IPC_CHANNEL_OPEN,comcode,,IPC channel opened between subsystems,True
-0011AC28,1158184,SUCS_IPC_CHANNEL_CLOSE,comcode,,IPC channel closed cleanly,True
-0011AC29,1158185,SUCS_IPC_HANDSHAKE_COMPLETE,comcode,,IPC handshake protocol completed,True
-0011AC2A,1158186,SUCS_IPC_PROTOCOL_ERROR,comcode,,"IPC protocol violation (non-fatal, recoverable)",True
-0011AC2B,1158187,SUCS_IPC_BUFFER_RELEASED,comcode,,IPC shared buffer released,True
-0011AC2C,1158188,SUCS_IPC_BUFFER_ACQUIRED,comcode,,IPC shared buffer acquired,True
-0011AC2D,1158189,SUCS_IPCRIORITY_CHANGED,comcode,,IPC message priority escalated,True
-0011AC2E,1158190,SUCS_IPC_BROADCAST,comcode,,IPC broadcast message dispatched,True
-0011AC2F,1158191,SUCS_IPC_MULTICAST,comcode,,IPC multicast message dispatched,True
-0011AC30,1158192,SUCS_CP_REGISTER,comcode,,Control plane entity registered,True
-0011AC31,1158193,SUCS_CP_DEREGISTER,comcode,,Control plane entity deregistered,True
-0011AC32,1158194,SUCS_CP_STATE_CHANGE,comcode,,Control plane state transition committed,True
-0011AC33,1158195,SUCS_CP_QUERY,comcode,,Control plane state query serviced,True
-0011AC34,1158196,SUCS_CP_CONFIG_APPLY,comcode,,Control plane configuration applied,True
-0011AC35,1158197,SUCS_CP_CONFIG_REVERT,comcode,,Control plane configuration reverted,True
-0011AC36,1158198,SUCS_CP_SNAPSHOT,comcode,,Control plane state snapshot taken,True
-0011AC37,1158199,SUCS_CP_RESTORE,comcode,,Control plane state restored from snapshot,True
-0011AC38,1158200,SUCS_CP_HEARTBEAT,comcode,,Control plane heartbeat OK,True
-0011AC39,1158201,SUCS_CP_LIVENESS,comcode,,Control plane liveness probe responded,True
-0011AC3A,1158202,SUCS_CP_WATCH_REGISTERED,comcode,,Control plane event watcher attached,True
-0011AC3B,1158203,SUCS_CP_WATCH_FIRED,comcode,,Control plane event watcher triggered,True
-0011AC3C,1158204,SUCS_CP_WATCH_DETACHED,comcode,,Control plane event watcher removed,True
+0011AC20,1158176,UNASSIGNED,comcode,,,False
+0011AC21,1158177,UNASSIGNED,comcode,,,False
+0011AC22,1158178,UNASSIGNED,comcode,,,False
+0011AC23,1158179,UNASSIGNED,comcode,,,False
+0011AC24,1158180,UNASSIGNED,comcode,,,False
+0011AC25,1158181,UNASSIGNED,comcode,,,False
+0011AC26,1158182,UNASSIGNED,comcode,,,False
+0011AC27,1158183,UNASSIGNED,comcode,,,False
+0011AC28,1158184,UNASSIGNED,comcode,,,False
+0011AC29,1158185,UNASSIGNED,comcode,,,False
+0011AC2A,1158186,UNASSIGNED,comcode,,,False
+0011AC2B,1158187,UNASSIGNED,comcode,,,False
+0011AC2C,1158188,UNASSIGNED,comcode,,,False
+0011AC2D,1158189,UNASSIGNED,comcode,,,False
+0011AC2E,1158190,UNASSIGNED,comcode,,,False
+0011AC2F,1158191,UNASSIGNED,comcode,,,False
+0011AC30,1158192,UNASSIGNED,comcode,,,False
+0011AC31,1158193,UNASSIGNED,comcode,,,False
+0011AC32,1158194,UNASSIGNED,comcode,,,False
+0011AC33,1158195,UNASSIGNED,comcode,,,False
+0011AC34,1158196,UNASSIGNED,comcode,,,False
+0011AC35,1158197,UNASSIGNED,comcode,,,False
+0011AC36,1158198,UNASSIGNED,comcode,,,False
+0011AC37,1158199,UNASSIGNED,comcode,,,False
+0011AC38,1158200,UNASSIGNED,comcode,,,False
+0011AC39,1158201,UNASSIGNED,comcode,,,False
+0011AC3A,1158202,UNASSIGNED,comcode,,,False
+0011AC3B,1158203,UNASSIGNED,comcode,,,False
+0011AC3C,1158204,UNASSIGNED,comcode,,,False
 0011AC3D,1158205,UNASSIGNED,comcode,,,False
 0011AC3E,1158206,UNASSIGNED,comcode,,,False
 0011AC3F,1158207,UNASSIGNED,comcode,,,False
@@ -3167,33 +3167,33 @@ hex,value,name,category,subcategory,description,assigned
 0011AC5D,1158237,UNASSIGNED,comcode,,,False
 0011AC5E,1158238,UNASSIGNED,comcode,,,False
 0011AC5F,1158239,UNASSIGNED,comcode,,,False
-0011AC60,1158240,SUCS_BUS_ARBITRATION_WON,comcode,,Bus arbitration grant received,True
-0011AC61,1158241,SUCS_BUS_ARBITRATION_LOST,comcode,,Bus arbitration denied (retry expected),True
-0011AC62,1158242,SUCS_BUS_ACQUIRED,comcode,,Bus acquired for exclusive use,True
-0011AC63,1158243,SUCS_BUS_RELEASED,comcode,,Bus released after exclusive use,True
-0011AC64,1158244,SUCS_BUS_CONTENTION,comcode,,Bus contention detected (non-fatal),True
-0011AC65,1158245,SUCS_BUS_TIMEOUT,comcode,,Bus transaction timed out,True
-0011AC66,1158246,SUCS_BUS_ERROR,comcode,,Bus error on transaction,True
-0011AC67,1158247,SUCS_BUS_RESET,comcode,,Bus reset completed,True
-0011AC68,1158248,SUCS_BUS_READY,comcode,,Bus ready for transactions,True
-0011AC69,1158249,SUCS_BUS_IDLE,comcode,,Bus entered idle state,True
-0011AC6A,1158250,SUCS_BUS_ACTIVE,comcode,,Bus entered active state,True
-0011AC6B,1158251,SUCS_HW_HANDSHAKE_INIT,comcode,,Hardware handshake initiated,True
-0011AC6C,1158252,SUCS_HW_HANDSHAKE_ACK,comcode,,Hardware handshake acknowledged,True
-0011AC6D,1158253,SUCS_HW_HANDSHAKE_COMPLETE,comcode,,Hardware handshake completed successfully,True
-0011AC6E,1158254,SUCS_HW_HANDSHAKE_FAILED,comcode,,Hardware handshake failed,True
-0011AC6F,1158255,SUCS_HW_RESET,comcode,,Hardware reset completed,True
-0011AC70,1158256,SUCS_HW_POWER_ON,comcode,,Hardware power-on sequence completed,True
-0011AC71,1158257,SUCS_HW_POWER_OFF,comcode,,Hardware power-off sequence completed,True
-0011AC72,1158258,SUCS_HW_SLEEP,comcode,,Hardware entered sleep state,True
-0011AC73,1158259,SUCS_HW_WAKE,comcode,,Hardware woke from sleep,True
-0011AC74,1158260,SUCS_HW_SELF_TEST_PASS,comcode,,Hardware self-test passed,True
-0011AC75,1158261,SUCS_HW_SELF_TEST_FAIL,comcode,,Hardware self-test failed,True
-0011AC76,1158262,SUCS_HW_DMA_COMPLETE,comcode,,DMA transfer completed,True
-0011AC77,1158263,SUCS_HW_DMA_ABORT,comcode,,DMA transfer aborted,True
-0011AC78,1158264,SUCS_HW_IRQ_ATTACH,comcode,,IRQ handler attached,True
-0011AC79,1158265,SUCS_HW_IRQ_DETACH,comcode,,IRQ handler detached,True
-0011AC7A,1158266,SUCS_HW_IRQ_FIRE,comcode,,IRQ fired and handled,True
+0011AC60,1158240,UNASSIGNED,comcode,,,False
+0011AC61,1158241,UNASSIGNED,comcode,,,False
+0011AC62,1158242,UNASSIGNED,comcode,,,False
+0011AC63,1158243,UNASSIGNED,comcode,,,False
+0011AC64,1158244,UNASSIGNED,comcode,,,False
+0011AC65,1158245,UNASSIGNED,comcode,,,False
+0011AC66,1158246,UNASSIGNED,comcode,,,False
+0011AC67,1158247,UNASSIGNED,comcode,,,False
+0011AC68,1158248,UNASSIGNED,comcode,,,False
+0011AC69,1158249,UNASSIGNED,comcode,,,False
+0011AC6A,1158250,UNASSIGNED,comcode,,,False
+0011AC6B,1158251,UNASSIGNED,comcode,,,False
+0011AC6C,1158252,UNASSIGNED,comcode,,,False
+0011AC6D,1158253,UNASSIGNED,comcode,,,False
+0011AC6E,1158254,UNASSIGNED,comcode,,,False
+0011AC6F,1158255,UNASSIGNED,comcode,,,False
+0011AC70,1158256,UNASSIGNED,comcode,,,False
+0011AC71,1158257,UNASSIGNED,comcode,,,False
+0011AC72,1158258,UNASSIGNED,comcode,,,False
+0011AC73,1158259,UNASSIGNED,comcode,,,False
+0011AC74,1158260,UNASSIGNED,comcode,,,False
+0011AC75,1158261,UNASSIGNED,comcode,,,False
+0011AC76,1158262,UNASSIGNED,comcode,,,False
+0011AC77,1158263,UNASSIGNED,comcode,,,False
+0011AC78,1158264,UNASSIGNED,comcode,,,False
+0011AC79,1158265,UNASSIGNED,comcode,,,False
+0011AC7A,1158266,UNASSIGNED,comcode,,,False
 0011AC7B,1158267,UNASSIGNED,comcode,,,False
 0011AC7C,1158268,UNASSIGNED,comcode,,,False
 0011AC7D,1158269,UNASSIGNED,comcode,,,False
@@ -3231,29 +3231,29 @@ hex,value,name,category,subcategory,description,assigned
 0011AC9D,1158301,UNASSIGNED,comcode,,,False
 0011AC9E,1158302,UNASSIGNED,comcode,,,False
 0011AC9F,1158303,UNASSIGNED,comcode,,,False
-0011ACA0,1158304,SUCS_DRV_ATTACHED,comcode,,Driver attached to device,True
-0011ACA1,1158305,SUCS_DRV_DETACHED,comcode,,Driver detached from device,True
-0011ACA2,1158306,SUCS_DRV_PROBED,comcode,,Driver probe completed,True
-0011ACA3,1158307,SUCS_DRV_REMOVED,comcode,,Driver removed from device,True
-0011ACA4,1158308,SUCS_DRV_SUSPENDED,comcode,,Driver suspended,True
-0011ACA5,1158309,SUCS_DRV_RESUMED,comcode,,Driver resumed,True
-0011ACA6,1158310,SUCS_DRV_BINDING,comcode,,Driver binding to device,True
-0011ACA7,1158311,SUCS_DRV_UNBINDING,comcode,,Driver unbinding from device,True
-0011ACA8,1158312,SUCS_DRV_CONFIG_LOADED,comcode,,Driver configuration loaded,True
-0011ACA9,1158313,SUCS_DRV_CONFIG_UNLOADED,comcode,,Driver configuration unloaded,True
-0011ACAA,1158314,SUCS_PWR_STATE_CHANGE,comcode,,Power state transition committed,True
-0011ACAB,1158315,SUCS_PWR_SLEEP_ENTER,comcode,,Entering sleep power state,True
-0011ACAC,1158316,SUCS_PWR_SLEEP_EXIT,comcode,,Exiting sleep power state,True
-0011ACAD,1158317,SUCS_PWR_SUSPEND_ENTER,comcode,,Entering suspend power state,True
-0011ACAE,1158318,SUCS_PWR_SUSPEND_EXIT,comcode,,Exiting suspend power state,True
-0011ACAF,1158319,SUCS_PWR_HIBERNATE_ENTER,comcode,,Entering hibernate power state,True
-0011ACB0,1158320,SUCS_PWR_HIBERNATE_EXIT,comcode,,Exiting hibernate power state,True
-0011ACB1,1158321,SUCS_PWR_SHUTDOWN,comcode,,Shutdown power state entered,True
-0011ACB2,1158322,SUCS_PWR_REBOOT,comcode,,Reboot power state entered,True
-0011ACB3,1158323,SUCS_PWR_THERMAL_OK,comcode,,Thermal state within limits,True
-0011ACB4,1158324,SUCS_PWR_THERMAL_THROTTLE,comcode,,Thermal throttling activated,True
-0011ACB5,1158325,SUCS_PWR_VOLTAGE_OK,comcode,,Voltage rails within tolerance,True
-0011ACB6,1158326,SUCS_PWR_CURRENT_OK,comcode,,Current draw within limits,True
+0011ACA0,1158304,UNASSIGNED,comcode,,,False
+0011ACA1,1158305,UNASSIGNED,comcode,,,False
+0011ACA2,1158306,UNASSIGNED,comcode,,,False
+0011ACA3,1158307,UNASSIGNED,comcode,,,False
+0011ACA4,1158308,UNASSIGNED,comcode,,,False
+0011ACA5,1158309,UNASSIGNED,comcode,,,False
+0011ACA6,1158310,UNASSIGNED,comcode,,,False
+0011ACA7,1158311,UNASSIGNED,comcode,,,False
+0011ACA8,1158312,UNASSIGNED,comcode,,,False
+0011ACA9,1158313,UNASSIGNED,comcode,,,False
+0011ACAA,1158314,UNASSIGNED,comcode,,,False
+0011ACAB,1158315,UNASSIGNED,comcode,,,False
+0011ACAC,1158316,UNASSIGNED,comcode,,,False
+0011ACAD,1158317,UNASSIGNED,comcode,,,False
+0011ACAE,1158318,UNASSIGNED,comcode,,,False
+0011ACAF,1158319,UNASSIGNED,comcode,,,False
+0011ACB0,1158320,UNASSIGNED,comcode,,,False
+0011ACB1,1158321,UNASSIGNED,comcode,,,False
+0011ACB2,1158322,UNASSIGNED,comcode,,,False
+0011ACB3,1158323,UNASSIGNED,comcode,,,False
+0011ACB4,1158324,UNASSIGNED,comcode,,,False
+0011ACB5,1158325,UNASSIGNED,comcode,,,False
+0011ACB6,1158326,UNASSIGNED,comcode,,,False
 0011ACB7,1158327,UNASSIGNED,comcode,,,False
 0011ACB8,1158328,UNASSIGNED,comcode,,,False
 0011ACB9,1158329,UNASSIGNED,comcode,,,False
@@ -3295,22 +3295,22 @@ hex,value,name,category,subcategory,description,assigned
 0011ACDD,1158365,UNASSIGNED,comcode,,,False
 0011ACDE,1158366,UNASSIGNED,comcode,,,False
 0011ACDF,1158367,UNASSIGNED,comcode,,,False
-0011ACE0,1158368,SUCS_STREAM_OPEN,comcode,,Data stream opened,True
-0011ACE1,1158369,SUCS_STREAM_CLOSE,comcode,,Data stream closed,True
-0011ACE2,1158370,SUCS_STREAM_FLUSH,comcode,,Data stream flushed,True
-0011ACE3,1158371,SUCS_STREAM_RESET,comcode,,Data stream reset,True
-0011ACE4,1158372,SUCS_STREAM_PAUSE,comcode,,Data stream paused,True
-0011ACE5,1158373,SUCS_STREAM_RESUME,comcode,,Data stream resumed,True
-0011ACE6,1158374,SUCS_STREAM_BACKPRESSURE,comcode,,Data stream backpressure applied,True
-0011ACE7,1158375,SUCS_STREAM_BACKPRESSURE_LIFTED,comcode,,Data stream backpressure lifted,True
-0011ACE8,1158376,SUCS_STREAM_EOF,comcode,,Data stream end-of-stream,True
-0011ACE9,1158377,SUCS_PROTO_NEGOTIATE,comcode,,Protocol version negotiated,True
-0011ACEA,1158378,SUCS_PROTO_UPGRADE,comcode,,Protocol upgraded,True
-0011ACEB,1158379,SUCS_PROTO_DOWNGRADE,comcode,,Protocol downgraded,True
-0011ACEC,1158380,SUCS_PROTO_HEARTBEAT,comcode,,Protocol heartbeat sent,True
-0011ACED,1158381,SUCS_PROTO_KEEPALIVE,comcode,,Protocol keepalive acknowledged,True
-0011ACEE,1158382,SUCS_PROTO_WINDOW_UPDATE,comcode,,Protocol flow control window updated,True
-0011ACEF,1158383,SUCS_PROTO_RATE_LIMIT,comcode,,Protocol rate limit applied,True
+0011ACE0,1158368,UNASSIGNED,comcode,,,False
+0011ACE1,1158369,UNASSIGNED,comcode,,,False
+0011ACE2,1158370,UNASSIGNED,comcode,,,False
+0011ACE3,1158371,UNASSIGNED,comcode,,,False
+0011ACE4,1158372,UNASSIGNED,comcode,,,False
+0011ACE5,1158373,UNASSIGNED,comcode,,,False
+0011ACE6,1158374,UNASSIGNED,comcode,,,False
+0011ACE7,1158375,UNASSIGNED,comcode,,,False
+0011ACE8,1158376,UNASSIGNED,comcode,,,False
+0011ACE9,1158377,UNASSIGNED,comcode,,,False
+0011ACEA,1158378,UNASSIGNED,comcode,,,False
+0011ACEB,1158379,UNASSIGNED,comcode,,,False
+0011ACEC,1158380,UNASSIGNED,comcode,,,False
+0011ACED,1158381,UNASSIGNED,comcode,,,False
+0011ACEE,1158382,UNASSIGNED,comcode,,,False
+0011ACEF,1158383,UNASSIGNED,comcode,,,False
 0011ACF0,1158384,UNASSIGNED,comcode,,,False
 0011ACF1,1158385,UNASSIGNED,comcode,,,False
 0011ACF2,1158386,UNASSIGNED,comcode,,,False
@@ -3327,46 +3327,46 @@ hex,value,name,category,subcategory,description,assigned
 0011ACFD,1158397,UNASSIGNED,comcode,,,False
 0011ACFE,1158398,UNASSIGNED,comcode,,,False
 0011ACFF,1158399,UNASSIGNED,comcode,,,False
-0011AD00,1158400,OWFS_PROBE_OK,comcode,,OWFS superblock validated,True
-0011AD01,1158401,OWFS_MOUNT_OK,comcode,,OWFS volume mounted (CLEAN -> DIRTY),True
-0011AD02,1158402,OWFS_UNMOUNT_OK,comcode,,OWFS volume cleanly unmounted (DIRTY -> CLEAN),True
-0011AD03,1158403,OWFS_FORMAT_OK,comcode,,OWFS volume formatted successfully,True
-0011AD04,1158404,OWFS_SYNC_OK,comcode,,"OWFS sync committed (Fletcher-64, CLEAN)",True
-0011AD05,1158405,OWFS_CONSISTENCY_OK,comcode,,OWFS consistency check passed,True
-0011AD06,1158406,OWFS_RECOVERY_OK,comcode,,OWFS dirty state recovered via consistency check,True
-0011AD07,1158407,OWFS_ENUM_OK,comcode,,OWFS catalog enumeration succeeded,True
-0011AD08,1158408,OWFS_FILE_LOAD_OK,comcode,,OWFS file loaded to destination address,True
-0011AD09,1158409,OWFS_FILE_READ_OK,comcode,,OWFS file read completed,True
-0011AD0A,1158410,OWFS_FILE_WRITE_OK,comcode,,OWFS file write completed,True
-0011AD0B,1158411,OWFS_INODE_ALLOC_OK,comcode,,OWFS inode allocated successfully,True
-0011AD0C,1158412,OWFS_INODE_FREE_OK,comcode,,OWFS inode freed successfully,True
-0011AD0D,1158413,OWFS_CATALOG_INSERT_OK,comcode,,OWFS catalog entry inserted,True
-0011AD0E,1158414,OWFS_CATALOG_REMOVE_OK,comcode,,OWFS catalog entry removed,True
-0011AD0F,1158415,OWFS_CATALOG_LOOKUP_OK,comcode,,OWFS catalog entry found,True
-0011AD10,1158416,OWFS_CRYPTO_KEY_OK,comcode,,OWFS ChaCha20 key installed,True
-0011AD11,1158417,OWFS_CRYPTO_PURGE_OK,comcode,,OWFS key slot sanitized (3-pass wipe),True
-0011AD12,1158418,OWFS_CRYPTO_ROUNDTRIP_OK,comcode,,OWFS encryption round-trip verified,True
-0011AD13,1158419,USFS_PROBE_OK,comcode,,USFS superblock validated,True
-0011AD14,1158420,USFS_MOUNT_OK,comcode,,USFS volume mounted (CLEAN -> DIRTY),True
-0011AD15,1158421,USFS_UNMOUNT_OK,comcode,,USFS volume cleanly unmounted,True
-0011AD16,1158422,USFS_FORMAT_OK,comcode,,USFS volume formatted successfully,True
-0011AD17,1158423,USFS_SYNC_OK,comcode,,USFS sync committed,True
-0011AD18,1158424,USFS_CONSISTENCY_OK,comcode,,USFS consistency check passed,True
-0011AD19,1158425,USFS_RECOVERY_OK,comcode,,USFS dirty state recovered,True
-0011AD1A,1158426,USFS_FILE_READ_OK,comcode,,USFS file read completed,True
-0011AD1B,1158427,USFS_FILE_WRITE_OK,comcode,,USFS file write completed,True
-0011AD1C,1158428,USFS_ENTRY_ALLOC_OK,comcode,,USFS entry allocated,True
-0011AD1D,1158429,USFS_ENTRY_FREE_OK,comcode,,USFS entry freed,True
-0011AD1E,1158430,USFS_ENTRY_LOOKUP_OK,comcode,,USFS entry found,True
-0011AD1F,1158431,USFS_CRYPTO_KEY_OK,comcode,,USFS ChaCha20 key installed,True
-0011AD20,1158432,USFS_CRYPTO_PURGE_OK,comcode,,USFS key slot sanitized,True
-0011AD21,1158433,USFS_CRYPTO_ROUNDTRIP_OK,comcode,,USFS encryption round-trip verified,True
-0011AD22,1158434,MBL_MENU_SHOWN,comcode,,ModBoot: boot menu displayed,True
-0011AD23,1158435,MBL_ENTRY_SELECTED,comcode,,ModBoot: user selected boot entry,True
-0011AD24,1158436,MBL_KERNEL_LOADED,comcode,,ModBoot: kernel loaded successfully,True
-0011AD25,1158437,MBL_GOP_FOUND,comcode,,ModBoot: GOP framebuffer located,True
-0011AD26,1158438,MBL_BLOCK_IO_FOUND,comcode,,ModBoot: Block I/O protocol located,True
-0011AD27,1158439,MBL_MEMORY_MAPPED,comcode,,ModBoot: ExitBootServices succeeded,True
+0011AD00,1158400,UNASSIGNED,comcode,,,False
+0011AD01,1158401,UNASSIGNED,comcode,,,False
+0011AD02,1158402,UNASSIGNED,comcode,,,False
+0011AD03,1158403,UNASSIGNED,comcode,,,False
+0011AD04,1158404,UNASSIGNED,comcode,,,False
+0011AD05,1158405,UNASSIGNED,comcode,,,False
+0011AD06,1158406,UNASSIGNED,comcode,,,False
+0011AD07,1158407,UNASSIGNED,comcode,,,False
+0011AD08,1158408,UNASSIGNED,comcode,,,False
+0011AD09,1158409,UNASSIGNED,comcode,,,False
+0011AD0A,1158410,UNASSIGNED,comcode,,,False
+0011AD0B,1158411,UNASSIGNED,comcode,,,False
+0011AD0C,1158412,UNASSIGNED,comcode,,,False
+0011AD0D,1158413,UNASSIGNED,comcode,,,False
+0011AD0E,1158414,UNASSIGNED,comcode,,,False
+0011AD0F,1158415,UNASSIGNED,comcode,,,False
+0011AD10,1158416,UNASSIGNED,comcode,,,False
+0011AD11,1158417,UNASSIGNED,comcode,,,False
+0011AD12,1158418,UNASSIGNED,comcode,,,False
+0011AD13,1158419,UNASSIGNED,comcode,,,False
+0011AD14,1158420,UNASSIGNED,comcode,,,False
+0011AD15,1158421,UNASSIGNED,comcode,,,False
+0011AD16,1158422,UNASSIGNED,comcode,,,False
+0011AD17,1158423,UNASSIGNED,comcode,,,False
+0011AD18,1158424,UNASSIGNED,comcode,,,False
+0011AD19,1158425,UNASSIGNED,comcode,,,False
+0011AD1A,1158426,UNASSIGNED,comcode,,,False
+0011AD1B,1158427,UNASSIGNED,comcode,,,False
+0011AD1C,1158428,UNASSIGNED,comcode,,,False
+0011AD1D,1158429,UNASSIGNED,comcode,,,False
+0011AD1E,1158430,UNASSIGNED,comcode,,,False
+0011AD1F,1158431,UNASSIGNED,comcode,,,False
+0011AD20,1158432,UNASSIGNED,comcode,,,False
+0011AD21,1158433,UNASSIGNED,comcode,,,False
+0011AD22,1158434,UNASSIGNED,comcode,,,False
+0011AD23,1158435,UNASSIGNED,comcode,,,False
+0011AD24,1158436,UNASSIGNED,comcode,,,False
+0011AD25,1158437,UNASSIGNED,comcode,,,False
+0011AD26,1158438,UNASSIGNED,comcode,,,False
+0011AD27,1158439,UNASSIGNED,comcode,,,False
 0011AD28,1158440,UNASSIGNED,comcode,,,False
 0011AD29,1158441,UNASSIGNED,comcode,,,False
 0011AD2A,1158442,UNASSIGNED,comcode,,,False
@@ -3391,28 +3391,28 @@ hex,value,name,category,subcategory,description,assigned
 0011AD3D,1158461,UNASSIGNED,comcode,,,False
 0011AD3E,1158462,UNASSIGNED,comcode,,,False
 0011AD3F,1158463,UNASSIGNED,comcode,,,False
-0011AD40,1158464,STORAGE_DEVICE_ATTACHED,comcode,,Storage device attached,True
-0011AD41,1158465,STORAGE_DEVICE_DETACHED,comcode,,Storage device detached,True
-0011AD42,1158466,STORAGE_DEVICE_READY,comcode,,Storage device ready for I/O,True
-0011AD43,1158467,STORAGE_DEVICE_BUSY,comcode,,Storage device busy,True
-0011AD44,1158468,STORAGE_QUEUE_DRAIN,comcode,,Storage I/O queue draining,True
-0011AD45,1158469,STORAGE_QUEUE_FLUSH,comcode,,Storage I/O queue flushed,True
-0011AD46,1158470,STORAGE_CACHE_HIT,comcode,,Storage cache hit,True
-0011AD47,1158471,STORAGE_CACHE_MISS,comcode,,Storage cache miss,True
-0011AD48,1158472,STORAGE_CACHE_WRITEBACK,comcode,,Storage cache writeback completed,True
-0011AD49,1158473,STORAGE_CACHE_INVALIDATE,comcode,,Storage cache invalidated,True
-0011AD4A,1158474,STORAGE_CACHE_FLUSH,comcode,,Storage cache fully flushed,True
-0011AD4B,1158475,STORAGE_WEAR_LEVEL_OK,comcode,,Storage wear level within limits,True
-0011AD4C,1158476,STORAGE_WEAR_LEVEL_WARN,comcode,,Storage wear level approaching threshold,True
-0011AD4D,1158477,STORAGE_WEAR_LEVEL_CRITICAL,comcode,,Storage wear level critical,True
-0011AD4E,1158478,STORAGE_TRIM_OK,comcode,,Storage TRIM/discard completed,True
-0011AD4F,1158479,STORAGE_HEALTH_OK,comcode,,Storage SMART/health check passed,True
-0011AD50,1158480,STORAGE_HEALTH_DEGRADED,comcode,,Storage health degraded,True
-0011AD51,1158481,STORAGE_BAD_BLOCK_REMAPPED,comcode,,Storage bad block remapped,True
-0011AD52,1158482,STORAGE_ERASE_COMPLETE,comcode,,Storage block erase completed,True
-0011AD53,1158483,STORAGE_WRITE_COMPLETE,comcode,,Storage write completed,True
-0011AD54,1158484,STORAGE_READ_COMPLETE,comcode,,Storage read completed,True
-0011AD55,1158485,STORAGE_VERIFY_OK,comcode,,Storage verify/read-back matched,True
+0011AD40,1158464,UNASSIGNED,comcode,,,False
+0011AD41,1158465,UNASSIGNED,comcode,,,False
+0011AD42,1158466,UNASSIGNED,comcode,,,False
+0011AD43,1158467,UNASSIGNED,comcode,,,False
+0011AD44,1158468,UNASSIGNED,comcode,,,False
+0011AD45,1158469,UNASSIGNED,comcode,,,False
+0011AD46,1158470,UNASSIGNED,comcode,,,False
+0011AD47,1158471,UNASSIGNED,comcode,,,False
+0011AD48,1158472,UNASSIGNED,comcode,,,False
+0011AD49,1158473,UNASSIGNED,comcode,,,False
+0011AD4A,1158474,UNASSIGNED,comcode,,,False
+0011AD4B,1158475,UNASSIGNED,comcode,,,False
+0011AD4C,1158476,UNASSIGNED,comcode,,,False
+0011AD4D,1158477,UNASSIGNED,comcode,,,False
+0011AD4E,1158478,UNASSIGNED,comcode,,,False
+0011AD4F,1158479,UNASSIGNED,comcode,,,False
+0011AD50,1158480,UNASSIGNED,comcode,,,False
+0011AD51,1158481,UNASSIGNED,comcode,,,False
+0011AD52,1158482,UNASSIGNED,comcode,,,False
+0011AD53,1158483,UNASSIGNED,comcode,,,False
+0011AD54,1158484,UNASSIGNED,comcode,,,False
+0011AD55,1158485,UNASSIGNED,comcode,,,False
 0011AD56,1158486,UNASSIGNED,comcode,,,False
 0011AD57,1158487,UNASSIGNED,comcode,,,False
 0011AD58,1158488,UNASSIGNED,comcode,,,False
@@ -3455,22 +3455,22 @@ hex,value,name,category,subcategory,description,assigned
 0011AD7D,1158525,UNASSIGNED,comcode,,,False
 0011AD7E,1158526,UNASSIGNED,comcode,,,False
 0011AD7F,1158527,UNASSIGNED,comcode,,,False
-0011AD80,1158528,FS_MOUNT_CTRL,comcode,,Filesystem mount control signal,True
-0011AD81,1158529,FS_UNMOUNT_CTRL,comcode,,Filesystem unmount control signal,True
-0011AD82,1158530,FS_SYNC_CTRL,comcode,,Filesystem sync control signal,True
-0011AD83,1158531,FS_FORMAT_CTRL,comcode,,Filesystem format control signal,True
-0011AD84,1158532,FS_CHECK_CTRL,comcode,,Filesystem consistency check control signal,True
-0011AD85,1158533,FS_REPAIR_CTRL,comcode,,Filesystem repair control signal,True
-0011AD86,1158534,FS_SNAPSHOT_CTRL,comcode,,Filesystem snapshot control signal,True
-0011AD87,1158535,FS_ROLLBACK_CTRL,comcode,,Filesystem rollback control signal,True
-0011AD88,1158536,FS_LOCK_ACQUIRED,comcode,,Filesystem lock acquired,True
-0011AD89,1158537,FS_LOCK_RELEASED,comcode,,Filesystem lock released,True
-0011AD8A,1158538,FS_LOCK_CONTENTION,comcode,,Filesystem lock contention,True
-0011AD8B,1158539,FS_QUOTA_OK,comcode,,Filesystem quota within limits,True
-0011AD8C,1158540,FS_QUOTA_EXCEEDED,comcode,,Filesystem quota exceeded,True
-0011AD8D,1158541,FS_INODE_TABLE_SYNC,comcode,,Inode table synchronization completed,True
-0011AD8E,1158542,FS_BITMAP_SYNC,comcode,,Bitmap synchronization completed,True
-0011AD8F,1158543,FS_JOURNAL_COMMIT,comcode,,Filesystem journal committed,True
+0011AD80,1158528,UNASSIGNED,comcode,,,False
+0011AD81,1158529,UNASSIGNED,comcode,,,False
+0011AD82,1158530,UNASSIGNED,comcode,,,False
+0011AD83,1158531,UNASSIGNED,comcode,,,False
+0011AD84,1158532,UNASSIGNED,comcode,,,False
+0011AD85,1158533,UNASSIGNED,comcode,,,False
+0011AD86,1158534,UNASSIGNED,comcode,,,False
+0011AD87,1158535,UNASSIGNED,comcode,,,False
+0011AD88,1158536,UNASSIGNED,comcode,,,False
+0011AD89,1158537,UNASSIGNED,comcode,,,False
+0011AD8A,1158538,UNASSIGNED,comcode,,,False
+0011AD8B,1158539,UNASSIGNED,comcode,,,False
+0011AD8C,1158540,UNASSIGNED,comcode,,,False
+0011AD8D,1158541,UNASSIGNED,comcode,,,False
+0011AD8E,1158542,UNASSIGNED,comcode,,,False
+0011AD8F,1158543,UNASSIGNED,comcode,,,False
 0011AD90,1158544,UNASSIGNED,comcode,,,False
 0011AD91,1158545,UNASSIGNED,comcode,,,False
 0011AD92,1158546,UNASSIGNED,comcode,,,False
@@ -3583,19 +3583,19 @@ hex,value,name,category,subcategory,description,assigned
 0011ADFD,1158653,UNASSIGNED,comcode,,,False
 0011ADFE,1158654,UNASSIGNED,comcode,,,False
 0011ADFF,1158655,UNASSIGNED,comcode,,,False
-0011AE00,1158656,SUES_ERR_INVALID_BYTE,softcode,,Invalid byte sequence in SUTF stream,True
-0011AE01,1158657,SUES_ERR_BUFFER_TOO_SMALL,softcode,,Destination or source buffer too small,True
-0011AE02,1158658,SUES_ERR_OUT_OF_BOUNDS,softcode,,Codepoint exceeds max addressable range,True
-0011AE03,1158659,SUES_ERR_INVALID_CODEPOINT,softcode,,Codepoint is sentinel or trap range,True
-0011AE04,1158660,SUTF_NULL_OUTPUT,softcode,,NULL output pointer in SUTF transport,True
-0011AE05,1158661,SUTF_NULL_INPUT,softcode,,NULL input pointer or zero buffer size,True
-0011AE06,1158662,SUTF_TRUNCATED_SEQUENCE,softcode,,Truncated multi-byte SUTF sequence,True
-0011AE07,1158663,SUTF_VALUE_TOO_LARGE,softcode,,Decoded value exceeds encoding width,True
-0011AE08,1158664,VSUTF_NULL_POINTER,softcode,,NULL pointer in vSUTF transport,True
-0011AE09,1158665,VSUTF_BUFFER_TOO_SMALL,softcode,,vSUTF buffer insufficient,True
-0011AE0A,1158666,ESUTF_NULL_POINTER,softcode,,NULL pointer in e-SUTF transport,True
-0011AE0B,1158667,ESUTF_BUFFER_TOO_SMALL,softcode,,e-SUTF buffer insufficient,True
-0011AE0C,1158668,ESUTF_IPC_TOO_SMALL,softcode,,e-SUTF IPC frame buffer < 6 bytes,True
+0011AE00,1158656,UNASSIGNED,softcode,,,False
+0011AE01,1158657,UNASSIGNED,softcode,,,False
+0011AE02,1158658,UNASSIGNED,softcode,,,False
+0011AE03,1158659,UNASSIGNED,softcode,,,False
+0011AE04,1158660,UNASSIGNED,softcode,,,False
+0011AE05,1158661,UNASSIGNED,softcode,,,False
+0011AE06,1158662,UNASSIGNED,softcode,,,False
+0011AE07,1158663,UNASSIGNED,softcode,,,False
+0011AE08,1158664,UNASSIGNED,softcode,,,False
+0011AE09,1158665,UNASSIGNED,softcode,,,False
+0011AE0A,1158666,UNASSIGNED,softcode,,,False
+0011AE0B,1158667,UNASSIGNED,softcode,,,False
+0011AE0C,1158668,UNASSIGNED,softcode,,,False
 0011AE0D,1158669,UNASSIGNED,softcode,,,False
 0011AE0E,1158670,UNASSIGNED,softcode,,,False
 0011AE0F,1158671,UNASSIGNED,softcode,,,False
@@ -3615,28 +3615,28 @@ hex,value,name,category,subcategory,description,assigned
 0011AE1D,1158685,UNASSIGNED,softcode,,,False
 0011AE1E,1158686,UNASSIGNED,softcode,,,False
 0011AE1F,1158687,UNASSIGNED,softcode,,,False
-0011AE20,1158688,SUCS_RECOVERY_OK,softcode,,Transient error successfully recovered,True
-0011AE21,1158689,SUCS_PAGE_RECOVERED,softcode,,Memory page migrated/recovered successfully,True
-0011AE22,1158690,SUCS_PAGE_REMAP_OK,softcode,,Faulty page remapped to healthy frame,True
-0011AE23,1158691,SUCS_PAGE_ZEROED,softcode,,Page zeroed and returned to free pool,True
-0011AE24,1158692,SUCS_CACHE_LINE_FLUSHED,softcode,,Dirty cache line written back and invalidated,True
-0011AE25,1158693,SUCS_CACHE_RECONCILED,softcode,,Cache coherency restored across cores,True
-0011AE26,1158694,SUCS_CACHE_INVALIDATED,softcode,,Stale cache lines invalidated,True
-0011AE27,1158695,SUCS_CACHE_WB_COMPLETE,softcode,,Write-back of dirty cache completed,True
-0011AE28,1158696,SUCS_CACHE_COHERENCY_OK,softcode,,Cache coherency protocol satisfied,True
-0011AE29,1158697,SUCS_THREAD_RESPAWNED,softcode,,Faulting thread respawned successfully,True
-0011AE2A,1158698,SUCS_THREAD_RETRY_OK,softcode,,Thread operation retried and succeeded,True
-0011AE2B,1158699,SUCS_DEADLOCK_BROKE,softcode,,Deadlock detected and broken,True
-0011AE2C,1158700,SUCS_DEADLOCK_TIMEOUT,softcode,,"Deadlock timeout expired, proceeding",True
-0011AE2D,1158701,SUCS_FAULT_CONTAINED,softcode,,Hardware fault contained to fault domain,True
-0011AE2E,1158702,SUCS_FAULT_ISOLATED,softcode,,Faulting component isolated from healthy system,True
-0011AE2F,1158703,SUCS_FAULT_DEGRADED,softcode,,Operating in degraded mode after fault,True
-0011AE30,1158704,SUCS_FAULT_RESTORED,softcode,,System restored from degraded mode,True
-0011AE31,1158705,SUCS_MICRO_RETRY_OK,softcode,,Micro-retry of transient operation succeeded,True
-0011AE32,1158706,SUCS_FALLBACK_OK,softcode,,Fallback path executed successfully,True
-0011AE33,1158707,SUCS_FAILOVER_OK,softcode,,Failover to redundant component succeeded,True
-0011AE34,1158708,SUCS_REDUNDANCY_ENGAGED,softcode,,Redundant component activated,True
-0011AE35,1158709,SUCS_REDUNDANCY_RETIRE,softcode,,"Primary component restored, redundant retired",True
+0011AE20,1158688,UNASSIGNED,softcode,,,False
+0011AE21,1158689,UNASSIGNED,softcode,,,False
+0011AE22,1158690,UNASSIGNED,softcode,,,False
+0011AE23,1158691,UNASSIGNED,softcode,,,False
+0011AE24,1158692,UNASSIGNED,softcode,,,False
+0011AE25,1158693,UNASSIGNED,softcode,,,False
+0011AE26,1158694,UNASSIGNED,softcode,,,False
+0011AE27,1158695,UNASSIGNED,softcode,,,False
+0011AE28,1158696,UNASSIGNED,softcode,,,False
+0011AE29,1158697,UNASSIGNED,softcode,,,False
+0011AE2A,1158698,UNASSIGNED,softcode,,,False
+0011AE2B,1158699,UNASSIGNED,softcode,,,False
+0011AE2C,1158700,UNASSIGNED,softcode,,,False
+0011AE2D,1158701,UNASSIGNED,softcode,,,False
+0011AE2E,1158702,UNASSIGNED,softcode,,,False
+0011AE2F,1158703,UNASSIGNED,softcode,,,False
+0011AE30,1158704,UNASSIGNED,softcode,,,False
+0011AE31,1158705,UNASSIGNED,softcode,,,False
+0011AE32,1158706,UNASSIGNED,softcode,,,False
+0011AE33,1158707,UNASSIGNED,softcode,,,False
+0011AE34,1158708,UNASSIGNED,softcode,,,False
+0011AE35,1158709,UNASSIGNED,softcode,,,False
 0011AE36,1158710,UNASSIGNED,softcode,,,False
 0011AE37,1158711,UNASSIGNED,softcode,,,False
 0011AE38,1158712,UNASSIGNED,softcode,,,False
@@ -3647,20 +3647,20 @@ hex,value,name,category,subcategory,description,assigned
 0011AE3D,1158717,UNASSIGNED,softcode,,,False
 0011AE3E,1158718,UNASSIGNED,softcode,,,False
 0011AE3F,1158719,UNASSIGNED,softcode,,,False
-0011AE40,1158720,OWFS_ERR_IO,softcode,,OWFS: generic I/O failure,True
-0011AE41,1158721,OWFS_ERR_NOT_FOUND,softcode,,OWFS: inode not found by index or name,True
-0011AE42,1158722,OWFS_ERR_ALREADY_EXISTS,softcode,,OWFS: name already exists in catalog,True
-0011AE43,1158723,OWFS_ERR_NAME_TOO_LONG,softcode,,OWFS: name length >= 128 bytes,True
-0011AE44,1158724,OWFS_ERR_NOT_CATALOG,softcode,,OWFS: inode is not a catalog type,True
-0011AE45,1158725,OWFS_ERR_NOT_FILE,softcode,,OWFS: inode is not a file type,True
-0011AE46,1158726,OWFS_ERR_BUFFER_TOO_SMALL,softcode,,OWFS: write exceeds max logical block limit,True
-0011AE47,1158727,OWFS_ERR_INVALID_PARAM,softcode,,"OWFS: NULL pointer, bad type, or validation failure",True
-0011AE48,1158728,OWFS_ERR_ACCESS_DENIED,softcode,,OWFS: rwx permission denied,True
-0011AE49,1158729,OWFS_ERR_KEY_INVALID,softcode,,OWFS: encryption key wrong length,True
-0011AE4A,1158730,OWFS_ERR_EMPTY_INODE,softcode,,OWFS: inode is empty (entry_type == 0),True
-0011AE4B,1158731,OWFS_ERR_INODE_OUT_OF_RANGE,softcode,,OWFS: inode index >= total_inodes,True
-0011AE4C,1158732,OWFS_ERR_BLOCKMAP_INVALID,softcode,,OWFS: block index invalid or zero,True
-0011AE4D,1158733,OWFS_ERR_SUBST_NONASCII,softcode,,OWFS: SUTF-8 non-ASCII substituted with '?',True
+0011AE40,1158720,UNASSIGNED,softcode,,,False
+0011AE41,1158721,UNASSIGNED,softcode,,,False
+0011AE42,1158722,UNASSIGNED,softcode,,,False
+0011AE43,1158723,UNASSIGNED,softcode,,,False
+0011AE44,1158724,UNASSIGNED,softcode,,,False
+0011AE45,1158725,UNASSIGNED,softcode,,,False
+0011AE46,1158726,UNASSIGNED,softcode,,,False
+0011AE47,1158727,UNASSIGNED,softcode,,,False
+0011AE48,1158728,UNASSIGNED,softcode,,,False
+0011AE49,1158729,UNASSIGNED,softcode,,,False
+0011AE4A,1158730,UNASSIGNED,softcode,,,False
+0011AE4B,1158731,UNASSIGNED,softcode,,,False
+0011AE4C,1158732,UNASSIGNED,softcode,,,False
+0011AE4D,1158733,UNASSIGNED,softcode,,,False
 0011AE4E,1158734,UNASSIGNED,softcode,,,False
 0011AE4F,1158735,UNASSIGNED,softcode,,,False
 0011AE50,1158736,UNASSIGNED,softcode,,,False
@@ -3679,16 +3679,16 @@ hex,value,name,category,subcategory,description,assigned
 0011AE5D,1158749,UNASSIGNED,softcode,,,False
 0011AE5E,1158750,UNASSIGNED,softcode,,,False
 0011AE5F,1158751,UNASSIGNED,softcode,,,False
-0011AE60,1158752,OWFS_RECOVERY_CACHE_FLUSH,softcode,,OWFS: dirty cache flushed to disk,True
-0011AE61,1158753,OWFS_RECOVERY_BITMAP_REBUILD,softcode,,OWFS: bitmap rebuilt from entry scan,True
-0011AE62,1158754,OWFS_RECOVERY_INODE_REPAIR,softcode,,OWFS: inode CRC repaired,True
-0011AE63,1158755,OWFS_RECOVERY_CATALOG_REPAIR,softcode,,OWFS: catalog entry CRC repaired,True
-0011AE64,1158756,OWFS_RECOVERY_BLOCK_REMAP,softcode,,OWFS: bad block remapped,True
-0011AE65,1158757,OWFS_RECOVERY_SUPERBLOCK_REPAIR,softcode,,OWFS: superblock repaired from backup,True
-0011AE66,1158758,OWFS_RECOVERY_WRITEBACK,softcode,,OWFS: pending writes flushed to disk,True
-0011AE67,1158759,OWFS_RECOVERY_JOURNAL_REPLAY,softcode,,OWFS: journal entries replayed,True
-0011AE68,1158760,OWFS_RECOVERY_INODE_FREE,softcode,,OWFS: orphan inode freed,True
-0011AE69,1158761,OWFS_RECOVERY_CATALOG_TRIM,softcode,,OWFS: stale catalog entries trimmed,True
+0011AE60,1158752,UNASSIGNED,softcode,,,False
+0011AE61,1158753,UNASSIGNED,softcode,,,False
+0011AE62,1158754,UNASSIGNED,softcode,,,False
+0011AE63,1158755,UNASSIGNED,softcode,,,False
+0011AE64,1158756,UNASSIGNED,softcode,,,False
+0011AE65,1158757,UNASSIGNED,softcode,,,False
+0011AE66,1158758,UNASSIGNED,softcode,,,False
+0011AE67,1158759,UNASSIGNED,softcode,,,False
+0011AE68,1158760,UNASSIGNED,softcode,,,False
+0011AE69,1158761,UNASSIGNED,softcode,,,False
 0011AE6A,1158762,UNASSIGNED,softcode,,,False
 0011AE6B,1158763,UNASSIGNED,softcode,,,False
 0011AE6C,1158764,UNASSIGNED,softcode,,,False
@@ -3711,15 +3711,15 @@ hex,value,name,category,subcategory,description,assigned
 0011AE7D,1158781,UNASSIGNED,softcode,,,False
 0011AE7E,1158782,UNASSIGNED,softcode,,,False
 0011AE7F,1158783,UNASSIGNED,softcode,,,False
-0011AE80,1158784,USFS_ERR_IO,softcode,,USFS: generic I/O failure,True
-0011AE81,1158785,USFS_ERR_NOT_FOUND,softcode,,USFS: entry not found by index or name,True
-0011AE82,1158786,USFS_ERR_ALREADY_EXISTS,softcode,,USFS: name already exists,True
-0011AE83,1158787,USFS_ERR_NAME_TOO_LONG,softcode,,USFS: name length >= 128 bytes,True
-0011AE84,1158788,USFS_ERR_NOT_CATALOG,softcode,,USFS: entry is not a catalog type,True
-0011AE85,1158789,USFS_ERR_NOT_FILE,softcode,,USFS: entry is not a file type,True
-0011AE86,1158790,USFS_ERR_INVALID_PARAM,softcode,,USFS: NULL pointer or bad argument,True
-0011AE87,1158791,USFS_ERR_ACCESS_DENIED,softcode,,USFS: rwx permission denied,True
-0011AE88,1158792,USFS_ERR_KEY_INVALID,softcode,,USFS: encryption key wrong length,True
+0011AE80,1158784,UNASSIGNED,softcode,,,False
+0011AE81,1158785,UNASSIGNED,softcode,,,False
+0011AE82,1158786,UNASSIGNED,softcode,,,False
+0011AE83,1158787,UNASSIGNED,softcode,,,False
+0011AE84,1158788,UNASSIGNED,softcode,,,False
+0011AE85,1158789,UNASSIGNED,softcode,,,False
+0011AE86,1158790,UNASSIGNED,softcode,,,False
+0011AE87,1158791,UNASSIGNED,softcode,,,False
+0011AE88,1158792,UNASSIGNED,softcode,,,False
 0011AE89,1158793,UNASSIGNED,softcode,,,False
 0011AE8A,1158794,UNASSIGNED,softcode,,,False
 0011AE8B,1158795,UNASSIGNED,softcode,,,False
@@ -3743,16 +3743,16 @@ hex,value,name,category,subcategory,description,assigned
 0011AE9D,1158813,UNASSIGNED,softcode,,,False
 0011AE9E,1158814,UNASSIGNED,softcode,,,False
 0011AE9F,1158815,UNASSIGNED,softcode,,,False
-0011AEA0,1158816,USFS_RECOVERY_CACHE_FLUSH,softcode,,USFS: dirty cache flushed to disk,True
-0011AEA1,1158817,USFS_RECOVERY_BITMAP_REBUILD,softcode,,USFS: bitmap rebuilt from entry scan,True
-0011AEA2,1158818,USFS_RECOVERY_ENTRY_REPAIR,softcode,,USFS: entry CRC repaired,True
-0011AEA3,1158819,USFS_RECOVERY_SIGNATURE_REPAIR,softcode,,USFS: bitmap signature repaired,True
-0011AEA4,1158820,USFS_RECOVERY_BLOCK_REMAP,softcode,,USFS: bad block remapped,True
-0011AEA5,1158821,USFS_RECOVERY_SUPERBLOCK_REPAIR,softcode,,USFS: superblock repaired from backup,True
-0011AEA6,1158822,USFS_RECOVERY_WRITEBACK,softcode,,USFS: pending writes flushed to disk,True
-0011AEA7,1158823,USFS_RECOVERY_JOURNAL_REPLAY,softcode,,USFS: journal entries replayed,True
-0011AEA8,1158824,USFS_RECOVERY_ENTRY_FREE,softcode,,USFS: orphan entry freed,True
-0011AEA9,1158825,USFS_RECOVERY_ENTRY_TABLE_TRIM,softcode,,USFS: stale entry table entries trimmed,True
+0011AEA0,1158816,UNASSIGNED,softcode,,,False
+0011AEA1,1158817,UNASSIGNED,softcode,,,False
+0011AEA2,1158818,UNASSIGNED,softcode,,,False
+0011AEA3,1158819,UNASSIGNED,softcode,,,False
+0011AEA4,1158820,UNASSIGNED,softcode,,,False
+0011AEA5,1158821,UNASSIGNED,softcode,,,False
+0011AEA6,1158822,UNASSIGNED,softcode,,,False
+0011AEA7,1158823,UNASSIGNED,softcode,,,False
+0011AEA8,1158824,UNASSIGNED,softcode,,,False
+0011AEA9,1158825,UNASSIGNED,softcode,,,False
 0011AEAA,1158826,UNASSIGNED,softcode,,,False
 0011AEAB,1158827,UNASSIGNED,softcode,,,False
 0011AEAC,1158828,UNASSIGNED,softcode,,,False
@@ -3775,10 +3775,10 @@ hex,value,name,category,subcategory,description,assigned
 0011AEBD,1158845,UNASSIGNED,softcode,,,False
 0011AEBE,1158846,UNASSIGNED,softcode,,,False
 0011AEBF,1158847,UNASSIGNED,softcode,,,False
-0011AEC0,1158848,HTL_ERR_INVALID_PARAM,softcode,,HTL: NULL pointer or bad argument,True
-0011AEC1,1158849,HTL_ERR_INVALID_BLOCK,softcode,,HTL: block number out of range,True
-0011AEC2,1158850,HTL_ERR_NOT_READY,softcode,,HTL: device or resource not ready,True
-0011AEC3,1158851,HTL_ERR_WRITE_PROTECT,softcode,,HTL: hardware write protection active,True
+0011AEC0,1158848,UNASSIGNED,softcode,,,False
+0011AEC1,1158849,UNASSIGNED,softcode,,,False
+0011AEC2,1158850,UNASSIGNED,softcode,,,False
+0011AEC3,1158851,UNASSIGNED,softcode,,,False
 0011AEC4,1158852,UNASSIGNED,softcode,,,False
 0011AEC5,1158853,UNASSIGNED,softcode,,,False
 0011AEC6,1158854,UNASSIGNED,softcode,,,False
@@ -3807,17 +3807,17 @@ hex,value,name,category,subcategory,description,assigned
 0011AEDD,1158877,UNASSIGNED,softcode,,,False
 0011AEDE,1158878,UNASSIGNED,softcode,,,False
 0011AEDF,1158879,UNASSIGNED,softcode,,,False
-0011AEE0,1158880,MBL_GOP_NULL,softcode,,ModBoot: GOP pointer NULL (no framebuffer),True
-0011AEE1,1158881,MBL_BLOCK_IO_NULL,softcode,,ModBoot: Block I/O pointer NULL (no disk),True
-0011AEE2,1158882,MBL_CONIN_NULL,softcode,,ModBoot: ConIn pointer NULL (no keyboard),True
-0011AEE3,1158883,MBL_RT_NULL,softcode,,ModBoot: RuntimeServices pointer NULL,True
-0011AEE4,1158884,MBL_OWMKFS_FULL,softcode,,ModBoot: volume full during mkfs,True
-0011AEE5,1158885,MBL_OWMKFS_NO_INODES,softcode,,ModBoot: no free inodes during mkfs,True
-0011AEE6,1158886,MBL_OWMKFS_TOO_SMALL,softcode,,ModBoot: partition too small,True
-0011AEE7,1158887,MBL_MENU_REBOOT,softcode,,ModBoot: user pressed Esc/R to reboot,True
-0011AEE8,1158888,MBL_MENU_SHUTDOWN,softcode,,ModBoot: user pressed S to shutdown,True
-0011AEE9,1158889,MBL_OWMKFS_REBOOT_STAGED,softcode,,ModBoot: mode switch staged,True
-0011AEEA,1158890,MBL_PLUGIN_REBOOT_STAGED,softcode,,ModBoot: plugin staged for reboot,True
+0011AEE0,1158880,UNASSIGNED,softcode,,,False
+0011AEE1,1158881,UNASSIGNED,softcode,,,False
+0011AEE2,1158882,UNASSIGNED,softcode,,,False
+0011AEE3,1158883,UNASSIGNED,softcode,,,False
+0011AEE4,1158884,UNASSIGNED,softcode,,,False
+0011AEE5,1158885,UNASSIGNED,softcode,,,False
+0011AEE6,1158886,UNASSIGNED,softcode,,,False
+0011AEE7,1158887,UNASSIGNED,softcode,,,False
+0011AEE8,1158888,UNASSIGNED,softcode,,,False
+0011AEE9,1158889,UNASSIGNED,softcode,,,False
+0011AEEA,1158890,UNASSIGNED,softcode,,,False
 0011AEEB,1158891,UNASSIGNED,softcode,,,False
 0011AEEC,1158892,UNASSIGNED,softcode,,,False
 0011AEED,1158893,UNASSIGNED,softcode,,,False

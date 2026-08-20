@@ -1648,92 +1648,92 @@
     {
       "hex": "0011A000",
       "value": 1155072,
-      "name": "SUCS_TRAP_DISPATCH_FAILED",
-      "description": "Trap dispatch invoked but no handler installed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A001",
       "value": 1155073,
-      "name": "SUCS_TRAP_SLOT_INVALID",
-      "description": "BANcode mapped to invalid trap slot",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A002",
       "value": 1155074,
-      "name": "SUCS_TRAP_HANDLER_NULL",
-      "description": "NULL handler registered for trap slot",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A003",
       "value": 1155075,
-      "name": "SUCS_SENTINEL_RAISED",
-      "description": "SUCS_INVALID_CODEPOINT encountered in stream",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A004",
       "value": 1155076,
-      "name": "SUCS_TRAP_SLOT15_UNMAPPED",
-      "description": "BANcode in unmapped cluster 0011A780-0011A7FF",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A005",
       "value": 1155077,
-      "name": "SUCS_DOWNCAST_FAILED",
-      "description": "ExtSUCS-to-BaseSUCS narrowing failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A006",
       "value": 1155078,
-      "name": "SUCS_TRAP_RANGE_INTRUSION",
-      "description": "Codepoint entered trap range 0x7FFFFFF0-0x7FFFFFFE",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A007",
       "value": 1155079,
-      "name": "SUCS_CONTEXT_CORRUPT",
-      "description": "Trap handler context pointer invalid",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A008",
       "value": 1155080,
-      "name": "SUCS_RECURSIVE_TRAP",
-      "description": "Trap fired during trap handler execution",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A009",
       "value": 1155081,
-      "name": "SUCS_KERNEL_STACK_OVERFLOW",
-      "description": "Kernel stack exhausted during trap dispatch",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A00A",
@@ -3952,74 +3952,74 @@
     {
       "hex": "0011A100",
       "value": 1155328,
-      "name": "SUCS_PLUGIN_CHECKSUM_GATE",
-      "description": "Plugin CRC32c/Fletcher-64 mismatch; quarantined",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A101",
       "value": 1155329,
-      "name": "SUCS_PLUGIN_RANGE_GATE",
-      "description": "Plugin range malformed or below base limit; quarantined",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A102",
       "value": 1155330,
-      "name": "SUCS_PLUGIN_COLLISION_GATE",
-      "description": "Plugin range overlaps active plugin; quarantined",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A103",
       "value": 1155331,
-      "name": "SUCS_PLUGIN_MOUNT_GATE",
-      "description": "Plugin partition not OWFS; quarantined",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A104",
       "value": 1155332,
-      "name": "SUCS_PLUGIN_CAPACITY_GATE",
-      "description": "Active plugin table full; quarantined",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A105",
       "value": 1155333,
-      "name": "SUCS_PLUGIN_BLOB_CORRUPT",
-      "description": "Plugin blob malformed (wrong magic/size)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A106",
       "value": 1155334,
-      "name": "SUCS_PLUGIN_VERSION_REJECT",
-      "description": "Plugin blob format version unsupported",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A107",
       "value": 1155335,
-      "name": "SUCS_PLUGIN_ID_MALFORMED",
-      "description": "Plugin identifier empty or malformed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A108",
@@ -6256,137 +6256,137 @@
     {
       "hex": "0011A200",
       "value": 1155584,
-      "name": "SUTF_DECODE_OVERLONG",
-      "description": "Overlong SUTF sequence (security rejection)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A201",
       "value": 1155585,
-      "name": "SUTF_DECODE_BAD_CONTINUATION",
-      "description": "Invalid continuation byte in SUTF sequence",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A202",
       "value": 1155586,
-      "name": "SUTF_DECODE_TRAP_RANGE",
-      "description": "Decoded codepoint in kernel trap range",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A203",
       "value": 1155587,
-      "name": "SUTF_DECODE_SENTINEL",
-      "description": "Decoded codepoint equals SUCS_INVALID_CODEPOINT",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A204",
       "value": 1155588,
-      "name": "SUTF_DECODE_OUT_OF_BOUNDS",
-      "description": "Codepoint exceeds max range of encoding width",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A205",
       "value": 1155589,
-      "name": "SUTF_ENCODE_INVALID_CP",
-      "description": "Codepoint invalid or reserved",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A206",
       "value": 1155590,
-      "name": "VSUTF_BAD_PREFIX",
-      "description": "Unrecognized vSUTF lead byte",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A207",
       "value": 1155591,
-      "name": "VSUTF_OVERLONG_EXTENDED",
-      "description": "Extended frame encoding fits in base framing",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A208",
       "value": 1155592,
-      "name": "VSUTF_TRUNCATED_EXTENDED",
-      "description": "Extended frame truncated (< 9 bytes)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A209",
       "value": 1155593,
-      "name": "ESUTF_PAGE_TRANSLATION_FAIL",
-      "description": "e-SUTF host-to-guest page translation failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A20A",
       "value": 1155594,
-      "name": "ESUTF_UNMAPPED_ADDRESS",
-      "description": "e-SUTF codepoint not in any mapped page",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A20B",
       "value": 1155595,
-      "name": "ESUTF_PAGE_TABLE_FULL",
-      "description": "e-SUTF page table full (256 max)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A20C",
       "value": 1155596,
-      "name": "ESUTF_PAGE_NOT_ALIGNED",
-      "description": "e-SUTF page base not page-aligned",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A20D",
       "value": 1155597,
-      "name": "ESUTF_TRAP_PAGE_INTERSECT",
-      "description": "e-SUTF page intersects kernel trap range",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A20E",
       "value": 1155598,
-      "name": "ESUTF_IPC_FRAME_INVALID",
-      "description": "e-SUTF IPC frame too small or malformed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A20F",
@@ -8560,74 +8560,74 @@
     {
       "hex": "0011A300",
       "value": 1155840,
-      "name": "OWFS_MAGIC_MISMATCH",
-      "description": "OWFS superblock magic not 0x4F574653",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A301",
       "value": 1155841,
-      "name": "OWFS_SUPERBLOCK_CORRUPT",
-      "description": "OWFS superblock CRC32c validation failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A302",
       "value": 1155842,
-      "name": "OWFS_INODE_CHECKSUM_FAIL",
-      "description": "OWFS inode CRC32c integrity check failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A303",
       "value": 1155843,
-      "name": "OWFS_CATALOG_CHECKSUM_FAIL",
-      "description": "OWFS catalog entry CRC32c check failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A304",
       "value": 1155844,
-      "name": "OWFS_BITMAP_CHECKSUM_FAIL",
-      "description": "OWFS bitmap Fletcher-64 check failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A305",
       "value": 1155845,
-      "name": "OWFS_INODE_READ_FAIL",
-      "description": "Cannot read OWFS inode table block",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A306",
       "value": 1155846,
-      "name": "OWFS_INDIRECT_READ_FAIL",
-      "description": "Cannot read OWFS indirect block map",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A307",
       "value": 1155847,
-      "name": "OWFS_VOLUME_INCONSISTENT",
-      "description": "OWFS consistency check failed; data corruption",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A308",
@@ -10864,56 +10864,56 @@
     {
       "hex": "0011A400",
       "value": 1156096,
-      "name": "USFS_MAGIC_MISMATCH",
-      "description": "USFS superblock magic not 0x55534653",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A401",
       "value": 1156097,
-      "name": "USFS_SUPERBLOCK_CORRUPT",
-      "description": "USFS superblock CRC32c validation failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A402",
       "value": 1156098,
-      "name": "USFS_ENTRY_CHECKSUM_FAIL",
-      "description": "USFS entry table CRC32c check failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A403",
       "value": 1156099,
-      "name": "USFS_SIGNATURE_CHECKSUM_FAIL",
-      "description": "USFS bitmap signature check failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A404",
       "value": 1156100,
-      "name": "USFS_BITMAP_FLETCHER_FAIL",
-      "description": "USFS bitmap Fletcher-64 check failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A405",
       "value": 1156101,
-      "name": "USFS_VOLUME_INCONSISTENT",
-      "description": "USFS consistency check failed; data corruption",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A406",
@@ -13168,29 +13168,29 @@
     {
       "hex": "0011A500",
       "value": 1156352,
-      "name": "HTL_IO_FAILURE",
-      "description": "HTL I/O failure from hardware driver",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A501",
       "value": 1156353,
-      "name": "HTL_TIMEOUT",
-      "description": "HTL hardware timeout",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A502",
       "value": 1156354,
-      "name": "HTL_NO_DEVICE",
-      "description": "No hardware device present",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A503",
@@ -15472,92 +15472,92 @@
     {
       "hex": "0011A600",
       "value": 1156608,
-      "name": "MBL_KERNEL_LOAD_FAILED",
-      "description": "Kernel image failed to load from OWFS",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A601",
       "value": 1156609,
-      "name": "MBL_KERNEL_TOO_SMALL",
-      "description": "Kernel image smaller than 16 bytes",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A602",
       "value": 1156610,
-      "name": "MBL_BOOT_MAGIC_MISSING",
-      "description": "MBL2 magic not found at boot config address",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A603",
       "value": 1156611,
-      "name": "MBL_OWMKFS_FULL",
-      "description": "Volume full during mkfs formatting",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A604",
       "value": 1156612,
-      "name": "MBL_OWMKFS_NO_INODES",
-      "description": "No free inodes during OWFS mkfs",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A605",
       "value": 1156613,
-      "name": "MBL_OWMKFS_TOO_SMALL",
-      "description": "Partition too small for minimum OWFS layout",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A606",
       "value": 1156614,
-      "name": "MBL_EXIT_BOOT_SERVICES_FAIL",
-      "description": "UEFI ExitBootServices failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A607",
       "value": 1156615,
-      "name": "MBL_MEMORY_ALLOC_FAIL",
-      "description": "UEFI AllocatePages for memory map failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A608",
       "value": 1156616,
-      "name": "MBL_MEMORY_MAP_FAIL",
-      "description": "UEFI GetMemoryMap failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A609",
       "value": 1156617,
-      "name": "MBL_NO_EXIT_BOOT_SERVICES",
-      "description": "gExitBootServices protocol pointer NULL",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A60A",
@@ -17776,128 +17776,128 @@
     {
       "hex": "0011A700",
       "value": 1156864,
-      "name": "UEFI_LOAD_ERROR",
-      "description": "Image failed to load",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A701",
       "value": 1156865,
-      "name": "UEFI_INVALID_PARAMETER",
-      "description": "Invalid parameter to firmware service",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A702",
       "value": 1156866,
-      "name": "UEFI_UNSUPPORTED",
-      "description": "Operation not supported by platform",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A703",
       "value": 1156867,
-      "name": "UEFI_BAD_BUFFER_SIZE",
-      "description": "Buffer size invalid",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A704",
       "value": 1156868,
-      "name": "UEFI_BUFFER_TOO_SMALL",
-      "description": "Output buffer too small",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A705",
       "value": 1156869,
-      "name": "UEFI_NOT_READY",
-      "description": "Device or resource not ready",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A706",
       "value": 1156870,
-      "name": "UEFI_DEVICE_ERROR",
-      "description": "Hardware device error",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A707",
       "value": 1156871,
-      "name": "UEFI_WRITE_PROTECTED",
-      "description": "Device or media write-protected",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A708",
       "value": 1156872,
-      "name": "UEFI_OUT_OF_RESOURCES",
-      "description": "System resource allocation failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A709",
       "value": 1156873,
-      "name": "UEFI_ABORTED",
-      "description": "Operation was aborted",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A70A",
       "value": 1156874,
-      "name": "UEFI_NOT_FOUND",
-      "description": "Requested resource not found",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A70B",
       "value": 1156875,
-      "name": "UEFI_NOT_STARTED",
-      "description": "Device not started",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A70C",
       "value": 1156876,
-      "name": "UEFI_ALREADY_STARTED",
-      "description": "Operation already in progress",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A70D",
       "value": 1156877,
-      "name": "UEFI_SECURITY_VIOLATION",
-      "description": "Security violation detected",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A70E",
@@ -18928,1253 +18928,1253 @@
     {
       "hex": "0011A780",
       "value": 1156992,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A781",
       "value": 1156993,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A782",
       "value": 1156994,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A783",
       "value": 1156995,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A784",
       "value": 1156996,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A785",
       "value": 1156997,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A786",
       "value": 1156998,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A787",
       "value": 1156999,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A788",
       "value": 1157000,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A789",
       "value": 1157001,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A78A",
       "value": 1157002,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A78B",
       "value": 1157003,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A78C",
       "value": 1157004,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A78D",
       "value": 1157005,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A78E",
       "value": 1157006,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A78F",
       "value": 1157007,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A790",
       "value": 1157008,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A791",
       "value": 1157009,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A792",
       "value": 1157010,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A793",
       "value": 1157011,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A794",
       "value": 1157012,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A795",
       "value": 1157013,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A796",
       "value": 1157014,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A797",
       "value": 1157015,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A798",
       "value": 1157016,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A799",
       "value": 1157017,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A79A",
       "value": 1157018,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A79B",
       "value": 1157019,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A79C",
       "value": 1157020,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A79D",
       "value": 1157021,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A79E",
       "value": 1157022,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A79F",
       "value": 1157023,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7A0",
       "value": 1157024,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7A1",
       "value": 1157025,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7A2",
       "value": 1157026,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7A3",
       "value": 1157027,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7A4",
       "value": 1157028,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7A5",
       "value": 1157029,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7A6",
       "value": 1157030,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7A7",
       "value": 1157031,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7A8",
       "value": 1157032,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7A9",
       "value": 1157033,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7AA",
       "value": 1157034,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7AB",
       "value": 1157035,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7AC",
       "value": 1157036,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7AD",
       "value": 1157037,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7AE",
       "value": 1157038,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7AF",
       "value": 1157039,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7B0",
       "value": 1157040,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7B1",
       "value": 1157041,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7B2",
       "value": 1157042,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7B3",
       "value": 1157043,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7B4",
       "value": 1157044,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7B5",
       "value": 1157045,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7B6",
       "value": 1157046,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7B7",
       "value": 1157047,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7B8",
       "value": 1157048,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7B9",
       "value": 1157049,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7BA",
       "value": 1157050,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7BB",
       "value": 1157051,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7BC",
       "value": 1157052,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7BD",
       "value": 1157053,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7BE",
       "value": 1157054,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7BF",
       "value": 1157055,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7C0",
       "value": 1157056,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7C1",
       "value": 1157057,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7C2",
       "value": 1157058,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7C3",
       "value": 1157059,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7C4",
       "value": 1157060,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7C5",
       "value": 1157061,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7C6",
       "value": 1157062,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7C7",
       "value": 1157063,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7C8",
       "value": 1157064,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7C9",
       "value": 1157065,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7CA",
       "value": 1157066,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7CB",
       "value": 1157067,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7CC",
       "value": 1157068,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7CD",
       "value": 1157069,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7CE",
       "value": 1157070,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7CF",
       "value": 1157071,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7D0",
       "value": 1157072,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7D1",
       "value": 1157073,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7D2",
       "value": 1157074,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7D3",
       "value": 1157075,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7D4",
       "value": 1157076,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7D5",
       "value": 1157077,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7D6",
       "value": 1157078,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7D7",
       "value": 1157079,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7D8",
       "value": 1157080,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7D9",
       "value": 1157081,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7DA",
       "value": 1157082,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7DB",
       "value": 1157083,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7DC",
       "value": 1157084,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7DD",
       "value": 1157085,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7DE",
       "value": 1157086,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7DF",
       "value": 1157087,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7E0",
       "value": 1157088,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7E1",
       "value": 1157089,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7E2",
       "value": 1157090,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7E3",
       "value": 1157091,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7E4",
       "value": 1157092,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7E5",
       "value": 1157093,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7E6",
       "value": 1157094,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7E7",
       "value": 1157095,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7E8",
       "value": 1157096,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7E9",
       "value": 1157097,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7EA",
       "value": 1157098,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7EB",
       "value": 1157099,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7EC",
       "value": 1157100,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7ED",
       "value": 1157101,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7EE",
       "value": 1157102,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7EF",
       "value": 1157103,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7F0",
       "value": 1157104,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7F1",
       "value": 1157105,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7F2",
       "value": 1157106,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7F3",
       "value": 1157107,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7F4",
       "value": 1157108,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7F5",
       "value": 1157109,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7F6",
       "value": 1157110,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7F7",
       "value": 1157111,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7F8",
       "value": 1157112,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7F9",
       "value": 1157113,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7FA",
       "value": 1157114,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7FB",
       "value": 1157115,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7FC",
       "value": 1157116,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7FD",
       "value": 1157117,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7FE",
       "value": 1157118,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A7FF",
       "value": 1157119,
-      "name": "RESERVED_UNMAPPED",
-      "description": "No trap handler; slot 15 unmapped cluster",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "bancode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A800",
       "value": 1157120,
-      "name": "SUCS_MODE_INVALID",
-      "description": "Invalid mode specified for kernel mode switch",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A801",
       "value": 1157121,
-      "name": "SUCS_MODE_ALREADY_ACTIVE",
-      "description": "Requested mode is already the active mode",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A802",
       "value": 1157122,
-      "name": "SUCS_PLUGIN_INVALID_BLOB",
-      "description": "Malformed plugin blob (non-fatal staging warning)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A803",
       "value": 1157123,
-      "name": "SUCS_PLUGIN_DUPLICATE_ID",
-      "description": "Plugin ID already staged or mounted",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A804",
       "value": 1157124,
-      "name": "SUCS_PLUGIN_STAGING_FULL",
-      "description": "Plugin staging table full (4 max pending)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A805",
       "value": 1157125,
-      "name": "SUCS_PLUGIN_NOT_OWFS",
-      "description": "Plugin partition not OWFS (non-fatal staging warning)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A806",
       "value": 1157126,
-      "name": "SUCS_PLUGIN_MOUNT_FAILED",
-      "description": "Plugin partition mount failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A807",
       "value": 1157127,
-      "name": "SUCS_PLUGIN_BUFFER_OVERFLOW",
-      "description": "Plugin blob exceeds staging buffer (16 KB)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A808",
       "value": 1157128,
-      "name": "SUCS_PLUGIN_RANGE_COLLISION",
-      "description": "Plugin range overlaps existing plugin (staging)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A809",
       "value": 1157129,
-      "name": "SUCS_PLUGIN_CHECKSUM_MISMATCH",
-      "description": "Plugin checksum mismatch (non-quarantine path)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A80A",
       "value": 1157130,
-      "name": "SUCS_KEY_INVALID",
-      "description": "Encryption key wrong length (must be 32 bytes for ChaCha20)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A80B",
@@ -22384,83 +22384,83 @@
     {
       "hex": "0011A900",
       "value": 1157376,
-      "name": "OWFS_VOLUME_DIRTY",
-      "description": "OWFS volume dirty from unclean unmount",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A901",
       "value": 1157377,
-      "name": "OWFS_VOLUME_LOCKED",
-      "description": "OWFS volume locked for consistency scan",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A902",
       "value": 1157378,
-      "name": "OWFS_WRITE_PROTECTED",
-      "description": "OWFS volume or inode write-protected",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A903",
       "value": 1157379,
-      "name": "OWFS_NO_FREE_BLOCKS",
-      "description": "OWFS: no free data blocks (disk full)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A904",
       "value": 1157380,
-      "name": "OWFS_NO_FREE_INODES",
-      "description": "OWFS: no free inodes in table",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A905",
       "value": 1157381,
-      "name": "OWFS_CATALOG_FULL",
-      "description": "OWFS: no free blocks to grow catalog",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A906",
       "value": 1157382,
-      "name": "OWFS_ACCESS_DENIED",
-      "description": "OWFS: rwx permission denied for principal",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A907",
       "value": 1157383,
-      "name": "OWFS_KEY_INVALID",
-      "description": "OWFS: encryption key wrong length",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A908",
       "value": 1157384,
-      "name": "OWFS_CRC_SILENT_SKIP",
-      "description": "OWFS: catalog entry CRC mismatch, entry skipped",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011A909",
@@ -24688,74 +24688,74 @@
     {
       "hex": "0011AA00",
       "value": 1157632,
-      "name": "USFS_VOLUME_DIRTY",
-      "description": "USFS volume dirty from unclean unmount",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AA01",
       "value": 1157633,
-      "name": "USFS_VOLUME_LOCKED",
-      "description": "USFS volume locked for consistency scan",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AA02",
       "value": 1157634,
-      "name": "USFS_WRITE_PROTECTED",
-      "description": "USFS volume or entry write-protected",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AA03",
       "value": 1157635,
-      "name": "USFS_NO_FREE_BLOCKS",
-      "description": "USFS: no free data blocks (disk full)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AA04",
       "value": 1157636,
-      "name": "USFS_NO_FREE_ENTRIES",
-      "description": "USFS: no free entries in table",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AA05",
       "value": 1157637,
-      "name": "USFS_ACCESS_DENIED",
-      "description": "USFS: rwx permission denied for principal",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AA06",
       "value": 1157638,
-      "name": "USFS_KEY_INVALID",
-      "description": "USFS: encryption key wrong length",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AA07",
       "value": 1157639,
-      "name": "USFS_ENCRYPTED_UNHANDLED",
-      "description": "USFS: encryption error (reserved, currently unused)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AA08",
@@ -26992,110 +26992,110 @@
     {
       "hex": "0011AB00",
       "value": 1157888,
-      "name": "MBL_NO_GOP",
-      "description": "ModBoot: GOP (framebuffer) protocol not found",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB01",
       "value": 1157889,
-      "name": "MBL_NO_BLOCK_IO",
-      "description": "ModBoot: Block I/O protocol not found",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB02",
       "value": 1157890,
-      "name": "MBL_NO_LOADED_IMAGE",
-      "description": "ModBoot: Loaded Image protocol not found",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB03",
       "value": 1157891,
-      "name": "MBL_GOP_MODE_FAIL",
-      "description": "ModBoot: GOP QueryMode failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB04",
       "value": 1157892,
-      "name": "MBL_REMOVABLE_MEDIA",
-      "description": "ModBoot: removable media skipped (looking for fixed disk)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB05",
       "value": 1157893,
-      "name": "MBL_MEDIA_NOT_PRESENT",
-      "description": "ModBoot: media not present in drive",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB06",
       "value": 1157894,
-      "name": "MBL_OWMKFS_REBOOT_REQUIRED",
-      "description": "ModBoot: mode switch staged; reboot required",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB07",
       "value": 1157895,
-      "name": "MBL_PLUGIN_REBOOT_REQUIRED",
-      "description": "ModBoot: plugin staged; reboot required",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB08",
       "value": 1157896,
-      "name": "MBL_RTC_UNAVAILABLE",
-      "description": "ModBoot: RTC GetTime failed, returning 0",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB09",
       "value": 1157897,
-      "name": "MBL_KBD_UNAVAILABLE",
-      "description": "ModBoot: ConIn protocol missing, no keyboard",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB0A",
       "value": 1157898,
-      "name": "MBL_MENU_EMPTY",
-      "description": "ModBoot: no bootable entries found in catalog",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB0B",
       "value": 1157899,
-      "name": "MBL_SUTF8_NONASCII",
-      "description": "ModBoot: SUTF-8 decoded non-ASCII, substituted '?'",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "warncode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AB0C",
@@ -29296,164 +29296,164 @@
     {
       "hex": "0011AC00",
       "value": 1158144,
-      "name": "SUCS_SWITCH_SUCCESS",
-      "description": "Mode alteration committed successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC01",
       "value": 1158145,
-      "name": "SUCS_SWITCH_REBOOT_REQUIRED",
-      "description": "Mode switch staged; reboot required",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC02",
       "value": 1158146,
-      "name": "SUCS_PLUGIN_OK",
-      "description": "Plugin operation succeeded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC03",
       "value": 1158147,
-      "name": "SUCS_PLUGIN_MOUNTED",
-      "description": "Plugin mounted and registered successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC04",
       "value": 1158148,
-      "name": "SUCS_PLUGIN_STAGED",
-      "description": "Plugin staged for next boot",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC05",
       "value": 1158149,
-      "name": "SUCS_PLUGIN_COMMITTED",
-      "description": "Plugin committed on boot (mounted or quarantined)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC06",
       "value": 1158150,
-      "name": "SUCS_PLUGIN_UNMOUNTED",
-      "description": "Plugin unmounted successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC07",
       "value": 1158151,
-      "name": "SUCS_PLUGIN_CHECKSUM_OK",
-      "description": "Plugin CRC32c/Fletcher-64 gate passed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC08",
       "value": 1158152,
-      "name": "SUCS_PLUGIN_RANGE_OK",
-      "description": "Plugin range gate passed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC09",
       "value": 1158153,
-      "name": "SUCS_PLUGIN_COLLISION_OK",
-      "description": "Plugin collision gate passed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC0A",
       "value": 1158154,
-      "name": "SUCS_PLUGIN_MOUNT_OK",
-      "description": "Plugin mount gate passed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC0B",
       "value": 1158155,
-      "name": "SUCS_PLUGIN_CAPACITY_OK",
-      "description": "Plugin capacity gate passed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC0C",
       "value": 1158156,
-      "name": "SUCS_BOOT_COMMIT",
-      "description": "Boot configuration committed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC0D",
       "value": 1158157,
-      "name": "SUCS_BOOT_NO_PENDING",
-      "description": "No pending mode changes at boot",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC0E",
       "value": 1158158,
-      "name": "SUCS_HANDLER_REGISTERED",
-      "description": "Trap handler registered successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC0F",
       "value": 1158159,
-      "name": "SUCS_HANDLER_UNREGISTERED",
-      "description": "Trap handler unregistered successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC10",
       "value": 1158160,
-      "name": "SUCS_DISPATCH_SUCCESS",
-      "description": "Trap dispatch invoked handler successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC11",
       "value": 1158161,
-      "name": "SUCS_SUES_SUCCESS",
-      "description": "SUES operation completed successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC12",
@@ -29584,263 +29584,263 @@
     {
       "hex": "0011AC20",
       "value": 1158176,
-      "name": "SUCS_IPC_SEND",
-      "description": "IPC message sent successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC21",
       "value": 1158177,
-      "name": "SUCS_IPC_RECV",
-      "description": "IPC message received successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC22",
       "value": 1158178,
-      "name": "SUCS_IPC_ACK",
-      "description": "IPC acknowledgement transmitted",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC23",
       "value": 1158179,
-      "name": "SUCS_IPC_NACK",
-      "description": "IPC negative acknowledgement (message rejected)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC24",
       "value": 1158180,
-      "name": "SUCS_IPC_TIMEOUT",
-      "description": "IPC exchange timed out (non-fatal, retryable)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC25",
       "value": 1158181,
-      "name": "SUCS_IPC_QUEUE_FULL",
-      "description": "IPC message queue at capacity",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC26",
       "value": 1158182,
-      "name": "SUCS_IPC_QUEUE_DRAINED",
-      "description": "IPC message queue fully drained",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC27",
       "value": 1158183,
-      "name": "SUCS_IPC_CHANNEL_OPEN",
-      "description": "IPC channel opened between subsystems",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC28",
       "value": 1158184,
-      "name": "SUCS_IPC_CHANNEL_CLOSE",
-      "description": "IPC channel closed cleanly",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC29",
       "value": 1158185,
-      "name": "SUCS_IPC_HANDSHAKE_COMPLETE",
-      "description": "IPC handshake protocol completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC2A",
       "value": 1158186,
-      "name": "SUCS_IPC_PROTOCOL_ERROR",
-      "description": "IPC protocol violation (non-fatal, recoverable)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC2B",
       "value": 1158187,
-      "name": "SUCS_IPC_BUFFER_RELEASED",
-      "description": "IPC shared buffer released",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC2C",
       "value": 1158188,
-      "name": "SUCS_IPC_BUFFER_ACQUIRED",
-      "description": "IPC shared buffer acquired",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC2D",
       "value": 1158189,
-      "name": "SUCS_IPCRIORITY_CHANGED",
-      "description": "IPC message priority escalated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC2E",
       "value": 1158190,
-      "name": "SUCS_IPC_BROADCAST",
-      "description": "IPC broadcast message dispatched",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC2F",
       "value": 1158191,
-      "name": "SUCS_IPC_MULTICAST",
-      "description": "IPC multicast message dispatched",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC30",
       "value": 1158192,
-      "name": "SUCS_CP_REGISTER",
-      "description": "Control plane entity registered",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC31",
       "value": 1158193,
-      "name": "SUCS_CP_DEREGISTER",
-      "description": "Control plane entity deregistered",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC32",
       "value": 1158194,
-      "name": "SUCS_CP_STATE_CHANGE",
-      "description": "Control plane state transition committed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC33",
       "value": 1158195,
-      "name": "SUCS_CP_QUERY",
-      "description": "Control plane state query serviced",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC34",
       "value": 1158196,
-      "name": "SUCS_CP_CONFIG_APPLY",
-      "description": "Control plane configuration applied",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC35",
       "value": 1158197,
-      "name": "SUCS_CP_CONFIG_REVERT",
-      "description": "Control plane configuration reverted",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC36",
       "value": 1158198,
-      "name": "SUCS_CP_SNAPSHOT",
-      "description": "Control plane state snapshot taken",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC37",
       "value": 1158199,
-      "name": "SUCS_CP_RESTORE",
-      "description": "Control plane state restored from snapshot",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC38",
       "value": 1158200,
-      "name": "SUCS_CP_HEARTBEAT",
-      "description": "Control plane heartbeat OK",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC39",
       "value": 1158201,
-      "name": "SUCS_CP_LIVENESS",
-      "description": "Control plane liveness probe responded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC3A",
       "value": 1158202,
-      "name": "SUCS_CP_WATCH_REGISTERED",
-      "description": "Control plane event watcher attached",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC3B",
       "value": 1158203,
-      "name": "SUCS_CP_WATCH_FIRED",
-      "description": "Control plane event watcher triggered",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC3C",
       "value": 1158204,
-      "name": "SUCS_CP_WATCH_DETACHED",
-      "description": "Control plane event watcher removed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC3D",
@@ -30160,245 +30160,245 @@
     {
       "hex": "0011AC60",
       "value": 1158240,
-      "name": "SUCS_BUS_ARBITRATION_WON",
-      "description": "Bus arbitration grant received",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC61",
       "value": 1158241,
-      "name": "SUCS_BUS_ARBITRATION_LOST",
-      "description": "Bus arbitration denied (retry expected)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC62",
       "value": 1158242,
-      "name": "SUCS_BUS_ACQUIRED",
-      "description": "Bus acquired for exclusive use",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC63",
       "value": 1158243,
-      "name": "SUCS_BUS_RELEASED",
-      "description": "Bus released after exclusive use",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC64",
       "value": 1158244,
-      "name": "SUCS_BUS_CONTENTION",
-      "description": "Bus contention detected (non-fatal)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC65",
       "value": 1158245,
-      "name": "SUCS_BUS_TIMEOUT",
-      "description": "Bus transaction timed out",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC66",
       "value": 1158246,
-      "name": "SUCS_BUS_ERROR",
-      "description": "Bus error on transaction",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC67",
       "value": 1158247,
-      "name": "SUCS_BUS_RESET",
-      "description": "Bus reset completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC68",
       "value": 1158248,
-      "name": "SUCS_BUS_READY",
-      "description": "Bus ready for transactions",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC69",
       "value": 1158249,
-      "name": "SUCS_BUS_IDLE",
-      "description": "Bus entered idle state",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC6A",
       "value": 1158250,
-      "name": "SUCS_BUS_ACTIVE",
-      "description": "Bus entered active state",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC6B",
       "value": 1158251,
-      "name": "SUCS_HW_HANDSHAKE_INIT",
-      "description": "Hardware handshake initiated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC6C",
       "value": 1158252,
-      "name": "SUCS_HW_HANDSHAKE_ACK",
-      "description": "Hardware handshake acknowledged",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC6D",
       "value": 1158253,
-      "name": "SUCS_HW_HANDSHAKE_COMPLETE",
-      "description": "Hardware handshake completed successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC6E",
       "value": 1158254,
-      "name": "SUCS_HW_HANDSHAKE_FAILED",
-      "description": "Hardware handshake failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC6F",
       "value": 1158255,
-      "name": "SUCS_HW_RESET",
-      "description": "Hardware reset completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC70",
       "value": 1158256,
-      "name": "SUCS_HW_POWER_ON",
-      "description": "Hardware power-on sequence completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC71",
       "value": 1158257,
-      "name": "SUCS_HW_POWER_OFF",
-      "description": "Hardware power-off sequence completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC72",
       "value": 1158258,
-      "name": "SUCS_HW_SLEEP",
-      "description": "Hardware entered sleep state",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC73",
       "value": 1158259,
-      "name": "SUCS_HW_WAKE",
-      "description": "Hardware woke from sleep",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC74",
       "value": 1158260,
-      "name": "SUCS_HW_SELF_TEST_PASS",
-      "description": "Hardware self-test passed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC75",
       "value": 1158261,
-      "name": "SUCS_HW_SELF_TEST_FAIL",
-      "description": "Hardware self-test failed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC76",
       "value": 1158262,
-      "name": "SUCS_HW_DMA_COMPLETE",
-      "description": "DMA transfer completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC77",
       "value": 1158263,
-      "name": "SUCS_HW_DMA_ABORT",
-      "description": "DMA transfer aborted",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC78",
       "value": 1158264,
-      "name": "SUCS_HW_IRQ_ATTACH",
-      "description": "IRQ handler attached",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC79",
       "value": 1158265,
-      "name": "SUCS_HW_IRQ_DETACH",
-      "description": "IRQ handler detached",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC7A",
       "value": 1158266,
-      "name": "SUCS_HW_IRQ_FIRE",
-      "description": "IRQ fired and handled",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AC7B",
@@ -30736,209 +30736,209 @@
     {
       "hex": "0011ACA0",
       "value": 1158304,
-      "name": "SUCS_DRV_ATTACHED",
-      "description": "Driver attached to device",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACA1",
       "value": 1158305,
-      "name": "SUCS_DRV_DETACHED",
-      "description": "Driver detached from device",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACA2",
       "value": 1158306,
-      "name": "SUCS_DRV_PROBED",
-      "description": "Driver probe completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACA3",
       "value": 1158307,
-      "name": "SUCS_DRV_REMOVED",
-      "description": "Driver removed from device",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACA4",
       "value": 1158308,
-      "name": "SUCS_DRV_SUSPENDED",
-      "description": "Driver suspended",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACA5",
       "value": 1158309,
-      "name": "SUCS_DRV_RESUMED",
-      "description": "Driver resumed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACA6",
       "value": 1158310,
-      "name": "SUCS_DRV_BINDING",
-      "description": "Driver binding to device",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACA7",
       "value": 1158311,
-      "name": "SUCS_DRV_UNBINDING",
-      "description": "Driver unbinding from device",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACA8",
       "value": 1158312,
-      "name": "SUCS_DRV_CONFIG_LOADED",
-      "description": "Driver configuration loaded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACA9",
       "value": 1158313,
-      "name": "SUCS_DRV_CONFIG_UNLOADED",
-      "description": "Driver configuration unloaded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACAA",
       "value": 1158314,
-      "name": "SUCS_PWR_STATE_CHANGE",
-      "description": "Power state transition committed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACAB",
       "value": 1158315,
-      "name": "SUCS_PWR_SLEEP_ENTER",
-      "description": "Entering sleep power state",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACAC",
       "value": 1158316,
-      "name": "SUCS_PWR_SLEEP_EXIT",
-      "description": "Exiting sleep power state",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACAD",
       "value": 1158317,
-      "name": "SUCS_PWR_SUSPEND_ENTER",
-      "description": "Entering suspend power state",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACAE",
       "value": 1158318,
-      "name": "SUCS_PWR_SUSPEND_EXIT",
-      "description": "Exiting suspend power state",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACAF",
       "value": 1158319,
-      "name": "SUCS_PWR_HIBERNATE_ENTER",
-      "description": "Entering hibernate power state",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACB0",
       "value": 1158320,
-      "name": "SUCS_PWR_HIBERNATE_EXIT",
-      "description": "Exiting hibernate power state",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACB1",
       "value": 1158321,
-      "name": "SUCS_PWR_SHUTDOWN",
-      "description": "Shutdown power state entered",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACB2",
       "value": 1158322,
-      "name": "SUCS_PWR_REBOOT",
-      "description": "Reboot power state entered",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACB3",
       "value": 1158323,
-      "name": "SUCS_PWR_THERMAL_OK",
-      "description": "Thermal state within limits",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACB4",
       "value": 1158324,
-      "name": "SUCS_PWR_THERMAL_THROTTLE",
-      "description": "Thermal throttling activated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACB5",
       "value": 1158325,
-      "name": "SUCS_PWR_VOLTAGE_OK",
-      "description": "Voltage rails within tolerance",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACB6",
       "value": 1158326,
-      "name": "SUCS_PWR_CURRENT_OK",
-      "description": "Current draw within limits",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACB7",
@@ -31312,146 +31312,146 @@
     {
       "hex": "0011ACE0",
       "value": 1158368,
-      "name": "SUCS_STREAM_OPEN",
-      "description": "Data stream opened",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACE1",
       "value": 1158369,
-      "name": "SUCS_STREAM_CLOSE",
-      "description": "Data stream closed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACE2",
       "value": 1158370,
-      "name": "SUCS_STREAM_FLUSH",
-      "description": "Data stream flushed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACE3",
       "value": 1158371,
-      "name": "SUCS_STREAM_RESET",
-      "description": "Data stream reset",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACE4",
       "value": 1158372,
-      "name": "SUCS_STREAM_PAUSE",
-      "description": "Data stream paused",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACE5",
       "value": 1158373,
-      "name": "SUCS_STREAM_RESUME",
-      "description": "Data stream resumed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACE6",
       "value": 1158374,
-      "name": "SUCS_STREAM_BACKPRESSURE",
-      "description": "Data stream backpressure applied",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACE7",
       "value": 1158375,
-      "name": "SUCS_STREAM_BACKPRESSURE_LIFTED",
-      "description": "Data stream backpressure lifted",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACE8",
       "value": 1158376,
-      "name": "SUCS_STREAM_EOF",
-      "description": "Data stream end-of-stream",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACE9",
       "value": 1158377,
-      "name": "SUCS_PROTO_NEGOTIATE",
-      "description": "Protocol version negotiated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACEA",
       "value": 1158378,
-      "name": "SUCS_PROTO_UPGRADE",
-      "description": "Protocol upgraded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACEB",
       "value": 1158379,
-      "name": "SUCS_PROTO_DOWNGRADE",
-      "description": "Protocol downgraded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACEC",
       "value": 1158380,
-      "name": "SUCS_PROTO_HEARTBEAT",
-      "description": "Protocol heartbeat sent",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACED",
       "value": 1158381,
-      "name": "SUCS_PROTO_KEEPALIVE",
-      "description": "Protocol keepalive acknowledged",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACEE",
       "value": 1158382,
-      "name": "SUCS_PROTO_WINDOW_UPDATE",
-      "description": "Protocol flow control window updated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACEF",
       "value": 1158383,
-      "name": "SUCS_PROTO_RATE_LIMIT",
-      "description": "Protocol rate limit applied",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011ACF0",
@@ -31600,362 +31600,362 @@
     {
       "hex": "0011AD00",
       "value": 1158400,
-      "name": "OWFS_PROBE_OK",
-      "description": "OWFS superblock validated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD01",
       "value": 1158401,
-      "name": "OWFS_MOUNT_OK",
-      "description": "OWFS volume mounted (CLEAN -> DIRTY)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD02",
       "value": 1158402,
-      "name": "OWFS_UNMOUNT_OK",
-      "description": "OWFS volume cleanly unmounted (DIRTY -> CLEAN)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD03",
       "value": 1158403,
-      "name": "OWFS_FORMAT_OK",
-      "description": "OWFS volume formatted successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD04",
       "value": 1158404,
-      "name": "OWFS_SYNC_OK",
-      "description": "OWFS sync committed (Fletcher-64, CLEAN)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD05",
       "value": 1158405,
-      "name": "OWFS_CONSISTENCY_OK",
-      "description": "OWFS consistency check passed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD06",
       "value": 1158406,
-      "name": "OWFS_RECOVERY_OK",
-      "description": "OWFS dirty state recovered via consistency check",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD07",
       "value": 1158407,
-      "name": "OWFS_ENUM_OK",
-      "description": "OWFS catalog enumeration succeeded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD08",
       "value": 1158408,
-      "name": "OWFS_FILE_LOAD_OK",
-      "description": "OWFS file loaded to destination address",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD09",
       "value": 1158409,
-      "name": "OWFS_FILE_READ_OK",
-      "description": "OWFS file read completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD0A",
       "value": 1158410,
-      "name": "OWFS_FILE_WRITE_OK",
-      "description": "OWFS file write completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD0B",
       "value": 1158411,
-      "name": "OWFS_INODE_ALLOC_OK",
-      "description": "OWFS inode allocated successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD0C",
       "value": 1158412,
-      "name": "OWFS_INODE_FREE_OK",
-      "description": "OWFS inode freed successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD0D",
       "value": 1158413,
-      "name": "OWFS_CATALOG_INSERT_OK",
-      "description": "OWFS catalog entry inserted",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD0E",
       "value": 1158414,
-      "name": "OWFS_CATALOG_REMOVE_OK",
-      "description": "OWFS catalog entry removed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD0F",
       "value": 1158415,
-      "name": "OWFS_CATALOG_LOOKUP_OK",
-      "description": "OWFS catalog entry found",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD10",
       "value": 1158416,
-      "name": "OWFS_CRYPTO_KEY_OK",
-      "description": "OWFS ChaCha20 key installed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD11",
       "value": 1158417,
-      "name": "OWFS_CRYPTO_PURGE_OK",
-      "description": "OWFS key slot sanitized (3-pass wipe)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD12",
       "value": 1158418,
-      "name": "OWFS_CRYPTO_ROUNDTRIP_OK",
-      "description": "OWFS encryption round-trip verified",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD13",
       "value": 1158419,
-      "name": "USFS_PROBE_OK",
-      "description": "USFS superblock validated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD14",
       "value": 1158420,
-      "name": "USFS_MOUNT_OK",
-      "description": "USFS volume mounted (CLEAN -> DIRTY)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD15",
       "value": 1158421,
-      "name": "USFS_UNMOUNT_OK",
-      "description": "USFS volume cleanly unmounted",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD16",
       "value": 1158422,
-      "name": "USFS_FORMAT_OK",
-      "description": "USFS volume formatted successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD17",
       "value": 1158423,
-      "name": "USFS_SYNC_OK",
-      "description": "USFS sync committed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD18",
       "value": 1158424,
-      "name": "USFS_CONSISTENCY_OK",
-      "description": "USFS consistency check passed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD19",
       "value": 1158425,
-      "name": "USFS_RECOVERY_OK",
-      "description": "USFS dirty state recovered",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD1A",
       "value": 1158426,
-      "name": "USFS_FILE_READ_OK",
-      "description": "USFS file read completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD1B",
       "value": 1158427,
-      "name": "USFS_FILE_WRITE_OK",
-      "description": "USFS file write completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD1C",
       "value": 1158428,
-      "name": "USFS_ENTRY_ALLOC_OK",
-      "description": "USFS entry allocated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD1D",
       "value": 1158429,
-      "name": "USFS_ENTRY_FREE_OK",
-      "description": "USFS entry freed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD1E",
       "value": 1158430,
-      "name": "USFS_ENTRY_LOOKUP_OK",
-      "description": "USFS entry found",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD1F",
       "value": 1158431,
-      "name": "USFS_CRYPTO_KEY_OK",
-      "description": "USFS ChaCha20 key installed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD20",
       "value": 1158432,
-      "name": "USFS_CRYPTO_PURGE_OK",
-      "description": "USFS key slot sanitized",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD21",
       "value": 1158433,
-      "name": "USFS_CRYPTO_ROUNDTRIP_OK",
-      "description": "USFS encryption round-trip verified",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD22",
       "value": 1158434,
-      "name": "MBL_MENU_SHOWN",
-      "description": "ModBoot: boot menu displayed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD23",
       "value": 1158435,
-      "name": "MBL_ENTRY_SELECTED",
-      "description": "ModBoot: user selected boot entry",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD24",
       "value": 1158436,
-      "name": "MBL_KERNEL_LOADED",
-      "description": "ModBoot: kernel loaded successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD25",
       "value": 1158437,
-      "name": "MBL_GOP_FOUND",
-      "description": "ModBoot: GOP framebuffer located",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD26",
       "value": 1158438,
-      "name": "MBL_BLOCK_IO_FOUND",
-      "description": "ModBoot: Block I/O protocol located",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD27",
       "value": 1158439,
-      "name": "MBL_MEMORY_MAPPED",
-      "description": "ModBoot: ExitBootServices succeeded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD28",
@@ -32176,200 +32176,200 @@
     {
       "hex": "0011AD40",
       "value": 1158464,
-      "name": "STORAGE_DEVICE_ATTACHED",
-      "description": "Storage device attached",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD41",
       "value": 1158465,
-      "name": "STORAGE_DEVICE_DETACHED",
-      "description": "Storage device detached",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD42",
       "value": 1158466,
-      "name": "STORAGE_DEVICE_READY",
-      "description": "Storage device ready for I/O",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD43",
       "value": 1158467,
-      "name": "STORAGE_DEVICE_BUSY",
-      "description": "Storage device busy",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD44",
       "value": 1158468,
-      "name": "STORAGE_QUEUE_DRAIN",
-      "description": "Storage I/O queue draining",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD45",
       "value": 1158469,
-      "name": "STORAGE_QUEUE_FLUSH",
-      "description": "Storage I/O queue flushed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD46",
       "value": 1158470,
-      "name": "STORAGE_CACHE_HIT",
-      "description": "Storage cache hit",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD47",
       "value": 1158471,
-      "name": "STORAGE_CACHE_MISS",
-      "description": "Storage cache miss",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD48",
       "value": 1158472,
-      "name": "STORAGE_CACHE_WRITEBACK",
-      "description": "Storage cache writeback completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD49",
       "value": 1158473,
-      "name": "STORAGE_CACHE_INVALIDATE",
-      "description": "Storage cache invalidated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD4A",
       "value": 1158474,
-      "name": "STORAGE_CACHE_FLUSH",
-      "description": "Storage cache fully flushed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD4B",
       "value": 1158475,
-      "name": "STORAGE_WEAR_LEVEL_OK",
-      "description": "Storage wear level within limits",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD4C",
       "value": 1158476,
-      "name": "STORAGE_WEAR_LEVEL_WARN",
-      "description": "Storage wear level approaching threshold",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD4D",
       "value": 1158477,
-      "name": "STORAGE_WEAR_LEVEL_CRITICAL",
-      "description": "Storage wear level critical",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD4E",
       "value": 1158478,
-      "name": "STORAGE_TRIM_OK",
-      "description": "Storage TRIM/discard completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD4F",
       "value": 1158479,
-      "name": "STORAGE_HEALTH_OK",
-      "description": "Storage SMART/health check passed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD50",
       "value": 1158480,
-      "name": "STORAGE_HEALTH_DEGRADED",
-      "description": "Storage health degraded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD51",
       "value": 1158481,
-      "name": "STORAGE_BAD_BLOCK_REMAPPED",
-      "description": "Storage bad block remapped",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD52",
       "value": 1158482,
-      "name": "STORAGE_ERASE_COMPLETE",
-      "description": "Storage block erase completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD53",
       "value": 1158483,
-      "name": "STORAGE_WRITE_COMPLETE",
-      "description": "Storage write completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD54",
       "value": 1158484,
-      "name": "STORAGE_READ_COMPLETE",
-      "description": "Storage read completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD55",
       "value": 1158485,
-      "name": "STORAGE_VERIFY_OK",
-      "description": "Storage verify/read-back matched",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD56",
@@ -32752,146 +32752,146 @@
     {
       "hex": "0011AD80",
       "value": 1158528,
-      "name": "FS_MOUNT_CTRL",
-      "description": "Filesystem mount control signal",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD81",
       "value": 1158529,
-      "name": "FS_UNMOUNT_CTRL",
-      "description": "Filesystem unmount control signal",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD82",
       "value": 1158530,
-      "name": "FS_SYNC_CTRL",
-      "description": "Filesystem sync control signal",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD83",
       "value": 1158531,
-      "name": "FS_FORMAT_CTRL",
-      "description": "Filesystem format control signal",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD84",
       "value": 1158532,
-      "name": "FS_CHECK_CTRL",
-      "description": "Filesystem consistency check control signal",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD85",
       "value": 1158533,
-      "name": "FS_REPAIR_CTRL",
-      "description": "Filesystem repair control signal",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD86",
       "value": 1158534,
-      "name": "FS_SNAPSHOT_CTRL",
-      "description": "Filesystem snapshot control signal",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD87",
       "value": 1158535,
-      "name": "FS_ROLLBACK_CTRL",
-      "description": "Filesystem rollback control signal",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD88",
       "value": 1158536,
-      "name": "FS_LOCK_ACQUIRED",
-      "description": "Filesystem lock acquired",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD89",
       "value": 1158537,
-      "name": "FS_LOCK_RELEASED",
-      "description": "Filesystem lock released",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD8A",
       "value": 1158538,
-      "name": "FS_LOCK_CONTENTION",
-      "description": "Filesystem lock contention",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD8B",
       "value": 1158539,
-      "name": "FS_QUOTA_OK",
-      "description": "Filesystem quota within limits",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD8C",
       "value": 1158540,
-      "name": "FS_QUOTA_EXCEEDED",
-      "description": "Filesystem quota exceeded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD8D",
       "value": 1158541,
-      "name": "FS_INODE_TABLE_SYNC",
-      "description": "Inode table synchronization completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD8E",
       "value": 1158542,
-      "name": "FS_BITMAP_SYNC",
-      "description": "Bitmap synchronization completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD8F",
       "value": 1158543,
-      "name": "FS_JOURNAL_COMMIT",
-      "description": "Filesystem journal committed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "comcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AD90",
@@ -33904,119 +33904,119 @@
     {
       "hex": "0011AE00",
       "value": 1158656,
-      "name": "SUES_ERR_INVALID_BYTE",
-      "description": "Invalid byte sequence in SUTF stream",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE01",
       "value": 1158657,
-      "name": "SUES_ERR_BUFFER_TOO_SMALL",
-      "description": "Destination or source buffer too small",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE02",
       "value": 1158658,
-      "name": "SUES_ERR_OUT_OF_BOUNDS",
-      "description": "Codepoint exceeds max addressable range",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE03",
       "value": 1158659,
-      "name": "SUES_ERR_INVALID_CODEPOINT",
-      "description": "Codepoint is sentinel or trap range",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE04",
       "value": 1158660,
-      "name": "SUTF_NULL_OUTPUT",
-      "description": "NULL output pointer in SUTF transport",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE05",
       "value": 1158661,
-      "name": "SUTF_NULL_INPUT",
-      "description": "NULL input pointer or zero buffer size",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE06",
       "value": 1158662,
-      "name": "SUTF_TRUNCATED_SEQUENCE",
-      "description": "Truncated multi-byte SUTF sequence",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE07",
       "value": 1158663,
-      "name": "SUTF_VALUE_TOO_LARGE",
-      "description": "Decoded value exceeds encoding width",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE08",
       "value": 1158664,
-      "name": "VSUTF_NULL_POINTER",
-      "description": "NULL pointer in vSUTF transport",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE09",
       "value": 1158665,
-      "name": "VSUTF_BUFFER_TOO_SMALL",
-      "description": "vSUTF buffer insufficient",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE0A",
       "value": 1158666,
-      "name": "ESUTF_NULL_POINTER",
-      "description": "NULL pointer in e-SUTF transport",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE0B",
       "value": 1158667,
-      "name": "ESUTF_BUFFER_TOO_SMALL",
-      "description": "e-SUTF buffer insufficient",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE0C",
       "value": 1158668,
-      "name": "ESUTF_IPC_TOO_SMALL",
-      "description": "e-SUTF IPC frame buffer < 6 bytes",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE0D",
@@ -34192,200 +34192,200 @@
     {
       "hex": "0011AE20",
       "value": 1158688,
-      "name": "SUCS_RECOVERY_OK",
-      "description": "Transient error successfully recovered",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE21",
       "value": 1158689,
-      "name": "SUCS_PAGE_RECOVERED",
-      "description": "Memory page migrated/recovered successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE22",
       "value": 1158690,
-      "name": "SUCS_PAGE_REMAP_OK",
-      "description": "Faulty page remapped to healthy frame",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE23",
       "value": 1158691,
-      "name": "SUCS_PAGE_ZEROED",
-      "description": "Page zeroed and returned to free pool",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE24",
       "value": 1158692,
-      "name": "SUCS_CACHE_LINE_FLUSHED",
-      "description": "Dirty cache line written back and invalidated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE25",
       "value": 1158693,
-      "name": "SUCS_CACHE_RECONCILED",
-      "description": "Cache coherency restored across cores",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE26",
       "value": 1158694,
-      "name": "SUCS_CACHE_INVALIDATED",
-      "description": "Stale cache lines invalidated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE27",
       "value": 1158695,
-      "name": "SUCS_CACHE_WB_COMPLETE",
-      "description": "Write-back of dirty cache completed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE28",
       "value": 1158696,
-      "name": "SUCS_CACHE_COHERENCY_OK",
-      "description": "Cache coherency protocol satisfied",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE29",
       "value": 1158697,
-      "name": "SUCS_THREAD_RESPAWNED",
-      "description": "Faulting thread respawned successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE2A",
       "value": 1158698,
-      "name": "SUCS_THREAD_RETRY_OK",
-      "description": "Thread operation retried and succeeded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE2B",
       "value": 1158699,
-      "name": "SUCS_DEADLOCK_BROKE",
-      "description": "Deadlock detected and broken",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE2C",
       "value": 1158700,
-      "name": "SUCS_DEADLOCK_TIMEOUT",
-      "description": "Deadlock timeout expired, proceeding",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE2D",
       "value": 1158701,
-      "name": "SUCS_FAULT_CONTAINED",
-      "description": "Hardware fault contained to fault domain",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE2E",
       "value": 1158702,
-      "name": "SUCS_FAULT_ISOLATED",
-      "description": "Faulting component isolated from healthy system",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE2F",
       "value": 1158703,
-      "name": "SUCS_FAULT_DEGRADED",
-      "description": "Operating in degraded mode after fault",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE30",
       "value": 1158704,
-      "name": "SUCS_FAULT_RESTORED",
-      "description": "System restored from degraded mode",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE31",
       "value": 1158705,
-      "name": "SUCS_MICRO_RETRY_OK",
-      "description": "Micro-retry of transient operation succeeded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE32",
       "value": 1158706,
-      "name": "SUCS_FALLBACK_OK",
-      "description": "Fallback path executed successfully",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE33",
       "value": 1158707,
-      "name": "SUCS_FAILOVER_OK",
-      "description": "Failover to redundant component succeeded",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE34",
       "value": 1158708,
-      "name": "SUCS_REDUNDANCY_ENGAGED",
-      "description": "Redundant component activated",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE35",
       "value": 1158709,
-      "name": "SUCS_REDUNDANCY_RETIRE",
-      "description": "Primary component restored, redundant retired",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE36",
@@ -34480,128 +34480,128 @@
     {
       "hex": "0011AE40",
       "value": 1158720,
-      "name": "OWFS_ERR_IO",
-      "description": "OWFS: generic I/O failure",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE41",
       "value": 1158721,
-      "name": "OWFS_ERR_NOT_FOUND",
-      "description": "OWFS: inode not found by index or name",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE42",
       "value": 1158722,
-      "name": "OWFS_ERR_ALREADY_EXISTS",
-      "description": "OWFS: name already exists in catalog",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE43",
       "value": 1158723,
-      "name": "OWFS_ERR_NAME_TOO_LONG",
-      "description": "OWFS: name length >= 128 bytes",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE44",
       "value": 1158724,
-      "name": "OWFS_ERR_NOT_CATALOG",
-      "description": "OWFS: inode is not a catalog type",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE45",
       "value": 1158725,
-      "name": "OWFS_ERR_NOT_FILE",
-      "description": "OWFS: inode is not a file type",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE46",
       "value": 1158726,
-      "name": "OWFS_ERR_BUFFER_TOO_SMALL",
-      "description": "OWFS: write exceeds max logical block limit",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE47",
       "value": 1158727,
-      "name": "OWFS_ERR_INVALID_PARAM",
-      "description": "OWFS: NULL pointer, bad type, or validation failure",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE48",
       "value": 1158728,
-      "name": "OWFS_ERR_ACCESS_DENIED",
-      "description": "OWFS: rwx permission denied",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE49",
       "value": 1158729,
-      "name": "OWFS_ERR_KEY_INVALID",
-      "description": "OWFS: encryption key wrong length",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE4A",
       "value": 1158730,
-      "name": "OWFS_ERR_EMPTY_INODE",
-      "description": "OWFS: inode is empty (entry_type == 0)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE4B",
       "value": 1158731,
-      "name": "OWFS_ERR_INODE_OUT_OF_RANGE",
-      "description": "OWFS: inode index >= total_inodes",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE4C",
       "value": 1158732,
-      "name": "OWFS_ERR_BLOCKMAP_INVALID",
-      "description": "OWFS: block index invalid or zero",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE4D",
       "value": 1158733,
-      "name": "OWFS_ERR_SUBST_NONASCII",
-      "description": "OWFS: SUTF-8 non-ASCII substituted with '?'",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE4E",
@@ -34768,92 +34768,92 @@
     {
       "hex": "0011AE60",
       "value": 1158752,
-      "name": "OWFS_RECOVERY_CACHE_FLUSH",
-      "description": "OWFS: dirty cache flushed to disk",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE61",
       "value": 1158753,
-      "name": "OWFS_RECOVERY_BITMAP_REBUILD",
-      "description": "OWFS: bitmap rebuilt from entry scan",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE62",
       "value": 1158754,
-      "name": "OWFS_RECOVERY_INODE_REPAIR",
-      "description": "OWFS: inode CRC repaired",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE63",
       "value": 1158755,
-      "name": "OWFS_RECOVERY_CATALOG_REPAIR",
-      "description": "OWFS: catalog entry CRC repaired",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE64",
       "value": 1158756,
-      "name": "OWFS_RECOVERY_BLOCK_REMAP",
-      "description": "OWFS: bad block remapped",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE65",
       "value": 1158757,
-      "name": "OWFS_RECOVERY_SUPERBLOCK_REPAIR",
-      "description": "OWFS: superblock repaired from backup",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE66",
       "value": 1158758,
-      "name": "OWFS_RECOVERY_WRITEBACK",
-      "description": "OWFS: pending writes flushed to disk",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE67",
       "value": 1158759,
-      "name": "OWFS_RECOVERY_JOURNAL_REPLAY",
-      "description": "OWFS: journal entries replayed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE68",
       "value": 1158760,
-      "name": "OWFS_RECOVERY_INODE_FREE",
-      "description": "OWFS: orphan inode freed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE69",
       "value": 1158761,
-      "name": "OWFS_RECOVERY_CATALOG_TRIM",
-      "description": "OWFS: stale catalog entries trimmed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE6A",
@@ -35056,83 +35056,83 @@
     {
       "hex": "0011AE80",
       "value": 1158784,
-      "name": "USFS_ERR_IO",
-      "description": "USFS: generic I/O failure",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE81",
       "value": 1158785,
-      "name": "USFS_ERR_NOT_FOUND",
-      "description": "USFS: entry not found by index or name",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE82",
       "value": 1158786,
-      "name": "USFS_ERR_ALREADY_EXISTS",
-      "description": "USFS: name already exists",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE83",
       "value": 1158787,
-      "name": "USFS_ERR_NAME_TOO_LONG",
-      "description": "USFS: name length >= 128 bytes",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE84",
       "value": 1158788,
-      "name": "USFS_ERR_NOT_CATALOG",
-      "description": "USFS: entry is not a catalog type",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE85",
       "value": 1158789,
-      "name": "USFS_ERR_NOT_FILE",
-      "description": "USFS: entry is not a file type",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE86",
       "value": 1158790,
-      "name": "USFS_ERR_INVALID_PARAM",
-      "description": "USFS: NULL pointer or bad argument",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE87",
       "value": 1158791,
-      "name": "USFS_ERR_ACCESS_DENIED",
-      "description": "USFS: rwx permission denied",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE88",
       "value": 1158792,
-      "name": "USFS_ERR_KEY_INVALID",
-      "description": "USFS: encryption key wrong length",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AE89",
@@ -35344,92 +35344,92 @@
     {
       "hex": "0011AEA0",
       "value": 1158816,
-      "name": "USFS_RECOVERY_CACHE_FLUSH",
-      "description": "USFS: dirty cache flushed to disk",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEA1",
       "value": 1158817,
-      "name": "USFS_RECOVERY_BITMAP_REBUILD",
-      "description": "USFS: bitmap rebuilt from entry scan",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEA2",
       "value": 1158818,
-      "name": "USFS_RECOVERY_ENTRY_REPAIR",
-      "description": "USFS: entry CRC repaired",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEA3",
       "value": 1158819,
-      "name": "USFS_RECOVERY_SIGNATURE_REPAIR",
-      "description": "USFS: bitmap signature repaired",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEA4",
       "value": 1158820,
-      "name": "USFS_RECOVERY_BLOCK_REMAP",
-      "description": "USFS: bad block remapped",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEA5",
       "value": 1158821,
-      "name": "USFS_RECOVERY_SUPERBLOCK_REPAIR",
-      "description": "USFS: superblock repaired from backup",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEA6",
       "value": 1158822,
-      "name": "USFS_RECOVERY_WRITEBACK",
-      "description": "USFS: pending writes flushed to disk",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEA7",
       "value": 1158823,
-      "name": "USFS_RECOVERY_JOURNAL_REPLAY",
-      "description": "USFS: journal entries replayed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEA8",
       "value": 1158824,
-      "name": "USFS_RECOVERY_ENTRY_FREE",
-      "description": "USFS: orphan entry freed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEA9",
       "value": 1158825,
-      "name": "USFS_RECOVERY_ENTRY_TABLE_TRIM",
-      "description": "USFS: stale entry table entries trimmed",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEAA",
@@ -35632,38 +35632,38 @@
     {
       "hex": "0011AEC0",
       "value": 1158848,
-      "name": "HTL_ERR_INVALID_PARAM",
-      "description": "HTL: NULL pointer or bad argument",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEC1",
       "value": 1158849,
-      "name": "HTL_ERR_INVALID_BLOCK",
-      "description": "HTL: block number out of range",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEC2",
       "value": 1158850,
-      "name": "HTL_ERR_NOT_READY",
-      "description": "HTL: device or resource not ready",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEC3",
       "value": 1158851,
-      "name": "HTL_ERR_WRITE_PROTECT",
-      "description": "HTL: hardware write protection active",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEC4",
@@ -35920,101 +35920,101 @@
     {
       "hex": "0011AEE0",
       "value": 1158880,
-      "name": "MBL_GOP_NULL",
-      "description": "ModBoot: GOP pointer NULL (no framebuffer)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEE1",
       "value": 1158881,
-      "name": "MBL_BLOCK_IO_NULL",
-      "description": "ModBoot: Block I/O pointer NULL (no disk)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEE2",
       "value": 1158882,
-      "name": "MBL_CONIN_NULL",
-      "description": "ModBoot: ConIn pointer NULL (no keyboard)",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEE3",
       "value": 1158883,
-      "name": "MBL_RT_NULL",
-      "description": "ModBoot: RuntimeServices pointer NULL",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEE4",
       "value": 1158884,
-      "name": "MBL_OWMKFS_FULL",
-      "description": "ModBoot: volume full during mkfs",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEE5",
       "value": 1158885,
-      "name": "MBL_OWMKFS_NO_INODES",
-      "description": "ModBoot: no free inodes during mkfs",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEE6",
       "value": 1158886,
-      "name": "MBL_OWMKFS_TOO_SMALL",
-      "description": "ModBoot: partition too small",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEE7",
       "value": 1158887,
-      "name": "MBL_MENU_REBOOT",
-      "description": "ModBoot: user pressed Esc/R to reboot",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEE8",
       "value": 1158888,
-      "name": "MBL_MENU_SHUTDOWN",
-      "description": "ModBoot: user pressed S to shutdown",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEE9",
       "value": 1158889,
-      "name": "MBL_OWMKFS_REBOOT_STAGED",
-      "description": "ModBoot: mode switch staged",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEEA",
       "value": 1158890,
-      "name": "MBL_PLUGIN_REBOOT_STAGED",
-      "description": "ModBoot: plugin staged for reboot",
+      "name": "UNASSIGNED",
+      "description": "",
       "category": "softcode",
       "subcategory": "",
-      "assigned": true
+      "assigned": false
     },
     {
       "hex": "0011AEEB",
@@ -36209,1065 +36209,24 @@
   "stats": {
     "bancode": {
       "total_slots": 2048,
-      "assigned": 202,
-      "unassigned": 1846
+      "assigned": 0,
+      "unassigned": 2048
     },
     "warncode": {
       "total_slots": 1024,
-      "assigned": 40,
-      "unassigned": 984
+      "assigned": 0,
+      "unassigned": 1024
     },
     "comcode": {
       "total_slots": 512,
-      "assigned": 191,
-      "unassigned": 321
+      "assigned": 0,
+      "unassigned": 512
     },
     "softcode": {
       "total_slots": 256,
-      "assigned": 93,
-      "unassigned": 163
+      "assigned": 0,
+      "unassigned": 256
     }
   },
-  "duplicates": [
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A781"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A782"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A783"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A784"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A785"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A786"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A787"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A788"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A789"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A78A"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A78B"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A78C"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A78D"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A78E"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A78F"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A790"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A791"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A792"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A793"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A794"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A795"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A796"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A797"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A798"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A799"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A79A"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A79B"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A79C"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A79D"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A79E"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A79F"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7A0"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7A1"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7A2"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7A3"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7A4"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7A5"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7A6"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7A7"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7A8"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7A9"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7AA"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7AB"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7AC"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7AD"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7AE"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7AF"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7B0"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7B1"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7B2"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7B3"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7B4"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7B5"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7B6"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7B7"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7B8"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7B9"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7BA"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7BB"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7BC"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7BD"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7BE"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7BF"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7C0"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7C1"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7C2"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7C3"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7C4"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7C5"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7C6"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7C7"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7C8"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7C9"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7CA"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7CB"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7CC"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7CD"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7CE"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7CF"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7D0"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7D1"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7D2"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7D3"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7D4"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7D5"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7D6"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7D7"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7D8"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7D9"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7DA"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7DB"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7DC"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7DD"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7DE"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7DF"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7E0"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7E1"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7E2"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7E3"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7E4"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7E5"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7E6"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7E7"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7E8"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7E9"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7EA"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7EB"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7EC"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7ED"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7EE"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7EF"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7F0"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7F1"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7F2"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7F3"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7F4"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7F5"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7F6"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7F7"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7F8"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7F9"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7FA"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7FB"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7FC"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7FD"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7FE"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "RESERVED_UNMAPPED",
-      "hexes": [
-        "0011A780",
-        "0011A7FF"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "MBL_OWMKFS_FULL",
-      "hexes": [
-        "0011A603",
-        "0011AEE4"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "MBL_OWMKFS_NO_INODES",
-      "hexes": [
-        "0011A604",
-        "0011AEE5"
-      ]
-    },
-    {
-      "type": "duplicate_name",
-      "name": "MBL_OWMKFS_TOO_SMALL",
-      "hexes": [
-        "0011A605",
-        "0011AEE6"
-      ]
-    }
-  ]
+  "duplicates": []
 }

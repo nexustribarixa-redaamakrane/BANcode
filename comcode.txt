@@ -14,24 +14,24 @@
 #   0011ADC0-0011ADFF  Reserved
 #
 # --- Slot list ---
-SLOT    0011AC00   SUCS_SWITCH_SUCCESS            Mode alteration committed successfully
-SLOT    0011AC01   SUCS_SWITCH_REBOOT_REQUIRED    Mode switch staged; reboot required
-SLOT    0011AC02   SUCS_PLUGIN_OK                 Plugin operation succeeded
-SLOT    0011AC03   SUCS_PLUGIN_MOUNTED            Plugin mounted and registered successfully
-SLOT    0011AC04   SUCS_PLUGIN_STAGED             Plugin staged for next boot
-SLOT    0011AC05   SUCS_PLUGIN_COMMITTED          Plugin committed on boot (mounted or quarantined)
-SLOT    0011AC06   SUCS_PLUGIN_UNMOUNTED          Plugin unmounted successfully
-SLOT    0011AC07   SUCS_PLUGIN_CHECKSUM_OK        Plugin CRC32c/Fletcher-64 gate passed
-SLOT    0011AC08   SUCS_PLUGIN_RANGE_OK           Plugin range gate passed
-SLOT    0011AC09   SUCS_PLUGIN_COLLISION_OK       Plugin collision gate passed
-SLOT    0011AC0A   SUCS_PLUGIN_MOUNT_OK           Plugin mount gate passed
-SLOT    0011AC0B   SUCS_PLUGIN_CAPACITY_OK        Plugin capacity gate passed
-SLOT    0011AC0C   SUCS_BOOT_COMMIT               Boot configuration committed
-SLOT    0011AC0D   SUCS_BOOT_NO_PENDING           No pending mode changes at boot
-SLOT    0011AC0E   SUCS_HANDLER_REGISTERED        Trap handler registered successfully
-SLOT    0011AC0F   SUCS_HANDLER_UNREGISTERED      Trap handler unregistered successfully
-SLOT    0011AC10   SUCS_DISPATCH_SUCCESS          Trap dispatch invoked handler successfully
-SLOT    0011AC11   SUCS_SUES_SUCCESS              SUES operation completed successfully
+SLOT    0011AC00   UNASSIGNED
+SLOT    0011AC01   UNASSIGNED
+SLOT    0011AC02   UNASSIGNED
+SLOT    0011AC03   UNASSIGNED
+SLOT    0011AC04   UNASSIGNED
+SLOT    0011AC05   UNASSIGNED
+SLOT    0011AC06   UNASSIGNED
+SLOT    0011AC07   UNASSIGNED
+SLOT    0011AC08   UNASSIGNED
+SLOT    0011AC09   UNASSIGNED
+SLOT    0011AC0A   UNASSIGNED
+SLOT    0011AC0B   UNASSIGNED
+SLOT    0011AC0C   UNASSIGNED
+SLOT    0011AC0D   UNASSIGNED
+SLOT    0011AC0E   UNASSIGNED
+SLOT    0011AC0F   UNASSIGNED
+SLOT    0011AC10   UNASSIGNED
+SLOT    0011AC11   UNASSIGNED
 SLOT    0011AC12   UNASSIGNED
 SLOT    0011AC13   UNASSIGNED
 SLOT    0011AC14   UNASSIGNED
@@ -46,35 +46,35 @@ SLOT    0011AC1C   UNASSIGNED
 SLOT    0011AC1D   UNASSIGNED
 SLOT    0011AC1E   UNASSIGNED
 SLOT    0011AC1F   UNASSIGNED
-SLOT    0011AC20   SUCS_IPC_SEND                  IPC message sent successfully
-SLOT    0011AC21   SUCS_IPC_RECV                  IPC message received successfully
-SLOT    0011AC22   SUCS_IPC_ACK                   IPC acknowledgement transmitted
-SLOT    0011AC23   SUCS_IPC_NACK                  IPC negative acknowledgement (message rejected)
-SLOT    0011AC24   SUCS_IPC_TIMEOUT               IPC exchange timed out (non-fatal, retryable)
-SLOT    0011AC25   SUCS_IPC_QUEUE_FULL            IPC message queue at capacity
-SLOT    0011AC26   SUCS_IPC_QUEUE_DRAINED         IPC message queue fully drained
-SLOT    0011AC27   SUCS_IPC_CHANNEL_OPEN          IPC channel opened between subsystems
-SLOT    0011AC28   SUCS_IPC_CHANNEL_CLOSE         IPC channel closed cleanly
-SLOT    0011AC29   SUCS_IPC_HANDSHAKE_COMPLETE    IPC handshake protocol completed
-SLOT    0011AC2A   SUCS_IPC_PROTOCOL_ERROR        IPC protocol violation (non-fatal, recoverable)
-SLOT    0011AC2B   SUCS_IPC_BUFFER_RELEASED       IPC shared buffer released
-SLOT    0011AC2C   SUCS_IPC_BUFFER_ACQUIRED       IPC shared buffer acquired
-SLOT    0011AC2D   SUCS_IPCRIORITY_CHANGED        IPC message priority escalated
-SLOT    0011AC2E   SUCS_IPC_BROADCAST             IPC broadcast message dispatched
-SLOT    0011AC2F   SUCS_IPC_MULTICAST             IPC multicast message dispatched
-SLOT    0011AC30   SUCS_CP_REGISTER               Control plane entity registered
-SLOT    0011AC31   SUCS_CP_DEREGISTER             Control plane entity deregistered
-SLOT    0011AC32   SUCS_CP_STATE_CHANGE           Control plane state transition committed
-SLOT    0011AC33   SUCS_CP_QUERY                  Control plane state query serviced
-SLOT    0011AC34   SUCS_CP_CONFIG_APPLY           Control plane configuration applied
-SLOT    0011AC35   SUCS_CP_CONFIG_REVERT          Control plane configuration reverted
-SLOT    0011AC36   SUCS_CP_SNAPSHOT               Control plane state snapshot taken
-SLOT    0011AC37   SUCS_CP_RESTORE                Control plane state restored from snapshot
-SLOT    0011AC38   SUCS_CP_HEARTBEAT              Control plane heartbeat OK
-SLOT    0011AC39   SUCS_CP_LIVENESS               Control plane liveness probe responded
-SLOT    0011AC3A   SUCS_CP_WATCH_REGISTERED       Control plane event watcher attached
-SLOT    0011AC3B   SUCS_CP_WATCH_FIRED            Control plane event watcher triggered
-SLOT    0011AC3C   SUCS_CP_WATCH_DETACHED         Control plane event watcher removed
+SLOT    0011AC20   UNASSIGNED
+SLOT    0011AC21   UNASSIGNED
+SLOT    0011AC22   UNASSIGNED
+SLOT    0011AC23   UNASSIGNED
+SLOT    0011AC24   UNASSIGNED
+SLOT    0011AC25   UNASSIGNED
+SLOT    0011AC26   UNASSIGNED
+SLOT    0011AC27   UNASSIGNED
+SLOT    0011AC28   UNASSIGNED
+SLOT    0011AC29   UNASSIGNED
+SLOT    0011AC2A   UNASSIGNED
+SLOT    0011AC2B   UNASSIGNED
+SLOT    0011AC2C   UNASSIGNED
+SLOT    0011AC2D   UNASSIGNED
+SLOT    0011AC2E   UNASSIGNED
+SLOT    0011AC2F   UNASSIGNED
+SLOT    0011AC30   UNASSIGNED
+SLOT    0011AC31   UNASSIGNED
+SLOT    0011AC32   UNASSIGNED
+SLOT    0011AC33   UNASSIGNED
+SLOT    0011AC34   UNASSIGNED
+SLOT    0011AC35   UNASSIGNED
+SLOT    0011AC36   UNASSIGNED
+SLOT    0011AC37   UNASSIGNED
+SLOT    0011AC38   UNASSIGNED
+SLOT    0011AC39   UNASSIGNED
+SLOT    0011AC3A   UNASSIGNED
+SLOT    0011AC3B   UNASSIGNED
+SLOT    0011AC3C   UNASSIGNED
 SLOT    0011AC3D   UNASSIGNED
 SLOT    0011AC3E   UNASSIGNED
 SLOT    0011AC3F   UNASSIGNED
@@ -110,33 +110,33 @@ SLOT    0011AC5C   UNASSIGNED
 SLOT    0011AC5D   UNASSIGNED
 SLOT    0011AC5E   UNASSIGNED
 SLOT    0011AC5F   UNASSIGNED
-SLOT    0011AC60   SUCS_BUS_ARBITRATION_WON       Bus arbitration grant received
-SLOT    0011AC61   SUCS_BUS_ARBITRATION_LOST      Bus arbitration denied (retry expected)
-SLOT    0011AC62   SUCS_BUS_ACQUIRED              Bus acquired for exclusive use
-SLOT    0011AC63   SUCS_BUS_RELEASED              Bus released after exclusive use
-SLOT    0011AC64   SUCS_BUS_CONTENTION            Bus contention detected (non-fatal)
-SLOT    0011AC65   SUCS_BUS_TIMEOUT               Bus transaction timed out
-SLOT    0011AC66   SUCS_BUS_ERROR                 Bus error on transaction
-SLOT    0011AC67   SUCS_BUS_RESET                 Bus reset completed
-SLOT    0011AC68   SUCS_BUS_READY                 Bus ready for transactions
-SLOT    0011AC69   SUCS_BUS_IDLE                  Bus entered idle state
-SLOT    0011AC6A   SUCS_BUS_ACTIVE                Bus entered active state
-SLOT    0011AC6B   SUCS_HW_HANDSHAKE_INIT         Hardware handshake initiated
-SLOT    0011AC6C   SUCS_HW_HANDSHAKE_ACK          Hardware handshake acknowledged
-SLOT    0011AC6D   SUCS_HW_HANDSHAKE_COMPLETE     Hardware handshake completed successfully
-SLOT    0011AC6E   SUCS_HW_HANDSHAKE_FAILED       Hardware handshake failed
-SLOT    0011AC6F   SUCS_HW_RESET                  Hardware reset completed
-SLOT    0011AC70   SUCS_HW_POWER_ON               Hardware power-on sequence completed
-SLOT    0011AC71   SUCS_HW_POWER_OFF              Hardware power-off sequence completed
-SLOT    0011AC72   SUCS_HW_SLEEP                  Hardware entered sleep state
-SLOT    0011AC73   SUCS_HW_WAKE                   Hardware woke from sleep
-SLOT    0011AC74   SUCS_HW_SELF_TEST_PASS         Hardware self-test passed
-SLOT    0011AC75   SUCS_HW_SELF_TEST_FAIL         Hardware self-test failed
-SLOT    0011AC76   SUCS_HW_DMA_COMPLETE           DMA transfer completed
-SLOT    0011AC77   SUCS_HW_DMA_ABORT              DMA transfer aborted
-SLOT    0011AC78   SUCS_HW_IRQ_ATTACH             IRQ handler attached
-SLOT    0011AC79   SUCS_HW_IRQ_DETACH             IRQ handler detached
-SLOT    0011AC7A   SUCS_HW_IRQ_FIRE               IRQ fired and handled
+SLOT    0011AC60   UNASSIGNED
+SLOT    0011AC61   UNASSIGNED
+SLOT    0011AC62   UNASSIGNED
+SLOT    0011AC63   UNASSIGNED
+SLOT    0011AC64   UNASSIGNED
+SLOT    0011AC65   UNASSIGNED
+SLOT    0011AC66   UNASSIGNED
+SLOT    0011AC67   UNASSIGNED
+SLOT    0011AC68   UNASSIGNED
+SLOT    0011AC69   UNASSIGNED
+SLOT    0011AC6A   UNASSIGNED
+SLOT    0011AC6B   UNASSIGNED
+SLOT    0011AC6C   UNASSIGNED
+SLOT    0011AC6D   UNASSIGNED
+SLOT    0011AC6E   UNASSIGNED
+SLOT    0011AC6F   UNASSIGNED
+SLOT    0011AC70   UNASSIGNED
+SLOT    0011AC71   UNASSIGNED
+SLOT    0011AC72   UNASSIGNED
+SLOT    0011AC73   UNASSIGNED
+SLOT    0011AC74   UNASSIGNED
+SLOT    0011AC75   UNASSIGNED
+SLOT    0011AC76   UNASSIGNED
+SLOT    0011AC77   UNASSIGNED
+SLOT    0011AC78   UNASSIGNED
+SLOT    0011AC79   UNASSIGNED
+SLOT    0011AC7A   UNASSIGNED
 SLOT    0011AC7B   UNASSIGNED
 SLOT    0011AC7C   UNASSIGNED
 SLOT    0011AC7D   UNASSIGNED
@@ -174,29 +174,29 @@ SLOT    0011AC9C   UNASSIGNED
 SLOT    0011AC9D   UNASSIGNED
 SLOT    0011AC9E   UNASSIGNED
 SLOT    0011AC9F   UNASSIGNED
-SLOT    0011ACA0   SUCS_DRV_ATTACHED              Driver attached to device
-SLOT    0011ACA1   SUCS_DRV_DETACHED              Driver detached from device
-SLOT    0011ACA2   SUCS_DRV_PROBED                Driver probe completed
-SLOT    0011ACA3   SUCS_DRV_REMOVED               Driver removed from device
-SLOT    0011ACA4   SUCS_DRV_SUSPENDED             Driver suspended
-SLOT    0011ACA5   SUCS_DRV_RESUMED               Driver resumed
-SLOT    0011ACA6   SUCS_DRV_BINDING               Driver binding to device
-SLOT    0011ACA7   SUCS_DRV_UNBINDING             Driver unbinding from device
-SLOT    0011ACA8   SUCS_DRV_CONFIG_LOADED          Driver configuration loaded
-SLOT    0011ACA9   SUCS_DRV_CONFIG_UNLOADED        Driver configuration unloaded
-SLOT    0011ACAA   SUCS_PWR_STATE_CHANGE          Power state transition committed
-SLOT    0011ACAB   SUCS_PWR_SLEEP_ENTER           Entering sleep power state
-SLOT    0011ACAC   SUCS_PWR_SLEEP_EXIT            Exiting sleep power state
-SLOT    0011ACAD   SUCS_PWR_SUSPEND_ENTER         Entering suspend power state
-SLOT    0011ACAE   SUCS_PWR_SUSPEND_EXIT          Exiting suspend power state
-SLOT    0011ACAF   SUCS_PWR_HIBERNATE_ENTER       Entering hibernate power state
-SLOT    0011ACB0   SUCS_PWR_HIBERNATE_EXIT        Exiting hibernate power state
-SLOT    0011ACB1   SUCS_PWR_SHUTDOWN              Shutdown power state entered
-SLOT    0011ACB2   SUCS_PWR_REBOOT                Reboot power state entered
-SLOT    0011ACB3   SUCS_PWR_THERMAL_OK            Thermal state within limits
-SLOT    0011ACB4   SUCS_PWR_THERMAL_THROTTLE      Thermal throttling activated
-SLOT    0011ACB5   SUCS_PWR_VOLTAGE_OK            Voltage rails within tolerance
-SLOT    0011ACB6   SUCS_PWR_CURRENT_OK            Current draw within limits
+SLOT    0011ACA0   UNASSIGNED
+SLOT    0011ACA1   UNASSIGNED
+SLOT    0011ACA2   UNASSIGNED
+SLOT    0011ACA3   UNASSIGNED
+SLOT    0011ACA4   UNASSIGNED
+SLOT    0011ACA5   UNASSIGNED
+SLOT    0011ACA6   UNASSIGNED
+SLOT    0011ACA7   UNASSIGNED
+SLOT    0011ACA8   UNASSIGNED
+SLOT    0011ACA9   UNASSIGNED
+SLOT    0011ACAA   UNASSIGNED
+SLOT    0011ACAB   UNASSIGNED
+SLOT    0011ACAC   UNASSIGNED
+SLOT    0011ACAD   UNASSIGNED
+SLOT    0011ACAE   UNASSIGNED
+SLOT    0011ACAF   UNASSIGNED
+SLOT    0011ACB0   UNASSIGNED
+SLOT    0011ACB1   UNASSIGNED
+SLOT    0011ACB2   UNASSIGNED
+SLOT    0011ACB3   UNASSIGNED
+SLOT    0011ACB4   UNASSIGNED
+SLOT    0011ACB5   UNASSIGNED
+SLOT    0011ACB6   UNASSIGNED
 SLOT    0011ACB7   UNASSIGNED
 SLOT    0011ACB8   UNASSIGNED
 SLOT    0011ACB9   UNASSIGNED
@@ -238,22 +238,22 @@ SLOT    0011ACDC   UNASSIGNED
 SLOT    0011ACDD   UNASSIGNED
 SLOT    0011ACDE   UNASSIGNED
 SLOT    0011ACDF   UNASSIGNED
-SLOT    0011ACE0   SUCS_STREAM_OPEN               Data stream opened
-SLOT    0011ACE1   SUCS_STREAM_CLOSE              Data stream closed
-SLOT    0011ACE2   SUCS_STREAM_FLUSH              Data stream flushed
-SLOT    0011ACE3   SUCS_STREAM_RESET              Data stream reset
-SLOT    0011ACE4   SUCS_STREAM_PAUSE              Data stream paused
-SLOT    0011ACE5   SUCS_STREAM_RESUME             Data stream resumed
-SLOT    0011ACE6   SUCS_STREAM_BACKPRESSURE       Data stream backpressure applied
-SLOT    0011ACE7   SUCS_STREAM_BACKPRESSURE_LIFTED Data stream backpressure lifted
-SLOT    0011ACE8   SUCS_STREAM_EOF                Data stream end-of-stream
-SLOT    0011ACE9   SUCS_PROTO_NEGOTIATE           Protocol version negotiated
-SLOT    0011ACEA   SUCS_PROTO_UPGRADE             Protocol upgraded
-SLOT    0011ACEB   SUCS_PROTO_DOWNGRADE           Protocol downgraded
-SLOT    0011ACEC   SUCS_PROTO_HEARTBEAT           Protocol heartbeat sent
-SLOT    0011ACED   SUCS_PROTO_KEEPALIVE           Protocol keepalive acknowledged
-SLOT    0011ACEE   SUCS_PROTO_WINDOW_UPDATE       Protocol flow control window updated
-SLOT    0011ACEF   SUCS_PROTO_RATE_LIMIT          Protocol rate limit applied
+SLOT    0011ACE0   UNASSIGNED
+SLOT    0011ACE1   UNASSIGNED
+SLOT    0011ACE2   UNASSIGNED
+SLOT    0011ACE3   UNASSIGNED
+SLOT    0011ACE4   UNASSIGNED
+SLOT    0011ACE5   UNASSIGNED
+SLOT    0011ACE6   UNASSIGNED
+SLOT    0011ACE7   UNASSIGNED
+SLOT    0011ACE8   UNASSIGNED
+SLOT    0011ACE9   UNASSIGNED
+SLOT    0011ACEA   UNASSIGNED
+SLOT    0011ACEB   UNASSIGNED
+SLOT    0011ACEC   UNASSIGNED
+SLOT    0011ACED   UNASSIGNED
+SLOT    0011ACEE   UNASSIGNED
+SLOT    0011ACEF   UNASSIGNED
 SLOT    0011ACF0   UNASSIGNED
 SLOT    0011ACF1   UNASSIGNED
 SLOT    0011ACF2   UNASSIGNED
@@ -270,46 +270,46 @@ SLOT    0011ACFC   UNASSIGNED
 SLOT    0011ACFD   UNASSIGNED
 SLOT    0011ACFE   UNASSIGNED
 SLOT    0011ACFF   UNASSIGNED
-SLOT    0011AD00   OWFS_PROBE_OK                  OWFS superblock validated
-SLOT    0011AD01   OWFS_MOUNT_OK                  OWFS volume mounted (CLEAN -> DIRTY)
-SLOT    0011AD02   OWFS_UNMOUNT_OK                OWFS volume cleanly unmounted (DIRTY -> CLEAN)
-SLOT    0011AD03   OWFS_FORMAT_OK                 OWFS volume formatted successfully
-SLOT    0011AD04   OWFS_SYNC_OK                   OWFS sync committed (Fletcher-64, CLEAN)
-SLOT    0011AD05   OWFS_CONSISTENCY_OK            OWFS consistency check passed
-SLOT    0011AD06   OWFS_RECOVERY_OK               OWFS dirty state recovered via consistency check
-SLOT    0011AD07   OWFS_ENUM_OK                   OWFS catalog enumeration succeeded
-SLOT    0011AD08   OWFS_FILE_LOAD_OK              OWFS file loaded to destination address
-SLOT    0011AD09   OWFS_FILE_READ_OK              OWFS file read completed
-SLOT    0011AD0A   OWFS_FILE_WRITE_OK             OWFS file write completed
-SLOT    0011AD0B   OWFS_INODE_ALLOC_OK            OWFS inode allocated successfully
-SLOT    0011AD0C   OWFS_INODE_FREE_OK             OWFS inode freed successfully
-SLOT    0011AD0D   OWFS_CATALOG_INSERT_OK         OWFS catalog entry inserted
-SLOT    0011AD0E   OWFS_CATALOG_REMOVE_OK         OWFS catalog entry removed
-SLOT    0011AD0F   OWFS_CATALOG_LOOKUP_OK         OWFS catalog entry found
-SLOT    0011AD10   OWFS_CRYPTO_KEY_OK             OWFS ChaCha20 key installed
-SLOT    0011AD11   OWFS_CRYPTO_PURGE_OK           OWFS key slot sanitized (3-pass wipe)
-SLOT    0011AD12   OWFS_CRYPTO_ROUNDTRIP_OK       OWFS encryption round-trip verified
-SLOT    0011AD13   USFS_PROBE_OK                  USFS superblock validated
-SLOT    0011AD14   USFS_MOUNT_OK                  USFS volume mounted (CLEAN -> DIRTY)
-SLOT    0011AD15   USFS_UNMOUNT_OK                USFS volume cleanly unmounted
-SLOT    0011AD16   USFS_FORMAT_OK                 USFS volume formatted successfully
-SLOT    0011AD17   USFS_SYNC_OK                   USFS sync committed
-SLOT    0011AD18   USFS_CONSISTENCY_OK            USFS consistency check passed
-SLOT    0011AD19   USFS_RECOVERY_OK               USFS dirty state recovered
-SLOT    0011AD1A   USFS_FILE_READ_OK              USFS file read completed
-SLOT    0011AD1B   USFS_FILE_WRITE_OK             USFS file write completed
-SLOT    0011AD1C   USFS_ENTRY_ALLOC_OK            USFS entry allocated
-SLOT    0011AD1D   USFS_ENTRY_FREE_OK             USFS entry freed
-SLOT    0011AD1E   USFS_ENTRY_LOOKUP_OK           USFS entry found
-SLOT    0011AD1F   USFS_CRYPTO_KEY_OK             USFS ChaCha20 key installed
-SLOT    0011AD20   USFS_CRYPTO_PURGE_OK           USFS key slot sanitized
-SLOT    0011AD21   USFS_CRYPTO_ROUNDTRIP_OK       USFS encryption round-trip verified
-SLOT    0011AD22   MBL_MENU_SHOWN                 ModBoot: boot menu displayed
-SLOT    0011AD23   MBL_ENTRY_SELECTED             ModBoot: user selected boot entry
-SLOT    0011AD24   MBL_KERNEL_LOADED              ModBoot: kernel loaded successfully
-SLOT    0011AD25   MBL_GOP_FOUND                  ModBoot: GOP framebuffer located
-SLOT    0011AD26   MBL_BLOCK_IO_FOUND             ModBoot: Block I/O protocol located
-SLOT    0011AD27   MBL_MEMORY_MAPPED              ModBoot: ExitBootServices succeeded
+SLOT    0011AD00   UNASSIGNED
+SLOT    0011AD01   UNASSIGNED
+SLOT    0011AD02   UNASSIGNED
+SLOT    0011AD03   UNASSIGNED
+SLOT    0011AD04   UNASSIGNED
+SLOT    0011AD05   UNASSIGNED
+SLOT    0011AD06   UNASSIGNED
+SLOT    0011AD07   UNASSIGNED
+SLOT    0011AD08   UNASSIGNED
+SLOT    0011AD09   UNASSIGNED
+SLOT    0011AD0A   UNASSIGNED
+SLOT    0011AD0B   UNASSIGNED
+SLOT    0011AD0C   UNASSIGNED
+SLOT    0011AD0D   UNASSIGNED
+SLOT    0011AD0E   UNASSIGNED
+SLOT    0011AD0F   UNASSIGNED
+SLOT    0011AD10   UNASSIGNED
+SLOT    0011AD11   UNASSIGNED
+SLOT    0011AD12   UNASSIGNED
+SLOT    0011AD13   UNASSIGNED
+SLOT    0011AD14   UNASSIGNED
+SLOT    0011AD15   UNASSIGNED
+SLOT    0011AD16   UNASSIGNED
+SLOT    0011AD17   UNASSIGNED
+SLOT    0011AD18   UNASSIGNED
+SLOT    0011AD19   UNASSIGNED
+SLOT    0011AD1A   UNASSIGNED
+SLOT    0011AD1B   UNASSIGNED
+SLOT    0011AD1C   UNASSIGNED
+SLOT    0011AD1D   UNASSIGNED
+SLOT    0011AD1E   UNASSIGNED
+SLOT    0011AD1F   UNASSIGNED
+SLOT    0011AD20   UNASSIGNED
+SLOT    0011AD21   UNASSIGNED
+SLOT    0011AD22   UNASSIGNED
+SLOT    0011AD23   UNASSIGNED
+SLOT    0011AD24   UNASSIGNED
+SLOT    0011AD25   UNASSIGNED
+SLOT    0011AD26   UNASSIGNED
+SLOT    0011AD27   UNASSIGNED
 SLOT    0011AD28   UNASSIGNED
 SLOT    0011AD29   UNASSIGNED
 SLOT    0011AD2A   UNASSIGNED
@@ -334,28 +334,28 @@ SLOT    0011AD3C   UNASSIGNED
 SLOT    0011AD3D   UNASSIGNED
 SLOT    0011AD3E   UNASSIGNED
 SLOT    0011AD3F   UNASSIGNED
-SLOT    0011AD40   STORAGE_DEVICE_ATTACHED        Storage device attached
-SLOT    0011AD41   STORAGE_DEVICE_DETACHED        Storage device detached
-SLOT    0011AD42   STORAGE_DEVICE_READY           Storage device ready for I/O
-SLOT    0011AD43   STORAGE_DEVICE_BUSY            Storage device busy
-SLOT    0011AD44   STORAGE_QUEUE_DRAIN            Storage I/O queue draining
-SLOT    0011AD45   STORAGE_QUEUE_FLUSH            Storage I/O queue flushed
-SLOT    0011AD46   STORAGE_CACHE_HIT              Storage cache hit
-SLOT    0011AD47   STORAGE_CACHE_MISS             Storage cache miss
-SLOT    0011AD48   STORAGE_CACHE_WRITEBACK        Storage cache writeback completed
-SLOT    0011AD49   STORAGE_CACHE_INVALIDATE       Storage cache invalidated
-SLOT    0011AD4A   STORAGE_CACHE_FLUSH            Storage cache fully flushed
-SLOT    0011AD4B   STORAGE_WEAR_LEVEL_OK          Storage wear level within limits
-SLOT    0011AD4C   STORAGE_WEAR_LEVEL_WARN        Storage wear level approaching threshold
-SLOT    0011AD4D   STORAGE_WEAR_LEVEL_CRITICAL    Storage wear level critical
-SLOT    0011AD4E   STORAGE_TRIM_OK                Storage TRIM/discard completed
-SLOT    0011AD4F   STORAGE_HEALTH_OK              Storage SMART/health check passed
-SLOT    0011AD50   STORAGE_HEALTH_DEGRADED        Storage health degraded
-SLOT    0011AD51   STORAGE_BAD_BLOCK_REMAPPED     Storage bad block remapped
-SLOT    0011AD52   STORAGE_ERASE_COMPLETE         Storage block erase completed
-SLOT    0011AD53   STORAGE_WRITE_COMPLETE         Storage write completed
-SLOT    0011AD54   STORAGE_READ_COMPLETE          Storage read completed
-SLOT    0011AD55   STORAGE_VERIFY_OK              Storage verify/read-back matched
+SLOT    0011AD40   UNASSIGNED
+SLOT    0011AD41   UNASSIGNED
+SLOT    0011AD42   UNASSIGNED
+SLOT    0011AD43   UNASSIGNED
+SLOT    0011AD44   UNASSIGNED
+SLOT    0011AD45   UNASSIGNED
+SLOT    0011AD46   UNASSIGNED
+SLOT    0011AD47   UNASSIGNED
+SLOT    0011AD48   UNASSIGNED
+SLOT    0011AD49   UNASSIGNED
+SLOT    0011AD4A   UNASSIGNED
+SLOT    0011AD4B   UNASSIGNED
+SLOT    0011AD4C   UNASSIGNED
+SLOT    0011AD4D   UNASSIGNED
+SLOT    0011AD4E   UNASSIGNED
+SLOT    0011AD4F   UNASSIGNED
+SLOT    0011AD50   UNASSIGNED
+SLOT    0011AD51   UNASSIGNED
+SLOT    0011AD52   UNASSIGNED
+SLOT    0011AD53   UNASSIGNED
+SLOT    0011AD54   UNASSIGNED
+SLOT    0011AD55   UNASSIGNED
 SLOT    0011AD56   UNASSIGNED
 SLOT    0011AD57   UNASSIGNED
 SLOT    0011AD58   UNASSIGNED
@@ -398,22 +398,22 @@ SLOT    0011AD7C   UNASSIGNED
 SLOT    0011AD7D   UNASSIGNED
 SLOT    0011AD7E   UNASSIGNED
 SLOT    0011AD7F   UNASSIGNED
-SLOT    0011AD80   FS_MOUNT_CTRL                  Filesystem mount control signal
-SLOT    0011AD81   FS_UNMOUNT_CTRL                Filesystem unmount control signal
-SLOT    0011AD82   FS_SYNC_CTRL                   Filesystem sync control signal
-SLOT    0011AD83   FS_FORMAT_CTRL                 Filesystem format control signal
-SLOT    0011AD84   FS_CHECK_CTRL                  Filesystem consistency check control signal
-SLOT    0011AD85   FS_REPAIR_CTRL                 Filesystem repair control signal
-SLOT    0011AD86   FS_SNAPSHOT_CTRL               Filesystem snapshot control signal
-SLOT    0011AD87   FS_ROLLBACK_CTRL               Filesystem rollback control signal
-SLOT    0011AD88   FS_LOCK_ACQUIRED               Filesystem lock acquired
-SLOT    0011AD89   FS_LOCK_RELEASED               Filesystem lock released
-SLOT    0011AD8A   FS_LOCK_CONTENTION             Filesystem lock contention
-SLOT    0011AD8B   FS_QUOTA_OK                    Filesystem quota within limits
-SLOT    0011AD8C   FS_QUOTA_EXCEEDED              Filesystem quota exceeded
-SLOT    0011AD8D   FS_INODE_TABLE_SYNC            Inode table synchronization completed
-SLOT    0011AD8E   FS_BITMAP_SYNC                 Bitmap synchronization completed
-SLOT    0011AD8F   FS_JOURNAL_COMMIT              Filesystem journal committed
+SLOT    0011AD80   UNASSIGNED
+SLOT    0011AD81   UNASSIGNED
+SLOT    0011AD82   UNASSIGNED
+SLOT    0011AD83   UNASSIGNED
+SLOT    0011AD84   UNASSIGNED
+SLOT    0011AD85   UNASSIGNED
+SLOT    0011AD86   UNASSIGNED
+SLOT    0011AD87   UNASSIGNED
+SLOT    0011AD88   UNASSIGNED
+SLOT    0011AD89   UNASSIGNED
+SLOT    0011AD8A   UNASSIGNED
+SLOT    0011AD8B   UNASSIGNED
+SLOT    0011AD8C   UNASSIGNED
+SLOT    0011AD8D   UNASSIGNED
+SLOT    0011AD8E   UNASSIGNED
+SLOT    0011AD8F   UNASSIGNED
 SLOT    0011AD90   UNASSIGNED
 SLOT    0011AD91   UNASSIGNED
 SLOT    0011AD92   UNASSIGNED

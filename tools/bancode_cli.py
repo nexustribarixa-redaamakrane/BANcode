@@ -23,7 +23,7 @@ BUILD_DIR = ROOT / "build"
 SOURCE_FILES = {
     "bancode": ROOT / "bancode.txt",
     "warncode": ROOT / "warncode.txt",
-    "comcode": ROOT / "softcode.txt",
+    "comcode": ROOT / "comcode.txt",
     "softcode": ROOT / "softcode.txt",
 }
 
