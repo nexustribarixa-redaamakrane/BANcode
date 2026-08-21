@@ -12,6 +12,7 @@ set(CMAKE_C_EXTENSIONS OFF)
 # Static library target
 add_library(bancode STATIC
     kernel_src/bancode/bancode.c
+    kernel_src/bancode/bancode_trap.c
 )
 
 target_include_directories(bancode

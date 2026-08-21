@@ -101,20 +101,32 @@ Then in your kernel code:
 
 ### Trap Range Dispatch
 
-The trap vector table maps `0x7FFFFFF0 + N` → BANcode codepoint at offset `N`:
+The Kernel Security Trap range (`0x7FFFFFF0`–`0x7FFFFFFE`) holds 15 damage-control
+slots. Each trap slot governs a **cluster of 128 B+ BANcodes**
+(`slot = (bancode − 0x0011A000) / 128`); the final cluster
+`0x0011A780`–`0x0011A7FF` is unmapped, and `0x7FFFFFFF` is the invalid-codepoint
+sentinel — identical to SuperUnicode's kernel trap security range implementation:
 
 ```c
 #include <bancode/bancode_all.h>
 
-// In your IDT/exception handler:
-void handle_trap(uint32_t trap_num) {
-    uint32_t base = 0x7FFFFFF0;
-    uint32_t code = base + trap_num;
-    bancode_info_t info;
-    if (bancode_lookup(code, &info) == 0) {
-        // info.name, info.description available
-        kernel_panic(info.name);
-    }
+// Resolve the trap governing a fatal B+ BANcode:
+bancode_t code = 0x0011A01A;
+bancode_t trap = bancode_to_trap(code);        // 0x7FFFFFF0 + (0x1A / 128) = 0x7FFFFFF0
+
+// Reverse lookup: which B+ cluster does a trap handler manage?
+bancode_t lo, hi;
+if (bancode_trap_to_bancode_range(0x7FFFFFF0, &lo, &hi)) {
+    // lo == 0x0011A000, hi == 0x0011A07F
+}
+
+// Register a crash-context damage-control handler and dispatch:
+static void my_handler(bancode_t trap_cp, bancode_t bancode_cp, void* ctx) {
+    kernel_panic(bancode_name(bancode_cp));
+}
+bancode_trap_register_handler(0, my_handler, NULL);
+if (!bancode_trap_dispatch(code)) {
+    // no handler installed for this cluster (or unmapped slot 15)
 }
 ```
 

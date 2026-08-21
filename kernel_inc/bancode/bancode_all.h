@@ -30,23 +30,59 @@ typedef uint32_t bancode_t;
 
 #define BANCODE_TOTAL_ASSIGNED 0
 
-/* Trap range dispatch - like Unicode surrogate pairs */
-/* Each trap address 0x7FFFFFF0+N maps to BANcode at offset N */
-#define BANCODE_TRAP_RANGE_START  0x7FFFFFF0U
-#define BANCODE_TRAP_RANGE_END    0x7FFFFFFEU
-#define BANCODE_TRAP_RANGE_COUNT  15U
+/* Kernel Security Trap Range & Sentinel (31-bit Base SUCS) */
+#define BANCODE_KERNEL_TRAP_MIN   0x7FFFFFF0U
+#define BANCODE_KERNEL_TRAP_MAX   0x7FFFFFFEU
+#define BANCODE_INVALID_CODEPOINT 0x7FFFFFFFU
 
-/* Convert trap address to BANcode offset (0-based within trap range) */
-#define BANCODE_TRAP_TO_OFFSET(trap_addr)  ((trap_addr) - BANCODE_TRAP_RANGE_START)
+/* Kernel Security Trap Damage Control Dispatch geometry */
+#define BANCODE_TRAP_SLOT_COUNT    15U
+#define BANCODE_BANCODES_PER_TRAP  128U
 
-/* Convert trap offset to BANcode value (adds bancode block base) */
-#define BANCODE_OFFSET_TO_CODE(offset)  (0x0011A000U + (offset))
+/* Legacy aliases for the Kernel Security Trap range */
+#define BANCODE_TRAP_RANGE_START  BANCODE_KERNEL_TRAP_MIN
+#define BANCODE_TRAP_RANGE_END    BANCODE_KERNEL_TRAP_MAX
+#define BANCODE_TRAP_RANGE_COUNT  BANCODE_TRAP_SLOT_COUNT
 
-/* Convert trap address directly to BANcode value */
-#define BANCODE_TRAP_TO_CODE(trap_addr)  (BANCODE_OFFSET_TO_CODE(BANCODE_TRAP_TO_OFFSET(trap_addr)))
+/* Returns true if code is a fatal B+ BANcode (the only codes that route to traps) */
+static inline bool bancode_is_bancode(bancode_t code) {
+    return (code >= BANCODE_BANCODE_START && code <= BANCODE_BANCODE_END);
+}
 
-/* Returns true if address is within the trap dispatch range */
-#define BANCODE_IS_TRAP_RANGE(addr)  ((addr) >= BANCODE_TRAP_RANGE_START && (addr) <= BANCODE_TRAP_RANGE_END)
+/* Returns true if cp is inside the Kernel Security Trap range (0x7FFFFFF0-0x7FFFFFFE) */
+static inline bool bancode_is_kernel_trap(bancode_t cp) {
+    return (cp >= BANCODE_KERNEL_TRAP_MIN && cp <= BANCODE_KERNEL_TRAP_MAX);
+}
+
+#define BANCODE_IS_TRAP_RANGE(addr)  bancode_is_kernel_trap(addr)
+
+/* Resolves the Kernel Security Trap codepoint (0x7FFFFFF0-0x7FFFFFFE) governing
+ * a B+ BANcode for damage control dispatch upon kernel crash. Returns
+ * BANCODE_INVALID_CODEPOINT if the input is not a B+ BANcode or falls beyond
+ * the 15 assigned trap slots (0x0011A780-0x0011A7FF is unmapped). */
+static inline bancode_t bancode_to_trap(bancode_t bancode_cp) {
+    if (!bancode_is_bancode(bancode_cp)) {
+        return BANCODE_INVALID_CODEPOINT;
+    }
+    uint32_t slot = (uint32_t)((bancode_cp - BANCODE_BANCODE_START) / BANCODE_BANCODES_PER_TRAP);
+    if (slot >= BANCODE_TRAP_SLOT_COUNT) {
+        return BANCODE_INVALID_CODEPOINT;
+    }
+    return (bancode_t)(BANCODE_KERNEL_TRAP_MIN + slot);
+}
+
+/* Returns the B+ BANcode cluster range (inclusive min/max) managed by a specific
+ * Kernel Security Trap handler. Returns false for non-trap codepoints or null
+ * output pointers. */
+static inline bool bancode_trap_to_bancode_range(bancode_t trap_cp, bancode_t* out_min, bancode_t* out_max) {
+    if (!bancode_is_kernel_trap(trap_cp) || out_min == NULL || out_max == NULL) {
+        return false;
+    }
+    uint32_t slot = (uint32_t)(trap_cp - BANCODE_KERNEL_TRAP_MIN);
+    *out_min = (bancode_t)(BANCODE_BANCODE_START + slot * BANCODE_BANCODES_PER_TRAP);
+    *out_max = (bancode_t)(*out_min + (BANCODE_BANCODES_PER_TRAP - 1UL));
+    return true;
+}
 
 /* Returns true if code is a known BANcode */
 bool bancode_is_valid(bancode_t code);
@@ -59,5 +95,57 @@ const char* bancode_desc(bancode_t code);
 
 /* Returns category string ("" if not assigned) */
 const char* bancode_category(bancode_t code);
+
+/* Kernel Security Trap Damage Control Dispatch
+ *
+ * Each of the 15 Kernel Security Trap slots (0x7FFFFFF0-0x7FFFFFFE) governs a
+ * cluster of 128 B+ BANcodes (0x0011A000-0x0011A77F). A handler registered for
+ * a slot is invoked by bancode_trap_dispatch() whenever a B+ BANcode in its
+ * cluster is raised, enabling kernel crash damage control tailored to the
+ * BANcode registry domain.
+ *
+ * Handlers run in the calling (crash) context and must be freestanding-safe:
+ * zero libc dependencies, no allocation, no blocking.
+ *
+ * The dispatch table is a fixed-size static table (zero dynamic allocation). */
+
+/* Damage-control handler signature:
+ *   trap_cp    - the Kernel Security Trap codepoint (0x7FFFFFF0+slot)
+ *   bancode_cp - the B+ BANcode that triggered the dispatch
+ *   context    - the caller-supplied context registered for the slot */
+typedef void (*bancode_trap_handler_t)(bancode_t trap_cp, bancode_t bancode_cp, void* context);
+
+/* Registers (or replaces) the damage-control handler for a trap slot.
+ * slot must be 0..BANCODE_TRAP_SLOT_COUNT-1 and handler must be non-NULL
+ * (use bancode_trap_unregister_handler to clear a slot).
+ * Returns true on success. */
+bool bancode_trap_register_handler(uint32_t slot, bancode_trap_handler_t handler, void* context);
+
+/* Unregisters the handler for a trap slot.
+ * Returns true if a handler was actually removed. */
+bool bancode_trap_unregister_handler(uint32_t slot);
+
+/* Returns true if a handler is installed for the slot; optionally returns the
+ * registered context via out_context (may be NULL). */
+bool bancode_trap_handler_installed(uint32_t slot, void** out_context);
+
+/* Removes every registered handler (used for shutdown / recovery). */
+void bancode_trap_clear_all(void);
+
+/* Dispatches a B+ BANcode to the handler governing its cluster. Returns true
+ * if a handler was installed and invoked. Non-fatal BANcodes, unmapped BANcodes
+ * (slot 15 / 0x0011A780-0x0011A7FF), and slots without a handler return false. */
+bool bancode_trap_dispatch(bancode_t bancode_cp);
+
+/* Freestanding-readable diagnostic record of the most recent dispatch. */
+typedef struct {
+    bool        fired;        /* true if the last dispatch invoked a handler */
+    uint32_t    slot;         /* trap slot index (0..14) */
+    bancode_t   trap_cp;      /* Kernel Security Trap codepoint */
+    bancode_t   bancode_cp;   /* B+ BANcode that triggered the dispatch */
+} bancode_trap_diagnostic_t;
+
+/* Returns the diagnostic record of the most recent dispatch attempt. */
+bancode_trap_diagnostic_t bancode_trap_last_dispatch(void);
 
 #endif /* BANCODE_ALL_H */
