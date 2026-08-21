@@ -10,8 +10,8 @@ typedef struct bancode_entry {
     const char* category;
 } bancode_entry;
 
-static const bancode_entry bancode_table[] = {
-};
+/* No codes assigned yet - placeholder row keeps the table valid; size is 0 so it is never matched */
+static const bancode_entry bancode_table[1] = { { 0xFFFFFFFFU, "UNASSIGNED", "", "" } };
 #define BANCODE_TABLE_SIZE 0
 
 static const bancode_entry* bancode_find(bancode_t code) {

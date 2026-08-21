@@ -9,6 +9,7 @@
 /* Range: 0x0011AC00 - 0x0011ADFF */
 
 typedef enum bancode_comcode_e {
+    COMCODE_UNASSIGNED = 0x00000000U /* no codes assigned in this block */
 } bancode_comcode_e;
 
 #endif /* BANCODE_COMCODE_H */

@@ -1,0 +1,37 @@
+# Build directories (CMake - MSVC and GCC/MinGW)
+/build/
+/build-gcc/
+
+# CMake in-source junk
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+
+# Compiled objects / libraries
+*.obj
+*.o
+*.a
+*.lib
+*.pdb
+*.dll
+*.exe
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Rust
+/rust_bindings/target/
+**/*.rs.bk
+
+# Visual Studio / IDE
+.vs/
+*.vcxproj.user
+*.suo
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store

@@ -171,6 +171,8 @@ def generate_c99(registry):
         ch.append("")
 
         ch.append(f"typedef enum bancode_{cat}_e {{")
+        if not unique_cat:
+            ch.append(f"    {tag}_UNASSIGNED = 0x00000000U /* no codes assigned in this block */")
         for s in unique_cat:
             ch.append(f"    {c_name(s['hex'], s['name'])} = 0x{s['hex']}U,")
         ch.append(f"}} bancode_{cat}_e;")
@@ -198,12 +200,16 @@ def generate_c99(registry):
     c.append("")
 
     # Static lookup table
-    c.append("static const bancode_entry bancode_table[] = {")
-    for s in assigned:
-        name_esc = s["name"].replace("\\", "\\\\").replace('"', '\\"')
-        desc_esc = s["description"].replace("\\", "\\\\").replace('"', '\\"')
-        c.append(f'    {{ 0x{s["hex"]}U, "{name_esc}", "{desc_esc}", "{s["category"]}" }},')
-    c.append("};")
+    if assigned:
+        c.append("static const bancode_entry bancode_table[] = {")
+        for s in assigned:
+            name_esc = s["name"].replace("\\", "\\\\").replace('"', '\\"')
+            desc_esc = s["description"].replace("\\", "\\\\").replace('"', '\\"')
+            c.append(f'    {{ 0x{s["hex"]}U, "{name_esc}", "{desc_esc}", "{s["category"]}" }},')
+        c.append("};")
+    else:
+        c.append("/* No codes assigned yet - placeholder row keeps the table valid; size is 0 so it is never matched */")
+        c.append('static const bancode_entry bancode_table[1] = { { 0xFFFFFFFFU, "UNASSIGNED", "", "" } };')
     c.append(f"#define BANCODE_TABLE_SIZE {len(assigned)}")
     c.append("")
 
