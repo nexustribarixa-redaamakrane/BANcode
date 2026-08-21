@@ -1,6 +1,0 @@
-C:/Users/KARIMABENDA/Documents/BANcode/build/CMakeFiles/bancode.dir
-C:/Users/KARIMABENDA/Documents/BANcode/build/CMakeFiles/generate.dir
-C:/Users/KARIMABENDA/Documents/BANcode/build/CMakeFiles/full.dir
-C:/Users/KARIMABENDA/Documents/BANcode/build/CMakeFiles/INSTALL.dir
-C:/Users/KARIMABENDA/Documents/BANcode/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/KARIMABENDA/Documents/BANcode/build/CMakeFiles/ZERO_CHECK.dir
