@@ -5,7 +5,7 @@
 # Subcategories:
 #   0011A000-0011A0FF  SUCS kernel traps & sentinel
 #   0011A100-0011A1FF  SUCS plugin quarantine
-#   0011A200-0011A2FF  SUTF/ExtSUTF transport
+#   0011A200-0011A2FF  SUTF/SUST serialization
 #   0011A300-0011A3FF  OWFS integrity
 #   0011A400-0011A4FF  USFS integrity
 #   0011A500-0011A5FF  HTL hardware

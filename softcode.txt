@@ -3,7 +3,7 @@
 # ROLE     Soft recovery, fault containment, cache reconciliation, self-healing routines; also soft errors. May be printable; useful when showing the glyph of the error, not just its codename or codepoint.
 #
 # Subcategories:
-#   0011AE00-0011AE1F  SUTF/ExtSUTF encoding errors
+#   0011AE00-0011AE1F  SUTF/SUST encoding errors
 #   0011AE20-0011AE3F  Soft recovery & self-healing
 #   0011AE40-0011AE5F  OWFS soft errors
 #   0011AE60-0011AE7F  OWFS recovery

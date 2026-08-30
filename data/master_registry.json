@@ -113,64 +113,64 @@
         "subcategory": "SUCS Plugin Quarantine"
       },
       {
-        "name": "ESUTF_IPC_FRAME_INVALID",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "name": "ESUST_IPC_FRAME_INVALID",
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
-        "name": "ESUTF_PAGE_NOT_ALIGNED",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "name": "ESUST_PAGE_NOT_ALIGNED",
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
-        "name": "ESUTF_PAGE_TABLE_FULL",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "name": "ESUST_PAGE_TABLE_FULL",
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
-        "name": "ESUTF_PAGE_TRANSLATION_FAIL",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "name": "ESUST_PAGE_TRANSLATION_FAIL",
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
-        "name": "ESUTF_TRAP_PAGE_INTERSECT",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "name": "ESUST_TRAP_PAGE_INTERSECT",
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
-        "name": "ESUTF_UNMAPPED_ADDRESS",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "name": "ESUST_UNMAPPED_ADDRESS",
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
         "name": "SUTF_DECODE_BAD_CONTINUATION",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
         "name": "SUTF_DECODE_OUT_OF_BOUNDS",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
         "name": "SUTF_DECODE_OVERLONG",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
         "name": "SUTF_DECODE_SENTINEL",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
         "name": "SUTF_DECODE_TRAP_RANGE",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
         "name": "SUTF_ENCODE_INVALID_CP",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
         "name": "VSUTF_BAD_PREFIX",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
         "name": "VSUTF_OVERLONG_EXTENDED",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
         "name": "VSUTF_TRUNCATED_EXTENDED",
-        "subcategory": "SUTF/ExtSUTF Transport"
+        "subcategory": "SUTF/SUST Serialization"
       },
       {
         "name": "OWFS_BITMAP_CHECKSUM_FAIL",
@@ -1271,56 +1271,56 @@
     ],
     "softcode": [
       {
-        "name": "ESUTF_BUFFER_TOO_SMALL",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "name": "ESUST_BUFFER_TOO_SMALL",
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
-        "name": "ESUTF_IPC_TOO_SMALL",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "name": "ESUST_IPC_TOO_SMALL",
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
-        "name": "ESUTF_NULL_POINTER",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "name": "ESUST_NULL_POINTER",
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
         "name": "SUES_ERR_BUFFER_TOO_SMALL",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
         "name": "SUES_ERR_INVALID_BYTE",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
         "name": "SUES_ERR_INVALID_CODEPOINT",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
         "name": "SUES_ERR_OUT_OF_BOUNDS",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
         "name": "SUTF_NULL_INPUT",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
         "name": "SUTF_NULL_OUTPUT",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
         "name": "SUTF_TRUNCATED_SEQUENCE",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
         "name": "SUTF_VALUE_TOO_LARGE",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
         "name": "VSUTF_BUFFER_TOO_SMALL",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
         "name": "VSUTF_NULL_POINTER",
-        "subcategory": "SUTF/ExtSUTF Encoding Errors"
+        "subcategory": "SUTF/SUST Encoding Errors"
       },
       {
         "name": "SUCS_CACHE_COHERENCY_OK",

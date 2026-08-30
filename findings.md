@@ -6,7 +6,7 @@ Research date: Aug 18, 2026 (updated). All three are freestanding C99 prototype 
 
 ## 1. SuperUnicode (`Documents/Superunicode`)
 
-Library of SUCS (31-bit character encoding) / ExtSUCS (64-bit) / SUTF (serialization transports). Builds and all 6 CTest suites pass. Produces 4 static libraries: `libsuperunicode_static.a`, `libsutf.a`, `libsuperunicode_extended.a`, `libsucs_plugin.a`.
+Library of SUCS (31-bit character encoding) / ExtSUCS (64-bit) / SUTF (transformation formats) / SUST (serialization transports). Builds and all 7 CTest suites (10 tests) pass. Produces 6 static libraries: `libsuperunicode_static.a`, `libsutf.a`, `libsuperunicode_extended.a`, `libsust.a`, `libsucs_plugin.a`, `libsuf_static.a`.
 
 ### What was fixed (Aug 18, 2026)
 - **sutf8.h 5-byte threshold bug**: Was `0x3FFFFFFUL` (missing leading zero), corrected to `0x03FFFFFFFUL` (26-bit payload). The encoder/decoder were already correct; only the inline length helper was wrong. README SUTF-8 table also corrected to match.
@@ -19,13 +19,14 @@ Library of SUCS (31-bit character encoding) / ExtSUCS (64-bit) / SUTF (serializa
 #### Real implementations (all verified)
 - **sucs_trap.c** (90 lines): Full kernel Security Trap dispatch — 15-slot static table, register/unregister/dispatch/diagnostics/clear. Not stubs.
 - **sutf8.c/sutf_encode.c/sutf_decode.c**: Complete 1–6 byte SUTF-8 codec with overlong rejection and range validation.
-- **sutf16.c**: 1–2 word transport using bit-15 framing (no surrogate pairs).
-- **sutf4.c / sutf2.c**: Fixed 4-byte nibble/symbol-frame transports.
-- **extsutf_fixed.c** (204 lines): SUTF-32/64/128/256/512/N fixed-width vector transports.
-- **vsutf.c** (199 lines): Variable-length streaming transport with 9-byte extended frame.
-- **esutf.c** (226 lines): Page-mapped IPC transport with 256-entry page table, host/guest translation.
+- **sutf16.c**: 1–2 word SUTF-16 transformation using bit-15 framing (no surrogate pairs).
+- **sutf4.c / sutf2.c**: Fixed 4-byte nibble/symbol-frame transformations.
+- **sust16.c** (121 lines): SUST-16 1/2-word byte serialization with explicit big/little-endian variants.
+- **sustfixed.c** (204 lines): SUST-32/64/128/256/512/N fixed-width serialization forms.
+- **vsutf.c** (199 lines): Variable-length streaming transformation with 9-byte extended frame.
+- **esust.c** (226 lines): Page-mapped IPC serialization with 256-entry page table, host/guest translation.
 - **Plugin subsystem** (4 source files, ~710 lines): CRC32c + Fletcher-64 checksums, blob staging, 5-gate boot commit, OWFS-only partition policy. Real CLI tools (`plugin_pack.c`, `plugin_verify.c`). SDK with template and example.
-- **Unified test** (93 lines): Genuine header-coexistence test linking all 4 libraries in one TU.
+- **Unified test** (130 lines): Genuine header-coexistence test linking all 6 libraries in one TU.
 
 #### Remaining minor issues
 1. `sucs_plugin_static` CMake target missing `-std=c99 -nostdlib` (only has `-ffreestanding -Wall -Wextra -O2`)
