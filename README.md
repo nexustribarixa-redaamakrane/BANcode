@@ -130,6 +130,43 @@ if (!bancode_trap_dispatch(code)) {
 }
 ```
 
+### System / App Operating Modes
+
+Both `BANCODE_MODE_SYSTEM` and `BANCODE_MODE_APP` share the **identical codepoint
+registry** — the mode only controls how fatal **B+ BANcodes** are handled at
+dispatch time:
+
+- **`BANCODE_MODE_SYSTEM` (default, kernel):** Fatal BANcodes dispatch to the
+  Kernel Security Trap handlers via `bancode_trap_dispatch()`. Each trap slot
+  (`0x7FFFFFF0+slot`) governs its cluster of 128 BANcodes. This is the krnl path.
+- **`BANCODE_MODE_APP`:** Fatal BANcodes **bypass kernel dispatch entirely** and
+  instead crash the application via a registered App-level crash handler. This
+  keeps the Kernel Security Trap machinery (reserved for the krnl) out of
+  application code.
+
+```c
+#include <bancode/bancode_all.h>
+
+/* App-mode crash handler (freestanding-safe): */
+static void crash_app(bancode_t bancode_cp, void* ctx) {
+    (void)ctx;
+    /* perform application-local abort / cleanup */
+}
+
+bancode_set_mode(BANCODE_MODE_APP);                      // switch to app mode
+bancode_register_app_crash_handler(crash_app, NULL);     // install app handler
+
+/* A fatal B+ BANcode now routes to crash_app, NOT to the krnl trap table: */
+bancode_trap_dispatch(0x0011A01A);
+
+bancode_set_mode(BANCODE_MODE_SYSTEM);                   // back to kernel dispatch
+```
+
+- **Compile-time default:** `BANCODE_DEFAULT_MODE` (System unless overridden with
+  `-DBANCODE_DEFAULT_MODE=1`); always changeable at runtime via `bancode_set_mode()`.
+- **App handler API:** `bancode_register_app_crash_handler`,
+  `bancode_unregister_app_crash_handler`, `bancode_app_crash_handler_installed`.
+
 ## CLI Usage
 
 ```bash

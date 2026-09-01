@@ -65,6 +65,14 @@ bool bancode_trap_dispatch(bancode_t bancode_cp) {
         return false;
     }
 
+    /* App mode: fatal BANcodes bypass kernel dispatch entirely and instead
+     * crash the app via the registered App-level crash handler. This keeps
+     * the kernel trap machinery (which is reserved for the krnl) unused by
+     * application code. */
+    if (bancode_is_app_mode()) {
+        return bancode_app_dispatch_fatal(bancode_cp);
+    }
+
     uint32_t slot = (uint32_t)((bancode_cp - BANCODE_BANCODE_START) / BANCODE_BANCODES_PER_TRAP);
     if (!slot_valid(slot)) {
         return false; /* slot 15 (0x0011A780-0x0011A7FF) has no trap handler */

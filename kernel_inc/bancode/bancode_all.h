@@ -10,8 +10,33 @@
 typedef uint32_t bancode_t;
 
 #define BANCODE_VERSION_MAJOR 1
-#define BANCODE_VERSION_MINOR 0
+#define BANCODE_VERSION_MINOR 1
 #define BANCODE_VERSION_PATCH 0
+
+/* BANcode Operating Modes.
+ *
+ * Both modes share the identical codepoint registry. The mode determines
+ * how fatal (B+) BANcodes are handled at dispatch time:
+ *
+ *   BANCODE_MODE_SYSTEM - Fatal BANcodes dispatch to Kernel Security Trap
+ *       handlers (bancode_trap_dispatch). This is the kernel-level path.
+ *
+ *   BANCODE_MODE_APP - Fatal BANcodes bypass kernel dispatch entirely.
+ *       Instead, the registered App-level crash handler is invoked directly,
+ *       allowing the application to perform its own crash/abort handling
+ *       without entering kernel trap territory.
+ */
+typedef enum {
+    BANCODE_MODE_SYSTEM = 0,  /* Kernel mode: fatal BANcodes use krnl trap dispatch */
+    BANCODE_MODE_APP    = 1   /* App mode: fatal BANcodes use app-level crash handler */
+} bancode_mode_t;
+
+/* Compile-time default mode. Override with -DBANCODE_DEFAULT_MODE=1 to ship
+ * an app-mode build by default. Runtime mode can still be changed at any time
+ * via bancode_set_mode(). */
+#ifndef BANCODE_DEFAULT_MODE
+#define BANCODE_DEFAULT_MODE BANCODE_MODE_SYSTEM
+#endif
 
 #define BANCODE_BANCODE_START  0x0011A000U
 #define BANCODE_BANCODE_END    0x0011A7FFU
@@ -147,5 +172,66 @@ typedef struct {
 
 /* Returns the diagnostic record of the most recent dispatch attempt. */
 bancode_trap_diagnostic_t bancode_trap_last_dispatch(void);
+
+/* ---------------------------------------------------------------------------
+ * App-Level Crash Handler (BANCODE_MODE_APP path)
+ *
+ * When the framework operates in BANCODE_MODE_APP, fatal BANcodes bypass the
+ * Kernel Security Trap dispatch entirely. Instead the registered App crash
+ * handler is invoked directly with the fatal BANcode codepoint that triggered
+ * the crash, allowing the application to perform its own abort / cleanup.
+ *
+ * The handler runs in the calling context and must be freestanding-safe:
+ * zero libc dependencies, no allocation, no blocking.
+ *
+ * Only one App crash handler can be active at a time. Registering a new
+ * handler replaces the previous one. Use bancode_unregister_app_crash_handler
+ * to clear.
+ * ------------------------------------------------------------------------ */
+
+typedef void (*bancode_app_crash_handler_t)(bancode_t bancode_cp, void* context);
+
+/* Registers the App-level crash handler for fatal BANcodes in App mode.
+ * handler must be non-NULL. Returns true on success. */
+bool bancode_register_app_crash_handler(bancode_app_crash_handler_t handler, void* context);
+
+/* Unregisters the App-level crash handler.
+ * Returns true if a handler was actually removed. */
+bool bancode_unregister_app_crash_handler(void);
+
+/* Returns true if an App crash handler is installed; optionally returns the
+ * registered context via out_context (may be NULL). */
+bool bancode_app_crash_handler_installed(void** out_context);
+
+/* Private: invoked by bancode_trap_dispatch() when the framework is in
+ * BANCODE_MODE_APP. Routes a fatal BANcode to the App-level crash handler,
+ * bypassing the Kernel Security Trap dispatch. Returns true if a handler was
+ * invoked. */
+bool bancode_app_dispatch_fatal(bancode_t bancode_cp);
+
+/* ---------------------------------------------------------------------------
+ * BANcode Mode API
+ *
+ * Controls whether fatal BANcodes dispatch through Kernel Security Traps
+ * (BANCODE_MODE_SYSTEM) or through the App-level crash handler
+ * (BANCODE_MODE_APP). Both modes share the identical codepoint registry.
+ * ------------------------------------------------------------------------ */
+
+/* Returns the current BANcode operating mode. */
+bancode_mode_t bancode_get_mode(void);
+
+/* Sets the BANcode operating mode at runtime.
+ * Returns true on success, false if an invalid mode was specified. */
+bool bancode_set_mode(bancode_mode_t mode);
+
+/* Returns true if the framework is in System mode. */
+static inline bool bancode_is_system_mode(void) {
+    return bancode_get_mode() == BANCODE_MODE_SYSTEM;
+}
+
+/* Returns true if the framework is in App mode. */
+static inline bool bancode_is_app_mode(void) {
+    return bancode_get_mode() == BANCODE_MODE_APP;
+}
 
 #endif /* BANCODE_ALL_H */

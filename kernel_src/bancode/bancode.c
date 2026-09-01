@@ -44,3 +44,65 @@ const char* bancode_category(bancode_t code) {
     const bancode_entry* e = bancode_find(code);
     return e ? e->category : "";
 }
+
+/* ---------------------------------------------------------------------------
+ * BANcode mode & App-level crash handler state
+ * ------------------------------------------------------------------------ */
+
+static bancode_mode_t g_mode = (bancode_mode_t)BANCODE_DEFAULT_MODE;
+
+static bancode_app_crash_handler_t g_app_handler = NULL;
+static void*                        g_app_context = NULL;
+static bool                         g_app_installed = false;
+
+bancode_mode_t bancode_get_mode(void) {
+    return g_mode;
+}
+
+bool bancode_set_mode(bancode_mode_t mode) {
+    if (mode != BANCODE_MODE_SYSTEM && mode != BANCODE_MODE_APP) {
+        return false;
+    }
+    g_mode = mode;
+    return true;
+}
+
+bool bancode_register_app_crash_handler(bancode_app_crash_handler_t handler, void* context) {
+    if (handler == NULL) {
+        return false;
+    }
+    g_app_handler   = handler;
+    g_app_context   = context;
+    g_app_installed = true;
+    return true;
+}
+
+bool bancode_unregister_app_crash_handler(void) {
+    if (!g_app_installed) {
+        return false;
+    }
+    g_app_installed = false;
+    g_app_handler   = NULL;
+    g_app_context   = NULL;
+    return true;
+}
+
+bool bancode_app_crash_handler_installed(void** out_context) {
+    if (out_context) {
+        *out_context = g_app_context;
+    }
+    return g_app_installed;
+}
+
+/* Invoked by bancode_trap_dispatch() when the framework is in App mode.
+ * Returns true if an App crash handler was invoked. */
+bool bancode_app_dispatch_fatal(bancode_t bancode_cp) {
+    if (g_mode != BANCODE_MODE_APP) {
+        return false;
+    }
+    if (!g_app_installed || g_app_handler == NULL) {
+        return false;
+    }
+    g_app_handler(bancode_cp, g_app_context);
+    return true;
+}
