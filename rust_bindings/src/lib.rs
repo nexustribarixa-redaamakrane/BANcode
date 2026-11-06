@@ -10,11 +10,13 @@ use core::fmt;
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
 #[repr(u32)]
 pub enum BANcode {
+    OWINIT_MISSING = 0x0011A005,
 }
 
 impl fmt::Display for BANcode {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match *self {
+            BANcode::OWINIT_MISSING => write!(f, "0x0011A005: OWINIT_MISSING"),
         }
     }
 }
@@ -23,6 +25,7 @@ impl TryFrom<u32> for BANcode {
     type Error = u32;
     fn try_from(v: u32) -> Result<Self, u32> {
     match v {
+            0x0011A005 => Ok(BANcode::OWINIT_MISSING),
             _ => Err(v),
         }
     }
@@ -101,11 +104,13 @@ impl TryFrom<u32> for SOFTcode {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
 #[repr(u32)]
 pub enum BANcode {
+    OWINIT_MISSING = 0x0011A005,
 }
 
 impl fmt::Display for BANcode {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
     match *self {
+            BANcode::OWINIT_MISSING => write!(f, "0x0011A005: OWINIT_MISSING"),
         }
     }
 }
@@ -114,6 +119,7 @@ impl TryFrom<u32> for BANcode {
     type Error = u32;
     fn try_from(v: u32) -> Result<Self, u32> {
         match v {
+            0x0011A005 => Ok(BANcode::OWINIT_MISSING),
             _ => Err(v),
         }
     }
@@ -127,6 +133,7 @@ pub fn is_valid(code: u32) -> bool {
 /// Returns codename string if known
 pub fn name(code: u32) -> Option<&'static str> {
     match code {
+        0x0011A005 => Some("OWINIT_MISSING"),
         _ => None,
     }
 }

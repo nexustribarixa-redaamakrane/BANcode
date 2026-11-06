@@ -4,7 +4,7 @@ hex,value,name,category,subcategory,description,assigned
 0011A002,1155074,UNASSIGNED,bancode,,,False
 0011A003,1155075,UNASSIGNED,bancode,,,False
 0011A004,1155076,UNASSIGNED,bancode,,,False
-0011A005,1155077,UNASSIGNED,bancode,,,False
+0011A005,1155077,OWINIT_MISSING,bancode,,Root userland orchestrator (owinit) not found on the OWINIT boot volume,True
 0011A006,1155078,UNASSIGNED,bancode,,,False
 0011A007,1155079,UNASSIGNED,bancode,,,False
 0011A008,1155080,UNASSIGNED,bancode,,,False

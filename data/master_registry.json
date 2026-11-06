@@ -1693,11 +1693,11 @@
     {
       "hex": "0011A005",
       "value": 1155077,
-      "name": "UNASSIGNED",
-      "description": "",
+      "name": "OWINIT_MISSING",
+      "description": "Root userland orchestrator (owinit) not found on the OWINIT boot volume",
       "category": "bancode",
       "subcategory": "",
-      "assigned": false
+      "assigned": true
     },
     {
       "hex": "0011A006",
@@ -36209,8 +36209,8 @@
   "stats": {
     "bancode": {
       "total_slots": 2048,
-      "assigned": 0,
-      "unassigned": 2048
+      "assigned": 1,
+      "unassigned": 2047
     },
     "warncode": {
       "total_slots": 1024,

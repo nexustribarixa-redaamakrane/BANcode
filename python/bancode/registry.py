@@ -33,6 +33,14 @@ class BANcodeRegistry:
 
     def _load(self):
         codes = {
+            0x0011A005: CodeEntry(
+                hex_value="0x0011A005",
+                value=0x0011A005,
+                name="OWINIT_MISSING",
+                category="bancode",
+                subcategory="",
+                description="Root userland orchestrator (owinit) not found on the OWINIT boot volume",
+            ),
         }
         self._codes = codes
 

@@ -53,7 +53,7 @@ typedef enum {
 #include "comcode.h"
 #include "softcode.h"
 
-#define BANCODE_TOTAL_ASSIGNED 0
+#define BANCODE_TOTAL_ASSIGNED 1
 
 /* Kernel Security Trap Range & Sentinel (31-bit Base SUCS) */
 #define BANCODE_KERNEL_TRAP_MIN   0x7FFFFFF0U

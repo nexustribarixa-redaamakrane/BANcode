@@ -10,9 +10,10 @@ typedef struct bancode_entry {
     const char* category;
 } bancode_entry;
 
-/* No codes assigned yet - placeholder row keeps the table valid; size is 0 so it is never matched */
-static const bancode_entry bancode_table[1] = { { 0xFFFFFFFFU, "UNASSIGNED", "", "" } };
-#define BANCODE_TABLE_SIZE 0
+static const bancode_entry bancode_table[] = {
+    { 0x0011A005U, "OWINIT_MISSING", "Root userland orchestrator (owinit) not found on the OWINIT boot volume", "bancode" },
+};
+#define BANCODE_TABLE_SIZE 1
 
 static const bancode_entry* bancode_find(bancode_t code) {
     int lo = 0;
